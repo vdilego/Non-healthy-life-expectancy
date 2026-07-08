@@ -1,0 +1,11 @@
+#IMaCh 0.99r45
+title=chr datafile=dataCZFchr.txt lastobs=15000 firstpass=1 lastpass=2
+ftol=1.000000e-018 stepm=3 ncovcol=0 nqv=0 ntv=0 nqtv=0 nlstate=2 ndeath=1 maxwav=2 mle=0 weight=1
+model=1+age+
+#Number of iterations & function calls = 85 & 11387, -2 Log likelihood = 2517.888500892621
+# Parameters nlstate*nlstate*ncov a12*1 + b12 * age + ...
+#model=  1      +     age 
+12   -3.6711645    0.0167704 
+13  -29.2245393   -0.0353399 
+21   -2.0902400   -0.0400381 
+23  -14.1752215    0.1241275 

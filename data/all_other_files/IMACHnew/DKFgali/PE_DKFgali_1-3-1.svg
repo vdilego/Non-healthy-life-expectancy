@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg 
+ width="640" height="480"
+ viewBox="0 0 640 480"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>Gnuplot</title>
+<desc>Produced by GNUPLOT 5.0 patchlevel 1 </desc>
+
+<g id="gnuplot_canvas">
+
+<rect x="0" y="0" width="640" height="480" fill="none"/>
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5'/>
+	<path id='gpPt0' stroke-width='0.222' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.222' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.222' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.222' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.222' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.222' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.222' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+	<path id='gpPt13' stroke-width='0.222' stroke='currentColor' d='M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z'/>
+	<use xlink:href='#gpPt13' id='gpPt14' fill='currentColor' stroke='none'/>
+	<filter id='textbox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='white' flood-opacity='1' result='bgnd'/>
+	  <feComposite in='SourceGraphic' in2='bgnd' operator='atop'/>
+	</filter>
+	<filter id='greybox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='lightgrey' flood-opacity='1' result='grey'/>
+	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
+	</filter>
+</defs>
+<g fill="none" color="white" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M96.8,422.4 L105.8,422.4 M531.3,422.4 L522.3,422.4  '/>	<g transform="translate(88.5,426.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 0.0001</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M96.8,394.7 L101.3,394.7 M531.3,394.7 L526.8,394.7 M96.8,378.5 L101.3,378.5 M531.3,378.5 L526.8,378.5
+		M96.8,367.0 L101.3,367.0 M531.3,367.0 L526.8,367.0 M96.8,358.0 L101.3,358.0 M531.3,358.0 L526.8,358.0
+		M96.8,350.8 L101.3,350.8 M531.3,350.8 L526.8,350.8 M96.8,344.6 L101.3,344.6 M531.3,344.6 L526.8,344.6
+		M96.8,339.2 L101.3,339.2 M531.3,339.2 L526.8,339.2 M96.8,334.5 L101.3,334.5 M531.3,334.5 L526.8,334.5
+		M96.8,330.3 L105.8,330.3 M531.3,330.3 L522.3,330.3  '/>	<g transform="translate(88.5,334.8)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 0.001</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M96.8,302.6 L101.3,302.6 M531.3,302.6 L526.8,302.6 M96.8,286.4 L101.3,286.4 M531.3,286.4 L526.8,286.4
+		M96.8,274.9 L101.3,274.9 M531.3,274.9 L526.8,274.9 M96.8,266.0 L101.3,266.0 M531.3,266.0 L526.8,266.0
+		M96.8,258.7 L101.3,258.7 M531.3,258.7 L526.8,258.7 M96.8,252.5 L101.3,252.5 M531.3,252.5 L526.8,252.5
+		M96.8,247.2 L101.3,247.2 M531.3,247.2 L526.8,247.2 M96.8,242.5 L101.3,242.5 M531.3,242.5 L526.8,242.5
+		M96.8,238.2 L105.8,238.2 M531.3,238.2 L522.3,238.2  '/>	<g transform="translate(88.5,242.7)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 0.01</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M96.8,210.5 L101.3,210.5 M531.3,210.5 L526.8,210.5 M96.8,194.3 L101.3,194.3 M531.3,194.3 L526.8,194.3
+		M96.8,182.8 L101.3,182.8 M531.3,182.8 L526.8,182.8 M96.8,173.9 L101.3,173.9 M531.3,173.9 L526.8,173.9
+		M96.8,166.6 L101.3,166.6 M531.3,166.6 L526.8,166.6 M96.8,160.4 L101.3,160.4 M531.3,160.4 L526.8,160.4
+		M96.8,155.1 L101.3,155.1 M531.3,155.1 L526.8,155.1 M96.8,150.4 L101.3,150.4 M531.3,150.4 L526.8,150.4
+		M96.8,146.2 L105.8,146.2 M531.3,146.2 L522.3,146.2  '/>	<g transform="translate(88.5,150.7)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 0.1</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M96.8,118.5 L101.3,118.5 M531.3,118.5 L526.8,118.5 M96.8,102.2 L101.3,102.2 M531.3,102.2 L526.8,102.2
+		M96.8,90.7 L101.3,90.7 M531.3,90.7 L526.8,90.7 M96.8,81.8 L101.3,81.8 M531.3,81.8 L526.8,81.8
+		M96.8,74.5 L101.3,74.5 M531.3,74.5 L526.8,74.5 M96.8,68.4 L101.3,68.4 M531.3,68.4 L526.8,68.4
+		M96.8,63.0 L101.3,63.0 M531.3,63.0 L526.8,63.0 M96.8,58.3 L101.3,58.3 M531.3,58.3 L526.8,58.3
+		M96.8,54.1 L105.8,54.1 M531.3,54.1 L522.3,54.1  '/>	<g transform="translate(88.5,58.6)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" > 1</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M96.8,422.4 L96.8,413.4 M96.8,54.1 L96.8,63.1  '/>	<g transform="translate(96.8,444.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 50</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M151.1,422.4 L151.1,413.4 M151.1,54.1 L151.1,63.1  '/>	<g transform="translate(151.1,444.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 55</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M205.4,422.4 L205.4,413.4 M205.4,54.1 L205.4,63.1  '/>	<g transform="translate(205.4,444.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 60</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M259.7,422.4 L259.7,413.4 M259.7,54.1 L259.7,63.1  '/>	<g transform="translate(259.7,444.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 65</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M314.1,422.4 L314.1,413.4 M314.1,54.1 L314.1,63.1  '/>	<g transform="translate(314.1,444.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 70</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M368.4,422.4 L368.4,413.4 M368.4,54.1 L368.4,63.1  '/>	<g transform="translate(368.4,444.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 75</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M422.7,422.4 L422.7,413.4 M422.7,54.1 L422.7,63.1  '/>	<g transform="translate(422.7,444.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 80</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M477.0,422.4 L477.0,413.4 M477.0,54.1 L477.0,63.1  '/>	<g transform="translate(477.0,444.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 85</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M531.3,422.4 L531.3,413.4 M531.3,54.1 L531.3,63.1  '/>	<g transform="translate(531.3,444.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" > 90</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M96.8,54.1 L96.8,422.4 L531.3,422.4 L531.3,54.1 L96.8,54.1 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(17.6,238.3) rotate(270)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >Quasi-incidence per year</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(314.0,471.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Arial" >Age</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(314.0,31.6)" stroke="none" fill="black" font-family="Helvetica" font-size="12.00"  text-anchor="middle">
+		<text><tspan font-family="Helvetica" >()</tspan></text>
+	</g>
+</g>
+	<g id="gnuplot_plot_1" ><title>i11</title>
+<g fill="none" color="white" stroke="black" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(572.8,67.6)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" >i11</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(  0, 158, 115)'  d='M581.1,63.1 L623.3,63.1 M96.8,54.5 L101.2,54.5 L105.6,54.6 L110.0,54.6 L114.4,54.6 L118.7,54.6
+		L123.1,54.6 L127.5,54.6 L131.9,54.6 L136.3,54.6 L140.7,54.6 L145.1,54.6 L149.5,54.6 L153.9,54.7
+		L158.2,54.7 L162.6,54.7 L167.0,54.7 L171.4,54.7 L175.8,54.7 L180.2,54.7 L184.6,54.7 L189.0,54.7
+		L193.4,54.7 L197.7,54.8 L202.1,54.8 L206.5,54.8 L210.9,54.8 L215.3,54.8 L219.7,54.8 L224.1,54.8
+		L228.5,54.9 L232.9,54.9 L237.2,54.9 L241.6,54.9 L246.0,54.9 L250.4,54.9 L254.8,55.0 L259.2,55.0
+		L263.6,55.0 L268.0,55.0 L272.4,55.0 L276.7,55.0 L281.1,55.1 L285.5,55.1 L289.9,55.1 L294.3,55.1
+		L298.7,55.1 L303.1,55.2 L307.5,55.2 L311.9,55.2 L316.2,55.2 L320.6,55.3 L325.0,55.3 L329.4,55.3
+		L333.8,55.3 L338.2,55.4 L342.6,55.4 L347.0,55.4 L351.4,55.5 L355.7,55.5 L360.1,55.5 L364.5,55.6
+		L368.9,55.6 L373.3,55.6 L377.7,55.7 L382.1,55.7 L386.5,55.8 L390.9,55.8 L395.2,55.8 L399.6,55.9
+		L404.0,55.9 L408.4,56.0 L412.8,56.0 L417.2,56.1 L421.6,56.2 L426.0,56.2 L430.4,56.3 L434.7,56.3
+		L439.1,56.4 L443.5,56.5 L447.9,56.5 L452.3,56.6 L456.7,56.7 L461.1,56.8 L465.5,56.8 L469.9,56.9
+		L474.2,57.0 L478.6,57.1 L483.0,57.2 L487.4,57.3 L491.8,57.4 L496.2,57.5 L500.6,57.6 L505.0,57.7
+		L509.4,57.9 L513.7,58.0 L518.1,58.1 L522.5,58.3 L526.9,58.4 L531.3,58.6  '/></g>
+	</g>
+	<g id="gnuplot_plot_2" ><title>i12</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(572.8,85.6)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" >i12</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb( 86, 180, 233)'  d='M581.1,81.1 L623.3,81.1 M96.8,208.2 L101.2,207.6 L105.6,206.9 L110.0,206.3 L114.4,205.6 L118.7,205.0
+		L123.1,204.3 L127.5,203.7 L131.9,203.0 L136.3,202.4 L140.7,201.7 L145.1,201.1 L149.5,200.4 L153.9,199.8
+		L158.2,199.1 L162.6,198.5 L167.0,197.8 L171.4,197.2 L175.8,196.5 L180.2,195.9 L184.6,195.2 L189.0,194.6
+		L193.4,193.9 L197.7,193.3 L202.1,192.6 L206.5,192.0 L210.9,191.3 L215.3,190.7 L219.7,190.0 L224.1,189.4
+		L228.5,188.7 L232.9,188.1 L237.2,187.4 L241.6,186.8 L246.0,186.1 L250.4,185.5 L254.8,184.9 L259.2,184.2
+		L263.6,183.6 L268.0,182.9 L272.4,182.3 L276.7,181.6 L281.1,181.0 L285.5,180.4 L289.9,179.7 L294.3,179.1
+		L298.7,178.4 L303.1,177.8 L307.5,177.2 L311.9,176.5 L316.2,175.9 L320.6,175.3 L325.0,174.6 L329.4,174.0
+		L333.8,173.4 L338.2,172.7 L342.6,172.1 L347.0,171.5 L351.4,170.8 L355.7,170.2 L360.1,169.6 L364.5,169.0
+		L368.9,168.3 L373.3,167.7 L377.7,167.1 L382.1,166.5 L386.5,165.8 L390.9,165.2 L395.2,164.6 L399.6,164.0
+		L404.0,163.4 L408.4,162.8 L412.8,162.2 L417.2,161.5 L421.6,160.9 L426.0,160.3 L430.4,159.7 L434.7,159.1
+		L439.1,158.5 L443.5,157.9 L447.9,157.4 L452.3,156.8 L456.7,156.2 L461.1,155.6 L465.5,155.0 L469.9,154.4
+		L474.2,153.9 L478.6,153.3 L483.0,152.7 L487.4,152.2 L491.8,151.6 L496.2,151.1 L500.6,150.5 L505.0,150.0
+		L509.4,149.4 L513.7,148.9 L518.1,148.4 L522.5,147.8 L526.9,147.3 L531.3,146.8  '/></g>
+	</g>
+	<g id="gnuplot_plot_3" ><title>i13</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(572.8,103.6)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" >i13</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(148,   0, 211)'  d='M581.1,99.1 L623.3,99.1 M96.8,351.7 L101.2,349.5 L105.6,347.4 L110.0,345.2 L114.4,343.0 L118.7,340.9
+		L123.1,338.7 L127.5,336.6 L131.9,334.4 L136.3,332.3 L140.7,330.1 L145.1,328.0 L149.5,325.8 L153.9,323.7
+		L158.2,321.5 L162.6,319.4 L167.0,317.2 L171.4,315.1 L175.8,312.9 L180.2,310.7 L184.6,308.6 L189.0,306.4
+		L193.4,304.3 L197.7,302.1 L202.1,300.0 L206.5,297.8 L210.9,295.7 L215.3,293.5 L219.7,291.4 L224.1,289.2
+		L228.5,287.1 L232.9,285.0 L237.2,282.8 L241.6,280.7 L246.0,278.5 L250.4,276.4 L254.8,274.2 L259.2,272.1
+		L263.6,269.9 L268.0,267.8 L272.4,265.6 L276.7,263.5 L281.1,261.4 L285.5,259.2 L289.9,257.1 L294.3,254.9
+		L298.7,252.8 L303.1,250.6 L307.5,248.5 L311.9,246.4 L316.2,244.2 L320.6,242.1 L325.0,240.0 L329.4,237.8
+		L333.8,235.7 L338.2,233.6 L342.6,231.4 L347.0,229.3 L351.4,227.2 L355.7,225.0 L360.1,222.9 L364.5,220.8
+		L368.9,218.6 L373.3,216.5 L377.7,214.4 L382.1,212.3 L386.5,210.1 L390.9,208.0 L395.2,205.9 L399.6,203.8
+		L404.0,201.7 L408.4,199.6 L412.8,197.5 L417.2,195.3 L421.6,193.2 L426.0,191.1 L430.4,189.0 L434.7,186.9
+		L439.1,184.8 L443.5,182.7 L447.9,180.6 L452.3,178.5 L456.7,176.5 L461.1,174.4 L465.5,172.3 L469.9,170.2
+		L474.2,168.1 L478.6,166.1 L483.0,164.0 L487.4,161.9 L491.8,159.9 L496.2,157.8 L500.6,155.8 L505.0,153.7
+		L509.4,151.7 L513.7,149.7 L518.1,147.6 L522.5,145.6 L526.9,143.6 L531.3,141.6  '/></g>
+	</g>
+	<g id="gnuplot_plot_4" ><title>i21</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(572.8,121.6)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" >i21</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(  0, 158, 115)' stroke-dasharray=' 5,8'  d='M581.1,117.1 L623.3,117.1 M96.8,84.2 L101.2,84.8 L105.6,85.4 L110.0,86.0 L114.4,86.6 L118.7,87.3
+		L123.1,87.9 L127.5,88.5 L131.9,89.2 L136.3,89.8 L140.7,90.5 L145.1,91.1 L149.5,91.8 L153.9,92.4
+		L158.2,93.1 L162.6,93.7 L167.0,94.4 L171.4,95.1 L175.8,95.7 L180.2,96.4 L184.6,97.1 L189.0,97.8
+		L193.4,98.4 L197.7,99.1 L202.1,99.8 L206.5,100.5 L210.9,101.2 L215.3,101.9 L219.7,102.6 L224.1,103.3
+		L228.5,104.0 L232.9,104.7 L237.2,105.4 L241.6,106.1 L246.0,106.8 L250.4,107.5 L254.8,108.3 L259.2,109.0
+		L263.6,109.7 L268.0,110.4 L272.4,111.2 L276.7,111.9 L281.1,112.6 L285.5,113.4 L289.9,114.1 L294.3,114.8
+		L298.7,115.6 L303.1,116.3 L307.5,117.1 L311.9,117.8 L316.2,118.6 L320.6,119.3 L325.0,120.1 L329.4,120.9
+		L333.8,121.6 L338.2,122.4 L342.6,123.2 L347.0,123.9 L351.4,124.7 L355.7,125.5 L360.1,126.3 L364.5,127.1
+		L368.9,127.8 L373.3,128.6 L377.7,129.4 L382.1,130.2 L386.5,131.0 L390.9,131.8 L395.2,132.6 L399.6,133.4
+		L404.0,134.2 L408.4,135.0 L412.8,135.8 L417.2,136.7 L421.6,137.5 L426.0,138.3 L430.4,139.1 L434.7,139.9
+		L439.1,140.8 L443.5,141.6 L447.9,142.4 L452.3,143.3 L456.7,144.1 L461.1,144.9 L465.5,145.8 L469.9,146.6
+		L474.2,147.5 L478.6,148.3 L483.0,149.2 L487.4,150.0 L491.8,150.9 L496.2,151.8 L500.6,152.6 L505.0,153.5
+		L509.4,154.4 L513.7,155.2 L518.1,156.1 L522.5,157.0 L526.9,157.9 L531.3,158.8  '/></g>
+	</g>
+	<g id="gnuplot_plot_5" ><title>i22</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(572.8,139.6)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" >i22</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb( 86, 180, 233)' stroke-dasharray=' 5,8'  d='M581.1,135.1 L623.3,135.1 M96.8,65.7 L101.2,65.6 L105.6,65.4 L110.0,65.2 L114.4,65.1 L118.7,64.9
+		L123.1,64.8 L127.5,64.6 L131.9,64.5 L136.3,64.3 L140.7,64.2 L145.1,64.0 L149.5,63.9 L153.9,63.8
+		L158.2,63.6 L162.6,63.5 L167.0,63.4 L171.4,63.3 L175.8,63.1 L180.2,63.0 L184.6,62.9 L189.0,62.8
+		L193.4,62.7 L197.7,62.6 L202.1,62.5 L206.5,62.4 L210.9,62.3 L215.3,62.2 L219.7,62.1 L224.1,62.0
+		L228.5,62.0 L232.9,61.9 L237.2,61.8 L241.6,61.7 L246.0,61.6 L250.4,61.6 L254.8,61.5 L259.2,61.4
+		L263.6,61.4 L268.0,61.3 L272.4,61.3 L276.7,61.2 L281.1,61.1 L285.5,61.1 L289.9,61.1 L294.3,61.0
+		L298.7,61.0 L303.1,60.9 L307.5,60.9 L311.9,60.9 L316.2,60.8 L320.6,60.8 L325.0,60.8 L329.4,60.7
+		L333.8,60.7 L338.2,60.7 L342.6,60.7 L347.0,60.7 L351.4,60.7 L355.7,60.6 L360.1,60.6 L364.5,60.6
+		L368.9,60.6 L373.3,60.6 L377.7,60.6 L382.1,60.6 L386.5,60.6 L390.9,60.7 L395.2,60.7 L399.6,60.7
+		L404.0,60.7 L408.4,60.7 L412.8,60.8 L417.2,60.8 L421.6,60.8 L426.0,60.8 L430.4,60.9 L434.7,60.9
+		L439.1,61.0 L443.5,61.0 L447.9,61.0 L452.3,61.1 L456.7,61.1 L461.1,61.2 L465.5,61.2 L469.9,61.3
+		L474.2,61.4 L478.6,61.4 L483.0,61.5 L487.4,61.6 L491.8,61.6 L496.2,61.7 L500.6,61.8 L505.0,61.9
+		L509.4,62.0 L513.7,62.1 L518.1,62.2 L522.5,62.2 L526.9,62.3 L531.3,62.4  '/></g>
+	</g>
+	<g id="gnuplot_plot_6" ><title>i23</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(572.8,157.6)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" >i23</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(148,   0, 211)' stroke-dasharray=' 5,8'  d='M581.1,153.1 L623.3,153.1 M96.8,190.4 L101.2,189.3 L105.6,188.3 L110.0,187.3 L114.4,186.3 L118.7,185.2
+		L123.1,184.2 L127.5,183.2 L131.9,182.2 L136.3,181.2 L140.7,180.2 L145.1,179.2 L149.5,178.2 L153.9,177.2
+		L158.2,176.2 L162.6,175.2 L167.0,174.2 L171.4,173.3 L175.8,172.3 L180.2,171.3 L184.6,170.3 L189.0,169.4
+		L193.4,168.4 L197.7,167.4 L202.1,166.5 L206.5,165.5 L210.9,164.5 L215.3,163.6 L219.7,162.6 L224.1,161.7
+		L228.5,160.7 L232.9,159.8 L237.2,158.9 L241.6,157.9 L246.0,157.0 L250.4,156.0 L254.8,155.1 L259.2,154.2
+		L263.6,153.3 L268.0,152.3 L272.4,151.4 L276.7,150.5 L281.1,149.6 L285.5,148.7 L289.9,147.8 L294.3,146.9
+		L298.7,146.0 L303.1,145.1 L307.5,144.2 L311.9,143.3 L316.2,142.4 L320.6,141.5 L325.0,140.6 L329.4,139.7
+		L333.8,138.8 L338.2,137.9 L342.6,137.1 L347.0,136.2 L351.4,135.3 L355.7,134.4 L360.1,133.6 L364.5,132.7
+		L368.9,131.8 L373.3,131.0 L377.7,130.1 L382.1,129.3 L386.5,128.4 L390.9,127.6 L395.2,126.7 L399.6,125.9
+		L404.0,125.0 L408.4,124.2 L412.8,123.3 L417.2,122.5 L421.6,121.7 L426.0,120.8 L430.4,120.0 L434.7,119.2
+		L439.1,118.4 L443.5,117.5 L447.9,116.7 L452.3,115.9 L456.7,115.1 L461.1,114.3 L465.5,113.5 L469.9,112.7
+		L474.2,111.9 L478.6,111.1 L483.0,110.3 L487.4,109.5 L491.8,108.7 L496.2,107.9 L500.6,107.1 L505.0,106.4
+		L509.4,105.6 L513.7,104.8 L518.1,104.0 L522.5,103.3 L526.9,102.5 L531.3,101.8  '/></g>
+	</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M96.8,54.1 L96.8,422.4 L531.3,422.4 L531.3,54.1 L96.8,54.1 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+</g>
+</svg>
+

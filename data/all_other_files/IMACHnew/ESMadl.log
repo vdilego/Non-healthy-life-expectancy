@@ -1,0 +1,1069 @@
+Log filename:ESMadl.log
+Version 0.99r45 $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $
+Enter the parameter file name: 
+pathimach=C:\PROGRA~1\IMACH-~2.99R\bin\
+pathtot=C:\Users\mmusz\Dropbox\gender_paradox\data\IMACHnew\ESMadl.txt
+ path=C:\Users\mmusz\Dropbox\gender_paradox\data\IMACHnew\ 
+ optionfile=ESMadl.txt
+ optionfilext=txt
+ optionfilefiname='ESMadl'
+Compiled with: Microsoft Visual Studio for Windows (x64 and x86)  64-bit
+The programm is not running under WOW64 (i.e probably on a 64bit Windows).
+Local time (at start): Tue Feb 04 22:03:38 2025
+title=adl datafile=dataESMadl.txt lastobs=5000 firstpass=1 lastpass=2
+ftol=1.000000e-018 stepm=6 ncovcol=0 nqv=0 ntv=0 nqtv=0 nlstate=2 ndeath=1 maxwav=2 mle=1 weight=1
+model=1+age+
+12 -11.245550 0.110107
+13 -8.877656 0.074841
+21 -2.755455 0.023037
+23 -7.505407 0.075516
+# Scales (for hessian or gradient estimation)
+12 0.000000e+000 0.000000e+000
+13 0.000000e+000 0.000000e+000
+21 0.000000e+000 0.000000e+000
+23 0.000000e+000 0.000000e+000
+# Covariance matrix
+121 0.00000e+000
+122 0.00000e+000 0.00000e+000
+131 0.00000e+000 0.00000e+000 0.00000e+000
+132 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000
+211 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000
+212 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000
+231 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000
+232 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000
+
+Model=1+age+
+Typevar: 0 for simple covariate (dummy, quantitative, fixed or varying), 1 for age product, 2 for  product, 3 for double product with age  
+Fixed[k] 0=fixed (product or simple), 1 varying, 2 fixed with age product, 3 varying with age product 
+Dummy[k] 0=dummy (0 1), 1 quantitative (single or product without age), 2 dummy with age product, 3 quant with age product
+ncoveff=0, nqfveff=0, ntveff=0, nqtveff=0, cptcovn=0
+ncovf=0, ncovv=0, ncova=0, nsd=0, nsq=0
+Warning: The value of parameter lastobs=5000 is big compared to the 
+  effective number of cases imx=1928, please adjust, 
+  otherwise you are allocating more memory than necessary.
+Total number of individuals= 1928, Agemin = 51.25, Agemax= 93.50
+
+Information, you have to check 0 informations which haven't been logged!
+Delay (in months) between two waves Min=1 (for indiviudal 1852) Max=33 (1892) Mean=24.359959
+
+ Age 51 1.=1 loss[1]=0.0% 2.=0 loss[2]=NaNQ% 1.=1 prev[1]=100.0% 2.=0 prev[2]=0.0% 11=1
+Age 52 1.=0 loss[1]=0.0% 2.=0 loss[2]=NaNQ% 1.=0 prev[1]=100.0% 2.=0 prev[2]=0.0% 11=0
+Age 53 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=97.9% 2.=0 prev[2]=2.1% 11=0 12=0 21=0
+Age 54 1.=6 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=6 prev[1]=99.7% 2.=0 prev[2]=0.3% 11=6 12=0 21=0
+Age 55 1.=5 loss[1]=0.0% 2.=0 loss[2]=NaNQ% 1.=5 prev[1]=100.0% 2.=0 prev[2]=0.0% 11=5
+Age 56 1.=9 loss[1]=0.0% 2.=1 loss[2]=0.0% 1.=9 prev[1]=94.4% 2.=1 prev[2]=5.6% 11=8 13=1 22=1
+Age 57 1.=7 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=7 prev[1]=96.5% 2.=0 prev[2]=3.5% 11=7 12=0 21=0 22=0
+Age 58 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=98.2% 2.=0 prev[2]=1.8% 11=2 12=0 21=0 22=0
+Age 59 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=97.6% 2.=0 prev[2]=2.4% 11=1 12=0 13=0 21=0 22=0
+Age 60 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=99.7% 2.=0 prev[2]=0.3% 11=1 21=0
+Age 61 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=94.8% 2.=0 prev[2]=5.2% 11=2 12=0 21=0 23=0
+Age 62 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=93.6% 2.=0 prev[2]=6.4% 11=2 12=0 21=0 22=0
+Age 63 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=99.3% 2.=0 prev[2]=0.7% 11=2 12=0 13=0 21=0 22=0
+Age 64 1.=3 loss[1]=0.0% 2.=1 loss[2]=0.0% 1.=3 prev[1]=77.2% 2.=1 prev[2]=22.8% 11=3 12=0 13=0 21=0 22=0 23=0
+Age 65 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=96.9% 2.=0 prev[2]=3.1% 11=2 12=0 13=0 21=0 22=0
+Age 66 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=95.5% 2.=0 prev[2]=4.5% 11=2 12=0 13=0 22=0 23=0
+Age 67 1.=3 loss[1]=0.0% 2.=0 loss[2]=NaNQ% 1.=3 prev[1]=100.0% 2.=0 prev[2]=0.0% 11=2 12=0 13=0
+Age 68 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=88.3% 2.=0 prev[2]=11.7% 11=2 12=0 13=0 21=0 22=0 23=0
+Age 69 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=92.8% 2.=0 prev[2]=7.2% 11=2 12=0 13=0 21=0
+Age 70 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=86.9% 2.=0 prev[2]=13.1% 11=2 12=0 13=0 21=0 22=0
+Age 71 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=87.3% 2.=0 prev[2]=12.7% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 72 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=82.9% 2.=0 prev[2]=17.1% 11=1 12=0 13=0 21=0 22=0
+Age 73 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=88.6% 2.=0 prev[2]=11.4% 11=1 12=0 13=0 21=0 22=0
+Age 74 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=91.9% 2.=0 prev[2]=8.1% 11=2 12=0 13=0 21=0 22=0 23=0
+Age 75 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=85.0% 2.=0 prev[2]=15.0% 11=2 12=0 13=0 21=0 22=0 23=0
+Age 76 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=95.9% 2.=0 prev[2]=4.1% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 77 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=92.9% 2.=0 prev[2]=7.1% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 78 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=87.1% 2.=0 prev[2]=12.9% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 79 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=86.2% 2.=0 prev[2]=13.8% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 80 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=93.6% 2.=0 prev[2]=6.4% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 81 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=72.3% 2.=0 prev[2]=27.7% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 82 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=83.4% 2.=0 prev[2]=16.6% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 83 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=62.4% 2.=0 prev[2]=37.6% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 84 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=80.2% 2.=0 prev[2]=19.8% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 85 1.=1 loss[1]=0.0% 2.=1 loss[2]=0.0% 1.=1 prev[1]=54.1% 2.=1 prev[2]=45.9% 11=0 12=0 13=0 21=0 22=0 23=0
+Age 86 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=70.3% 2.=0 prev[2]=29.7% 11=0 12=0 13=0 21=0 22=0 23=0
+Age 87 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=81.6% 2.=0 prev[2]=18.4% 11=0 12=0 13=0 21=0 22=0 23=0
+Age 88 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=54.6% 2.=0 prev[2]=45.4% 11=0 12=0 13=0 21=0 22=0 23=0
+Age 89 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=37.8% 2.=0 prev[2]=62.2% 11=0 12=0 13=0 22=0 23=0
+Age 90 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=78.8% 2.=0 prev[2]=21.2% 11=0 12=0 13=0 21=0 22=0 23=0
+Age 91 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=65.0% 2.=0 prev[2]=35.0% 13=0 21=0
+Age 92 1.=0 loss[1]=NaNQ% 2.=0 loss[2]=NaNQ% 1.=0 prev[1]=NaNQ% 2.=0 prev[2]=NaNQ%
+Age 93 1.=0 loss[1]=NaNQ% 2.=0 loss[2]=NaNQ% 1.=0 prev[1]=NaNQ% 2.=0 prev[2]=NaNQ%
+1 1.=0 loss[1]=NaNQ% 2.=0 loss[2]=NaNQ% 1.=0 prev[1]=NaNQ% 2.=0 prev[2]=NaNQ%
+0 1.=0 loss[1]=NaNQ% 2.=0 loss[2]=NaNQ% 1.=0 prev[1]=NaNQ% 2.=0 prev[2]=NaNQ%
+Total 1.=76 loss[1]=0.0% 2.=7 loss[2]=0.0% 1.=76 prev[1]=91.0% 2.=7 prev[2]=9.0% 11=69 12=3 13=4 21=3 22=3 23=2
+
+
+12  -11.2455502 ln(3/69)=   -2.9996287 
+13   -8.8776564 ln(4/69)=   -2.8682484 
+21   -2.7554552 ln(3/3)=   -0.2562467 
+23   -7.5054070 ln(2/3)=   -0.8100808 
+
+ -1-1=0 -10=0 -11=0 -12=0 -13=0 0-1=0 00=0 01=0 02=0 03=0 1-1=0 10=0 11=69 12=3 13=4 2-1=0 20=0 21=3 22=3 23=2 3-1=0 30=0 31=0 32=0 33=0
+Powell
+
+Powell iter=1 Big Iter=1 -2*LL=2032.419798354558 gain=0 0 sec. 1 sec.
+#model=  1      +     age 
+12  -11.2455502    0.1101065 
+13   -8.8776564    0.0748409 
+21   -2.7554552    0.0230371 
+23   -7.5054070    0.0755163 
+1.........2...............3........4..................5........6.............7.........8..................
+Powell iter=2 Big Iter=2 -2*LL=1920.399822107547 gain=112 0 sec. 1 sec.
+#model=  1      +     age 
+12  -11.6140997    0.1103138 
+13   -9.8104146    0.0744279 
+21   -3.2596213    0.0234394 
+23   -8.1897766    0.0754598 
+
+Considering the time needed for this last iteration #2: 0 seconds,
+   - if your program needs 1 BIG iterations  (2 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 22:03:39 2025 (current time is Tue Feb 04 22:03:39 2025);
+   - if your program needs 11 BIG iterations  (22 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 22:03:39 2025 (current time is Tue Feb 04 22:03:39 2025);
+   - if your program needs 21 BIG iterations  (42 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 22:03:39 2025 (current time is Tue Feb 04 22:03:39 2025);
+   - if your program needs 31 BIG iterations  (62 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 22:03:39 2025 (current time is Tue Feb 04 22:03:39 2025);
+1.........2..............3.........4..................5.........6..............7..........8..................
+Powell iter=3 Big Iter=2 -2*LL=1913.312696365320 gain=7.09 1 sec. 2 sec.
+#model=  1      +     age 
+12  -11.7848899    0.1104137 
+13   -9.6552729    0.0742437 
+21   -3.4949482    0.0235080 
+23   -8.3092427    0.0754114 
+
+Considering the time needed for this last iteration #3: 1 seconds,
+   - if your program needs 1 BIG iterations  (2 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) -1 second(s) i.e.
+   on Tue Feb 04 22:03:39 2025 (current time is Tue Feb 04 22:03:40 2025);
+   - if your program needs 11 BIG iterations  (22 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 19 second(s) i.e.
+   on Tue Feb 04 22:03:59 2025 (current time is Tue Feb 04 22:03:40 2025);
+   - if your program needs 21 BIG iterations  (42 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 39 second(s) i.e.
+   on Tue Feb 04 22:04:19 2025 (current time is Tue Feb 04 22:03:40 2025);
+   - if your program needs 31 BIG iterations  (62 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 59 second(s) i.e.
+   on Tue Feb 04 22:04:39 2025 (current time is Tue Feb 04 22:03:40 2025);
+1.........2................3..........4..................5.........6..............7.........8..........................Gaining to use new average direction of P0 P8 instead of biggest increase direction 1 :
+
+Powell iter=4 Big Iter=3 -2*LL=1912.223836896848 gain=1.09 1 sec. 3 sec.
+#model=  1      +     age 
+12  -11.9160356    0.1104699 
+13   -9.6205203    0.0740385 
+21   -3.5694673    0.0235240 
+23   -8.3464778    0.0753543 
+1.......................2................3..........4..................5.........6..............7.........8........
+Powell iter=5 Big Iter=3 -2*LL=1912.205501815932 gain=0.0183 1 sec. 4 sec.
+#model=  1      +     age 
+12  -11.9198115    0.1105223 
+13   -9.6087263    0.0738856 
+21   -3.5687450    0.0235227 
+23   -8.3426277    0.0753546 
+1..................2................3..........4..................5.........6.................7.........8...............Gaining to use new average direction of P0 P8 instead of biggest increase direction 4 :
+
+Powell iter=6 Big Iter=4 -2*LL=1911.782168004944 gain=0.423 0 sec. 4 sec.
+#model=  1      +     age 
+12  -12.1035118    0.1131056 
+13   -9.0735194    0.0665283 
+21   -3.5605389    0.0234663 
+23   -8.1503220    0.0732397 
+1..................2................3..........4........5.........6..............7.........8........directest= 0.404323544375 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000434244611, f1= 1911.782168004944,f2= 1911.779046843773,f3= 1912.185587706080, del= 0.002669239552
+f1-2f2+f3= 0.409662023478, f1-f2-del= 0.000451921620, f1-f3= -0.403419701136
+
+Powell iter=7 Big Iter=4 -2*LL=1911.779046843773 gain=0.00312 1 sec. 5 sec.
+#model=  1      +     age 
+12  -12.1060433    0.1131461 
+13   -9.0689850    0.0663753 
+21   -3.5600722    0.0234723 
+23   -8.1447373    0.0732022 
+1..................2.................3..........4........5........6..............7..........8........
+Powell iter=8 Big Iter=5 -2*LL=1911.778933847020 gain=0.000113 1 sec. 6 sec.
+#model=  1      +     age 
+12  -12.1062513    0.1131490 
+13   -9.0682852    0.0663561 
+21   -3.5604931    0.0234798 
+23   -8.1448235    0.0732069 
+1..................2................3..............4.........5........6...............7.........8.................Gaining to use new average direction of P0 P8 instead of biggest increase direction 7 :
+
+Powell iter=9 Big Iter=5 -2*LL=1911.776635469100 gain=0.0023 0 sec. 6 sec.
+#model=  1      +     age 
+12  -12.1041580    0.1131281 
+13   -9.0548635    0.0661167 
+21   -3.5898101    0.0238812 
+23   -8.1815646    0.0736940 
+1..................2................3..........4........5..................6................7........8.......
+Powell iter=10 Big Iter=6 -2*LL=1911.775601105309 gain=0.00103 1 sec. 7 sec.
+#model=  1      +     age 
+12  -12.1019756    0.1131049 
+13   -9.0529063    0.0661169 
+21   -3.5999729    0.0240129 
+23   -8.1956460    0.0738811 
+1..................2................3..........4..........5.............6..............7.............8...............Gaining to use new average direction of P0 P8 instead of biggest increase direction 3 :
+
+Powell iter=11 Big Iter=6 -2*LL=1911.775320772400 gain=0.00028 1 sec. 8 sec.
+#model=  1      +     age 
+12  -12.1000128    0.1130830 
+13   -9.0515595    0.0661189 
+21   -3.6079027    0.0241155 
+23   -8.2069523    0.0740035 
+1...............................2..................3.......................4..........5............6................7.........8..................directest= 0.000049136996 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000000000000, f1= 1911.775320772400,f2= 1911.775313553301,f3= 1911.775361040667, del= 0.000002784735
+f1-2f2+f3= 0.000054706465, f1-f2-del= 0.000004434365, f1-f3= -0.000040268267
+
+Powell iter=12 Big Iter=7 -2*LL=1911.775313553301 gain=7.22e-006 1 sec. 9 sec.
+#model=  1      +     age 
+12  -12.0998756    0.1130811 
+13   -9.0515801    0.0661193 
+21   -3.6076117    0.0241115 
+23   -8.2068245    0.0740015 
+1.......................2...................3...........................4........5.............6.....................7..............8.....................Gaining to use new average direction of P0 P8 instead of biggest increase direction 6 :
+
+Powell iter=13 Big Iter=7 -2*LL=1911.774972160657 gain=0.000341 1 sec. 10 sec.
+#model=  1      +     age 
+12  -12.0857342    0.1128892 
+13   -9.0474254    0.0660615 
+21   -3.5932661    0.0239126 
+23   -8.2114025    0.0740515 
+1..........................2......................3.....................4............5..........6............7.................8...............directest= 0.000335125862 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000000000000, f1= 1911.774972160657,f2= 1911.774969852715,f3= 1911.775306207127, del= 0.000001768246
+f1-2f2+f3= 0.000338662355, f1-f2-del= 0.000000539696, f1-f3= -0.000334046470
+
+Powell iter=14 Big Iter=8 -2*LL=1911.774969852715 gain=2.31e-006 0 sec. 10 sec.
+#model=  1      +     age 
+12  -12.0857390    0.1128885 
+13   -9.0473663    0.0660614 
+21   -3.5932826    0.0239150 
+23   -8.2116504    0.0740549 
+1......................2....................3..................4................5..............6...............7.............8..................Gaining to use new average direction of P0 P8 instead of biggest increase direction 4 :
+
+Powell iter=15 Big Iter=8 -2*LL=1911.774966131731 gain=3.72e-006 1 sec. 11 sec.
+#model=  1      +     age 
+12  -12.0859527    0.1128893 
+13   -9.0473528    0.0660629 
+21   -3.5930812    0.0239130 
+23   -8.2122093    0.0740630 
+1....................2................3...............4......................5.............................6........7...............8................Gaining to use new average direction of P0 P8 instead of biggest increase direction 2 :
+
+Powell iter=16 Big Iter=9 -2*LL=1911.774954918002 gain=1.12e-005 1 sec. 12 sec.
+#model=  1      +     age 
+12  -12.0864914    0.1128959 
+13   -9.0472855    0.0660637 
+21   -3.5925220    0.0239075 
+23   -8.2138665    0.0740858 
+1........................2...........3..........4................5..............6...............7...............8....................Gaining to use new average direction of P0 P8 instead of biggest increase direction 8 :
+
+Powell iter=17 Big Iter=9 -2*LL=1911.774932939191 gain=2.2e-005 1 sec. 13 sec.
+#model=  1      +     age 
+12  -12.0881143    0.1129142 
+13   -9.0470360    0.0660615 
+21   -3.5916027    0.0238949 
+23   -8.2176056    0.0741313 
+1........................2......3...............4...............5............6.........7...............8........
+Powell iter=18 Big Iter=10 -2*LL=1911.774907543892 gain=2.54e-005 0 sec. 13 sec.
+#model=  1      +     age 
+12  -12.0891225    0.1129277 
+13   -9.0468711    0.0660567 
+21   -3.5911279    0.0238865 
+23   -8.2195358    0.0741503 
+1......................2........3.............4...........5..................6................7...............8...............Gaining to use new average direction of P0 P8 instead of biggest increase direction 2 :
+
+Powell iter=19 Big Iter=10 -2*LL=1911.774895916349 gain=1.16e-005 1 sec. 14 sec.
+#model=  1      +     age 
+12  -12.0900918    0.1129427 
+13   -9.0465657    0.0660497 
+21   -3.5906586    0.0238786 
+23   -8.2222923    0.0741826 
+1.................2............3........4...................5..............6............7...............8.........
+Powell iter=20 Big Iter=11 -2*LL=1911.774892453000 gain=3.46e-006 1 sec. 15 sec.
+#model=  1      +     age 
+12  -12.0901136    0.1129439 
+13   -9.0465105    0.0660491 
+21   -3.5906420    0.0238790 
+23   -8.2227463    0.0741900 
+1......................2.............3..............4.............5.........6............7................8....................Gaining to use new average direction of P0 P8 instead of biggest increase direction 1 :
+
+Powell iter=21 Big Iter=11 -2*LL=1911.774890109665 gain=2.34e-006 1 sec. 16 sec.
+#model=  1      +     age 
+12  -12.0900725    0.1129454 
+13   -9.0465428    0.0660499 
+21   -3.5904784    0.0238788 
+23   -8.2229773    0.0741947 
+1..................................2.....................3.........................4.......................5...............6..............7.................8...................directest= 0.000001067619 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000000000000, f1= 1911.774890109665,f2= 1911.774890098053,f3= 1911.774891168943, del= 0.000000007441
+f1-2f2+f3= 0.000001082501, f1-f2-del= 0.000000004170, f1-f3= -0.000001059278
+
+Powell iter=22 Big Iter=12 -2*LL=1911.774890098053 gain=1.16e-008 1 sec. 17 sec.
+#model=  1      +     age 
+12  -12.0900458    0.1129451 
+13   -9.0465501    0.0660499 
+21   -3.5905003    0.0238790 
+23   -8.2228765    0.0741935 
+1...............2..................3...........4...................5............................6..................7...........................8........................
+Powell iter=23 Big Iter=12 -2*LL=1911.774890097049 gain=1e-009 0 sec. 17 sec.
+#model=  1      +     age 
+12  -12.0900423    0.1129450 
+13   -9.0465479    0.0660499 
+21   -3.5905040    0.0238790 
+23   -8.2228809    0.0741936 
+1..................2...............3........................4..............................5...................6...................7........................8...................................Gaining to use new average direction of P0 P8 instead of biggest increase direction 1 :
+
+Powell iter=24 Big Iter=13 -2*LL=1911.774890096852 gain=1.97e-010 1 sec. 18 sec.
+#model=  1      +     age 
+12  -12.0900415    0.1129450 
+13   -9.0465475    0.0660499 
+21   -3.5905071    0.0238790 
+23   -8.2228795    0.0741936 
+1..................................2.................................3.............................4.................................5........................6...............................7......................8..............................................directest= 0.000000000056 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000000000000, f1= 1911.774890096852,f2= 1911.774890096847,f3= 1911.774890096903, del= 0.000000000002
+f1-2f2+f3= 0.000000000060, f1-f2-del= 0.000000000002, f1-f3= -0.000000000052
+
+Powell iter=25 Big Iter=13 -2*LL=1911.774890096847 gain=4.32e-012 2 sec. 20 sec.
+#model=  1      +     age 
+12  -12.0900415    0.1129450 
+13   -9.0465475    0.0660499 
+21   -3.5905071    0.0238790 
+23   -8.2228795    0.0741936 
+1...................................2.......................................3.........................................4..................................5...........................6................................7...........................8...........................................
+Powell iter=26 Big Iter=14 -2*LL=1911.774890096847 gain=6.82e-013 1 sec. 21 sec.
+#model=  1      +     age 
+12  -12.0900415    0.1129450 
+13   -9.0465475    0.0660499 
+21   -3.5905071    0.0238790 
+23   -8.2228795    0.0741936 
+1.................................2......................................3.........................4..............................5.....................6.................................7........................8...................................directest= 0.000000000006 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000000000000, f1= 1911.774890096847,f2= 1911.774890096845,f3= 1911.774890096852, del= 0.000000000002
+f1-2f2+f3= 0.000000000009, f1-f2-del= 0.000000000000, f1-f3= -0.000000000006
+
+Powell iter=27 Big Iter=14 -2*LL=1911.774890096845 gain=1.59e-012 2 sec. 23 sec.
+#model=  1      +     age 
+12  -12.0900414    0.1129450 
+13   -9.0465471    0.0660499 
+21   -3.5905080    0.0238791 
+23   -8.2228806    0.0741936 
+1...................................2....................................3......................................4.................................5.......................6.......................7....................8...........................................
+#Number of iterations & function calls = 27 & 4552, -2 Log likelihood = 1911.774890096845
+# Parameters nlstate*nlstate*ncov a12*1 + b12 * age + ...
+#model=  1      +     age 
+12  -12.0900414    0.1129450 
+13   -9.0465471    0.0660499 
+21   -3.5905080    0.0238791 
+23   -8.2228806    0.0741936 
+
+Calculation of the hessian matrix. Wait...
+1-2-3-4-5-6-7-8-.1-2.1-3.1-4.1-5.1-6.1-7.1-8.2-3.2-4.2-5.2-6.2-7.2-8.3-4.3-5.3-6.3-7.3-8.4-5.4-6.4-7.4-8.5-6.5-7.5-8.6-7.6-8.7-8
+
+Inverting the hessian to get the covariance matrix. Wait...
+
+#Hessian matrix#
+7.525168e+001 5.659495e+003 7.251949e+000 5.777415e+002 -1.930736e+001 -1.523694e+003 -6.360600e+000 -4.999662e+002 
+5.659495e+003 4.328847e+005 5.710667e+002 4.592481e+004 -1.521828e+003 -1.217473e+005 -4.985634e+002 -3.957872e+004 
+7.251949e+000 5.710667e+002 6.504208e+001 4.600879e+003 -4.430037e+000 -3.555923e+002 1.049283e+001 8.375493e+002 
+5.777415e+002 4.592481e+004 4.600879e+003 3.321519e+005 -3.570537e+002 -2.893342e+004 8.371897e+002 6.749120e+004 
+-1.930736e+001 -1.521828e+003 -4.430037e+000 -3.570537e+002 4.925536e+001 3.655648e+003 -4.291412e+000 -3.625426e+002 
+-1.523694e+003 -1.217473e+005 -3.555923e+002 -2.893342e+004 3.655648e+003 2.763035e+005 -3.605555e+002 -3.066800e+004 
+-6.360600e+000 -4.985634e+002 1.049283e+001 8.371897e+002 -4.291412e+000 -3.605555e+002 3.161398e+001 2.547222e+003 
+-4.999662e+002 -3.957872e+004 8.375493e+002 6.749120e+004 -3.625426e+002 -3.066800e+004 2.547222e+003 2.076629e+005 
+Parameters, Wald tests and Wald-based confidence intervals
+ W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+ And Wald-based confidence intervals plus and minus 1.96 * W 
+  It might be better to visualize the covariance matrix. See the page 'Matrix of variance-covariance of one-step probabilities' and its graphs.
+12  -12.0900414(   0.9615204) W= -12.574 CI=[ -13.9746215 ;  -10.2054613]    0.1129450(   0.0129100) W=   8.749 CI=[   0.0876414 ;    0.1382486] 
+13   -9.0465471(   0.9087527) W=  -9.955 CI=[ -10.8277023 ;   -7.2653918]    0.0660499(   0.0128481) W=   5.141 CI=[   0.0408676 ;    0.0912322] 
+21   -3.5905080(   1.1513783) W=  -3.118 CI=[  -5.8472095 ;   -1.3338065]    0.0238791(   0.0156555) W=   1.525 CI=[  -0.0068058 ;    0.0545639] 
+23   -8.2228806(   1.6830854) W=  -4.886 CI=[ -11.5217280 ;   -4.9240332]    0.0741936(   0.0209037) W=   3.549 CI=[   0.0332223 ;    0.1151649] 
+# Scales (for hessian or gradient estimation)
+12 1.00000e-003 1.00000e-005
+13 1.00000e-003 1.00000e-005
+21 1.00000e-003 1.00000e-005
+23 1.00000e-003 2.00000e-005
+# Covariance matrix 
+# 121 Var(a12)
+# 122 Cov(b12,a12) Var(b12)
+#   ...
+# 232 Cov(b23,a12)  Cov(b23,b12) ... Var (b23)
+#121 Var(a12)
+#122 Cov(b12,a12) Var(b12)
+#131 Cov(a13,a12) Cov(a13,b12) Var(a13)
+#132 Cov(b13,a12) Cov(b13,b12) Cov(b13,a13) Var(b13)
+#211 Cov(a21,a12) Cov(a21,b12) Cov(a21,a13) Cov(a21,b13) Var(a21)
+#212 Cov(b21,a12) Cov(b21,b12) Cov(b21,a13) Cov(b21,b13) Cov(b21,a21) Var(b21)
+#231 Cov(a23,a12) Cov(a23,b12) Cov(a23,a13) Cov(a23,b13) Cov(a23,a21) Cov(a23,b21) Var(a23)
+#232 Cov(b23,a12) Cov(b23,b12) Cov(b23,a13) Cov(b23,b13) Cov(b23,a21) Cov(b23,b21) Cov(b23,a23) Var(b23)
+121 9.2452156e-001
+122 -1.23041e-002 1.6666793e-004
+131 -8.49712e-002 1.28931e-003 8.2583143e-001
+132 1.26985e-003 -1.95701e-005 -1.15577e-002 1.6507397e-004
+211 3.62487e-001 -5.13989e-003 -2.59762e-003 6.82763e-005 1.3256720e+000
+212 -5.14286e-003 7.39485e-005 5.02063e-005 -1.13147e-006 -1.78640e-002 2.4509525e-004
+231 2.17836e-001 -2.92219e-003 -2.06123e-001 2.80124e-003 2.38565e-001 -3.39662e-003 2.8327765e+000
+232 -2.98787e-003 4.10940e-005 2.99791e-003 -4.21158e-005 -3.36869e-003 4.85494e-005 -3.49439e-002 4.3696631e-004
+# agemin agemax for life expectancy, bage fage (if mle==0 ie no data nor Max likelihood).
+# Observed prevalence period
+begin-prev-date=1/1/2016 end-prev-date=1/9/2018 mov_average=0
+# Health expectancies computed from stable (period) prevalence (pop_based=0) or population based (1)
+pop_based=0
+# Prevalence forecasting and backcasting is skept here
+##prevforecast=0  starting-proj-date=1/1/1989 final-proj-date=1/1/1990 mobil_average=0
+#prevforecast=1 yearsfproj=10 mobil_average=0
+#prevbackcast=1 yearsbproj=10 mobil_average=1
+result:  .
+End of resultlines.
+
+Computing forward period (stable) prevalence: result on file 'PL_ESMadl.txt' 
+#************
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454205 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342739 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256961 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191429 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141707 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104233 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761742 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553023 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.0039878 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285553 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143233 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100275 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.0006963 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Computing pij: result on file 'PIJ_ESMadl.txt' 
+Computing standard deviation of one-step probabilities: result on file 'PROB_rESMadl.txt' 
+Computing matrix of variance covariance of one-step probabilities: result on file 'PROBCOV_ESMadl.txt' 
+and correlation matrix of one-step probabilities: result on file 'PROBCOR_ESMadl.txt' 
+50 13-12 mu 6.3730e-003 3.1687e-003 Var 3.3401e-006 1.1092e-006 cor -0.067 cov -1.2820e-007 Eig 3.347e-006 1.102e-006 1stv 0.998 -0.057 tan -0.057
+55 13-12 mu 8.8452e-003 5.5601e-003 Var 4.1761e-006 2.3141e-006 cor -0.061 cov -1.8877e-007 Eig 4.195e-006 2.295e-006 1stv 0.995 -0.100 tan -0.100
+60 13-12 mu 1.2259e-002 9.7425e-003 Var 4.9276e-006 4.5173e-006 cor -0.058 cov -2.7336e-007 Eig 5.064e-006 4.381e-006 1stv 0.895 -0.447 tan -0.500
+65 13-12 mu 1.6953e-002 1.7033e-002 Var 5.8750e-006 8.3235e-006 cor -0.071 cov -4.9337e-007 Eig 8.419e-006 5.779e-006 1stv 0.190 -0.982 tan -5.157
+70 13-12 mu 2.3359e-002 2.9670e-002 Var 8.8852e-006 1.5946e-005 cor -0.125 cov -1.4850e-006 Eig 1.625e-005 8.586e-006 1stv 0.198 -0.980 tan -4.957
+75 13-12 mu 3.1993e-002 5.1375e-002 Var 2.0704e-005 4.1397e-005 cor -0.209 cov -6.1243e-006 Eig 4.307e-005 1.903e-005 1stv 0.264 -0.965 tan -3.653
+80 13-12 mu 4.3395e-002 8.8098e-002 Var 6.0578e-005 1.6176e-004 cor -0.262 cov -2.5952e-005 Eig 1.680e-004 5.431e-005 1stv 0.235 -0.972 tan -4.140
+85 13-12 mu 5.7947e-002 1.4873e-001 Var 1.7493e-004 7.1273e-004 cor -0.293 cov -1.0358e-004 Eig 7.320e-004 1.557e-004 1stv 0.183 -0.983 tan -5.378
+90 13-12 mu 7.5505e-002 2.4500e-001 Var 4.5853e-004 2.8231e-003 cor -0.335 cov -3.8113e-004 Eig 2.883e-003 3.986e-004 1stv 0.155 -0.988 tan -6.361
+50 21-12 mu 1.6521e-001 3.1687e-003 Var 3.4823e-003 1.1092e-006 cor 0.254 cov 1.5798e-005 Eig 3.482e-003 1.038e-006 1stv 1.000 0.005 tan 0.005
+55 21-12 mu 1.8342e-001 5.5601e-003 Var 2.8229e-003 2.3141e-006 cor 0.233 cov 1.8806e-005 Eig 2.823e-003 2.189e-006 1stv 1.000 0.007 tan 0.007
+60 21-12 mu 2.0303e-001 9.7425e-003 Var 2.1333e-003 4.5173e-006 cor 0.207 cov 2.0304e-005 Eig 2.133e-003 4.324e-006 1stv 1.000 0.010 tan 0.010
+65 21-12 mu 2.2386e-001 1.7033e-002 Var 1.5322e-003 8.3235e-006 cor 0.187 cov 2.1150e-005 Eig 1.533e-003 8.030e-006 1stv 1.000 0.014 tan 0.014
+70 21-12 mu 2.4560e-001 2.9670e-002 Var 1.1877e-003 1.5946e-005 cor 0.219 cov 3.0119e-005 Eig 1.188e-003 1.517e-005 1stv 1.000 0.026 tan 0.026
+75 21-12 mu 2.6771e-001 5.1375e-002 Var 1.3112e-003 4.1397e-005 cor 0.342 cov 7.9592e-005 Eig 1.316e-003 3.643e-005 1stv 0.998 0.062 tan 0.062
+80 21-12 mu 2.8938e-001 8.8098e-002 Var 2.1370e-003 1.6176e-004 cor 0.439 cov 2.5805e-004 Eig 2.170e-003 1.286e-004 1stv 0.992 0.127 tan 0.128
+85 21-12 mu 3.0944e-001 1.4873e-001 Var 3.8830e-003 7.1273e-004 cor 0.457 cov 7.5955e-004 Eig 4.056e-003 5.401e-004 1stv 0.975 0.222 tan 0.227
+90 21-12 mu 3.2638e-001 2.4500e-001 Var 6.7065e-003 2.8231e-003 cor 0.440 cov 1.9127e-003 Eig 7.490e-003 2.039e-003 1stv 0.925 0.379 tan 0.410
+50 23-12 mu 1.9897e-002 3.1687e-003 Var 1.6618e-004 1.1092e-006 cor 0.103 cov 1.3939e-006 Eig 1.662e-004 1.097e-006 1stv 1.000 0.008 tan 0.008
+55 23-12 mu 2.8409e-002 5.5601e-003 Var 2.4249e-004 2.3141e-006 cor 0.100 cov 2.3662e-006 Eig 2.425e-004 2.291e-006 1stv 1.000 0.010 tan 0.010
+60 23-12 mu 4.0441e-002 9.7425e-003 Var 3.3242e-004 4.5173e-006 cor 0.099 cov 3.8477e-006 Eig 3.325e-004 4.472e-006 1stv 1.000 0.012 tan 0.012
+65 23-12 mu 5.7345e-002 1.7033e-002 Var 4.2151e-004 8.3235e-006 cor 0.105 cov 6.2204e-006 Eig 4.216e-004 8.230e-006 1stv 1.000 0.015 tan 0.015
+70 23-12 mu 8.0910e-002 2.9670e-002 Var 4.9091e-004 1.5946e-005 cor 0.126 cov 1.1179e-005 Eig 4.912e-004 1.568e-005 1stv 1.000 0.024 tan 0.024
+75 23-12 mu 1.1342e-001 5.1375e-002 Var 5.5420e-004 4.1397e-005 cor 0.171 cov 2.5928e-005 Eig 5.555e-004 4.009e-005 1stv 0.999 0.050 tan 0.050
+80 23-12 mu 1.5767e-001 8.8098e-002 Var 7.7405e-004 1.6176e-004 cor 0.216 cov 7.6272e-005 Eig 7.834e-004 1.524e-004 1stv 0.993 0.122 tan 0.123
+85 23-12 mu 2.1683e-001 1.4873e-001 Var 1.7278e-003 7.1273e-004 cor 0.215 cov 2.3913e-004 Eig 1.781e-003 6.592e-004 1stv 0.976 0.218 tan 0.224
+90 23-12 mu 2.9413e-001 2.4500e-001 Var 4.8471e-003 2.8231e-003 cor 0.189 cov 7.0019e-004 Eig 5.066e-003 2.604e-003 1stv 0.955 0.298 tan 0.312
+50 21-13 mu 1.6521e-001 6.3730e-003 Var 3.4823e-003 3.3401e-006 cor 0.006 cov 6.5294e-007 Eig 3.482e-003 3.340e-006 1stv 1.000 0.000 tan 0.000
+55 21-13 mu 1.8342e-001 8.8452e-003 Var 2.8229e-003 4.1761e-006 cor 0.009 cov 9.7890e-007 Eig 2.823e-003 4.176e-006 1stv 1.000 0.000 tan 0.000
+60 21-13 mu 2.0303e-001 1.2259e-002 Var 2.1333e-003 4.9276e-006 cor 0.013 cov 1.3383e-006 Eig 2.133e-003 4.927e-006 1stv 1.000 0.001 tan 0.001
+65 21-13 mu 2.2386e-001 1.6953e-002 Var 1.5322e-003 5.8750e-006 cor 0.018 cov 1.6674e-006 Eig 1.532e-003 5.873e-006 1stv 1.000 0.001 tan 0.001
+70 21-13 mu 2.4560e-001 2.3359e-002 Var 1.1877e-003 8.8852e-006 cor 0.019 cov 1.9009e-006 Eig 1.188e-003 8.882e-006 1stv 1.000 0.002 tan 0.002
+75 21-13 mu 2.6771e-001 3.1993e-002 Var 1.3112e-003 2.0704e-005 cor 0.012 cov 2.0035e-006 Eig 1.311e-003 2.070e-005 1stv 1.000 0.002 tan 0.002
+80 21-13 mu 2.8938e-001 4.3395e-002 Var 2.1370e-003 6.0578e-005 cor 0.005 cov 1.7113e-006 Eig 2.137e-003 6.058e-005 1stv 1.000 0.001 tan 0.001
+85 21-13 mu 3.0944e-001 5.7947e-002 Var 3.8830e-003 1.7493e-004 cor -0.001 cov -1.1514e-006 Eig 3.883e-003 1.749e-004 1stv 1.000 -0.000 tan -0.000
+90 21-13 mu 3.2638e-001 7.5505e-002 Var 6.7065e-003 4.5853e-004 cor -0.009 cov -1.6101e-005 Eig 6.707e-003 4.585e-004 1stv 1.000 -0.003 tan -0.003
+50 23-13 mu 1.9897e-002 6.3730e-003 Var 1.6618e-004 3.3401e-006 cor -0.114 cov -2.6946e-006 Eig 1.662e-004 3.296e-006 1stv 1.000 -0.017 tan -0.017
+55 23-13 mu 2.8409e-002 8.8452e-003 Var 2.4249e-004 4.1761e-006 cor -0.114 cov -3.6152e-006 Eig 2.425e-004 4.121e-006 1stv 1.000 -0.015 tan -0.015
+60 23-13 mu 4.0441e-002 1.2259e-002 Var 3.3242e-004 4.9276e-006 cor -0.118 cov -4.7724e-006 Eig 3.325e-004 4.858e-006 1stv 1.000 -0.015 tan -0.015
+65 23-13 mu 5.7345e-002 1.6953e-002 Var 4.2151e-004 5.8750e-006 cor -0.136 cov -6.7521e-006 Eig 4.216e-004 5.765e-006 1stv 1.000 -0.016 tan -0.016
+70 23-13 mu 8.0910e-002 2.3359e-002 Var 4.9091e-004 8.8852e-006 cor -0.180 cov -1.1906e-005 Eig 4.912e-004 8.591e-006 1stv 1.000 -0.025 tan -0.025
+75 23-13 mu 1.1342e-001 3.1993e-002 Var 5.5420e-004 2.0704e-005 cor -0.258 cov -2.7622e-005 Eig 5.556e-004 1.928e-005 1stv 0.999 -0.052 tan -0.052
+80 23-13 mu 1.5767e-001 4.3395e-002 Var 7.7405e-004 6.0578e-005 cor -0.340 cov -7.3652e-005 Eig 7.816e-004 5.305e-005 1stv 0.995 -0.102 tan -0.102
+85 23-13 mu 2.1683e-001 5.7947e-002 Var 1.7278e-003 1.7493e-004 cor -0.356 cov -1.9588e-004 Eig 1.752e-003 1.506e-004 1stv 0.992 -0.123 tan -0.124
+90 23-13 mu 2.9413e-001 7.5505e-002 Var 4.8471e-003 4.5853e-004 cor -0.326 cov -4.8561e-004 Eig 4.900e-003 4.054e-004 1stv 0.994 -0.109 tan -0.109
+50 23-21 mu 1.9897e-002 1.6521e-001 Var 1.6618e-004 3.4823e-003 cor 0.017 cov 1.2953e-005 Eig 3.482e-003 1.661e-004 1stv 0.004 1.000 tan 256.011
+55 23-21 mu 2.8409e-002 1.8342e-001 Var 2.4249e-004 2.8229e-003 cor -0.006 cov -4.6591e-006 Eig 2.823e-003 2.425e-004 1stv 0.002 -1.000 tan -553.842
+60 23-21 mu 4.0441e-002 2.0303e-001 Var 3.3242e-004 2.1333e-003 cor -0.034 cov -2.8966e-005 Eig 2.134e-003 3.320e-004 1stv 0.016 -1.000 tan -62.189
+65 23-21 mu 5.7345e-002 2.2386e-001 Var 4.2151e-004 1.5322e-003 cor -0.068 cov -5.4512e-005 Eig 1.535e-003 4.188e-004 1stv 0.049 -0.999 tan -20.425
+70 23-21 mu 8.0910e-002 2.4560e-001 Var 4.9091e-004 1.1877e-003 cor -0.091 cov -6.9479e-005 Eig 1.195e-003 4.841e-004 1stv 0.098 -0.995 tan -10.127
+75 23-21 mu 1.1342e-001 2.6771e-001 Var 5.5420e-004 1.3112e-003 cor -0.071 cov -6.0254e-005 Eig 1.316e-003 5.494e-004 1stv 0.079 -0.997 tan -12.643
+80 23-21 mu 1.5767e-001 2.8938e-001 Var 7.7405e-004 2.1370e-003 cor -0.029 cov -3.6699e-005 Eig 2.138e-003 7.731e-004 1stv 0.027 -1.000 tan -37.166
+85 23-21 mu 2.1683e-001 3.0944e-001 Var 1.7278e-003 3.8830e-003 cor -0.041 cov -1.0503e-004 Eig 3.888e-003 1.723e-003 1stv 0.049 -0.999 tan -20.568
+90 23-21 mu 2.9413e-001 3.2638e-001 Var 4.8471e-003 6.7065e-003 cor -0.108 cov -6.1748e-004 Eig 6.893e-003 4.661e-003 1stv 0.289 -0.957 tan -3.313
+Prevalence combination of varying and fixed dummies 1
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[50][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[51][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[51][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[52][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[52][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[53][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[53][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[54][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[54][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[55][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[55][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[56][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[56][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[57][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[57][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[58][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[58][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[59][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[59][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[60][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[60][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[61][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[61][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[62][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[62][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[63][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[63][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[64][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[64][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[65][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[65][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[66][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[66][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[67][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[67][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[68][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[68][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[69][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[69][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[70][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[70][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[71][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[71][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[72][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[72][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[73][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[73][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[74][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[74][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[75][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[75][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[76][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[76][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[77][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[77][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[78][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[78][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[79][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[79][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[80][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[80][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[81][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[81][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[82][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[82][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[83][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[83][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[84][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[84][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[85][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[85][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[86][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[86][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[87][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[87][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[88][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[88][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[89][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[89][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[90][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[90][2][1]=0.000000 because of lack of cases.
+Computing Health Expectancies: result on file 'E_ESMadl.txt' ...50|51|52|53|54|55|56|57|58|59|60|61|62|63|64|65|66|67|68|69|70|71|72|73|74|75|76|77|78|79|80|81|82|83|84|85|86|87|88|89|90|
+done evsij
+Computing Total Life expectancies with their standard errors: file 'T_ESMadl.txt' ...
+  Computing State-specific Expectancies and standard errors: result on file 'STDE_ESMadl.txt' 
+    Computing Covar. of State-specific Expectancies: result on file 'CVE_ESMadl.txt' 
+      Computing Variance-covariance of State-specific Expectancies: file 'V_ESMadl.txt' ... 
+# model  
+#****** Result for:******
+ cvevsij 50|51|52|53|54|55|56|57|58|59|60|61|62|63|64|65|66|67|68|69|70|71|72|73|74|75|76|77|78|79|80|81|82|83|84|85|86|87|88|89|90|
+ end cvevsij 
+ varevsij vpopbased=0 
+Computing total mortality p.j=w1*p1j+w2*p2j+..: result on file 'PRMORPREV-1-STABLBASED_ESMadl.txt' 
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0453753 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454657 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0453997 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454413 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454238 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454171 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454216 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454194 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0451258 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0457168 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454037 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454372 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454111 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454299 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454141 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454268 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454205 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342395 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0343083 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342577 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.03429 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342766 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342711 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342748 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342729 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0340447 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0345043 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342584 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342893 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342662 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342816 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342685 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342792 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342739 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256702 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0257221 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256837 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0257086 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256983 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256939 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256969 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256954 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0255194 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0258739 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256824 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0257098 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256899 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0257024 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256917 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0257006 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256961 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191234 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191623 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191333 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191524 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191446 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191411 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191435 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191422 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0190076 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.019279 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.019131 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191548 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191378 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191479 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191392 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191466 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191429 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141562 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141852 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141634 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.014178 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141721 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141693 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141712 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141702 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0140679 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0142742 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141606 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141808 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141667 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141747 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141676 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141737 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141707 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104126 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.010434 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104178 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104288 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104244 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104222 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104237 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104229 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0103456 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0105014 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104148 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104317 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104201 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104265 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104208 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104258 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104233 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00760955 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00762529 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761331 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00762152 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761829 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761655 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761775 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761708 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00755923 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00767599 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.0076105 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00762433 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761489 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761994 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.0076154 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761943 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761742 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552448 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553598 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552717 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553328 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.0055309 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552955 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553049 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552996 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00548691 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00557384 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552463 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553582 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552824 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553221 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552861 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553184 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553023 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398363 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00399197 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398554 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00399006 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398832 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398728 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398801 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398759 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00395579 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00402004 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398333 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00399226 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398626 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398934 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398651 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398909 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.0039878 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285253 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285854 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285387 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285719 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285593 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285513 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.0028557 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285536 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00283204 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00287919 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285201 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285905 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285434 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285672 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285451 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285655 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285553 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00202786 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203215 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.0020288 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203121 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203031 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.0020297 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203013 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00202987 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.0020129 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00204724 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00202727 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203274 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00202909 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203092 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00202921 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.0020308 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.0014308 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143386 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143146 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.0014332 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143256 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.0014321 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143243 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143223 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00141996 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00144479 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143022 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143444 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143164 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143302 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143171 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143295 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143233 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100167 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100383 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100212 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100338 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100292 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100257 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100282 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100267 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.000993879 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00101169 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100114 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100435 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100223 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100327 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100227 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100323 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100275 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000695546 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000697055 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000695853 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696747 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696428 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696172 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696358 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696242 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000689993 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000702659 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000695095 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000697506 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.00069591 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.00069669 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000695935 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696665 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.0006963 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Computing age specific forward period (stable) prevalences in each health state 
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454205 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342739 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256961 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191429 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141707 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104233 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761742 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553023 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.0039878 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285553 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143233 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100275 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.0006963 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+done selection
+done State-specific expectancies
+Computing Variance-covariance of forward period (stable) prevalence: file 'VPL_ESMadl.txt' ...
+#****** ******
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0453753 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454657 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0453997 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454413 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454238 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454171 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454216 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454194 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0451258 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0457168 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454037 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454372 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454111 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454299 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454141 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 50 did not converge with the required precision (0.0454268 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -150=(49-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342395 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0343083 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342577 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.03429 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342766 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342711 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342748 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342729 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0340447 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0345043 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342584 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342893 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342662 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342816 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342685 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 51 did not converge with the required precision (0.0342792 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -149=(50-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256702 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0257221 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256837 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0257086 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256983 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256939 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256969 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256954 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0255194 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0258739 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256824 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0257098 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256899 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0257024 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0256917 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 52 did not converge with the required precision (0.0257006 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -148=(51-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191234 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191623 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191333 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191524 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191446 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191411 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191435 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191422 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0190076 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.019279 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.019131 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191548 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191378 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191479 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191392 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 53 did not converge with the required precision (0.0191466 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -147=(52-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141562 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141852 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141634 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.014178 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141721 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141693 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141712 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141702 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0140679 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0142742 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141606 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141808 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141667 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141747 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141676 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 54 did not converge with the required precision (0.0141737 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -146=(53-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104126 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.010434 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104178 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104288 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104244 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104222 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104237 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104229 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0103456 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0105014 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104148 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104317 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104201 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104265 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104208 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 55 did not converge with the required precision (0.0104258 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -145=(54-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00760955 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00762529 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761331 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00762152 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761829 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761655 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761775 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761708 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00755923 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00767599 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.0076105 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00762433 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761489 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761994 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.0076154 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 56 did not converge with the required precision (0.00761943 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -144=(55-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552448 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553598 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552717 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553328 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.0055309 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552955 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553049 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552996 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00548691 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00557384 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552463 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553582 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552824 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553221 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00552861 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 57 did not converge with the required precision (0.00553184 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -143=(56-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398363 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00399197 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398554 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00399006 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398832 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398728 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398801 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398759 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00395579 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00402004 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398333 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00399226 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398626 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398934 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398651 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 58 did not converge with the required precision (0.00398909 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -142=(57-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285253 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285854 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285387 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285719 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285593 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285513 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.0028557 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285536 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00283204 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00287919 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285201 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285905 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285434 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285672 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285451 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 59 did not converge with the required precision (0.00285655 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -141=(58-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00202786 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203215 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.0020288 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203121 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203031 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.0020297 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203013 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00202987 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.0020129 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00204724 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00202727 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203274 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00202909 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00203092 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.00202921 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 60 did not converge with the required precision (0.0020308 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -140=(59-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.0014308 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143386 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143146 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.0014332 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143256 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.0014321 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143243 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143223 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00141996 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00144479 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143022 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143444 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143164 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143302 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143171 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 61 did not converge with the required precision (0.00143295 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -139=(60-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100167 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100383 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100212 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100338 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100292 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100257 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100282 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100267 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.000993879 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00101169 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100114 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100435 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100223 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100327 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100227 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 62 did not converge with the required precision (0.00100323 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -138=(61-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000695546 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000697055 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000695853 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696747 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696428 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696172 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696358 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696242 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000689993 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000702659 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000695095 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000697506 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.00069591 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.00069669 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000695935 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+Warning: the stable prevalence at age 63 did not converge with the required precision (0.000696665 > ftolpl=0.0006) within 200 years and 400 loops. Try to lower 'ftolpl'. Youngest age to start was -137=(62-200).
+done variance-covariance of forward period prevalence
+End of Imach with 0 errors and/or warnings 1. Please look at the log file for details.
+Local time at start Tue Feb 04 22:03:38 2025
+
+Local time at end   Tue Feb 04 22:04:10 2025
+
+Total time used 0 day(s) 0 hour(s) 0 minute(s) 32 second(s)
+Total time was 32 Sec.

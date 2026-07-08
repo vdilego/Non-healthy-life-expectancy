@@ -1,0 +1,11 @@
+#IMaCh 0.99r45
+title=chr datafile=dataGRFchr.txt lastobs=15000 firstpass=1 lastpass=2
+ftol=1.000000e-018 stepm=3 ncovcol=0 nqv=0 ntv=0 nqtv=0 nlstate=2 ndeath=1 maxwav=2 mle=0 weight=1
+model=1+age+
+#Number of iterations & function calls = 46 & 5742, -2 Log likelihood = 2420.692001725916
+# Parameters nlstate*nlstate*ncov a12*1 + b12 * age + ...
+#model=  1      +     age 
+12 -170.6864631    3.7028468 
+13  -74.2536588    0.3553102 
+21    9.1371630   -0.1535270 
+23  -16.9203576    0.1594321 

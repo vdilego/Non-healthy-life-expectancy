@@ -1,0 +1,104 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh BEFgali.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="BEFgali.htm">BEFgali.htm</a></br>Title=gali <br>Datafile=<a href="dataBEFgali.txt">dataBEFgali.txt</a> Firstpass=1 Lastpass=2 Stepm=3 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="BEFgali.txt">BEFgali.txt</a><br>
+ - Copy of the parameter file: <a href="orBEFgali.txt">orBEFgali.txt</a><br>
+ - Log file of the run: <a href="BEFgali.log">BEFgali.log</a><br>
+ - Gnuplot file name: <a href="BEFgali.gp">BEFgali.gp</a><br>
+ - Date and time at start: Mon May 27 20:18:50 2024
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=3
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="BEFgali/D_BEFgali_.svg">BEFgali/D_BEFgali_.svg</a></h4> 
+<img src="BEFgali/D_BEFgali_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=2519 <br>
+Youngest age at first (selected) pass 51.08, oldest age 97.67<br>
+Interval (in months) between two waves: Min=1 Max=33 Mean=24.12<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="BEFgali/ILK_BEFgali.txt">BEFgali/ILK_BEFgali.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="BEFgali/ILK_BEFgali-ori.png">BEFgali/ILK_BEFgali-ori.png</a><br> <img src="BEFgali/ILK_BEFgali-ori.png">
+<br>- and by state of destination <a href="BEFgali/ILK_BEFgali-dest.png">BEFgali/ILK_BEFgali-dest.png</a><br> <img src="BEFgali/ILK_BEFgali-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="BEFgali/ILK_BEFgali-p1j.png">BEFgali/ILK_BEFgali-p1j.png</a><br>
+ <img src="BEFgali/ILK_BEFgali-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="BEFgali/ILK_BEFgali-p2j.png">BEFgali/ILK_BEFgali-p2j.png</a><br>
+ <img src="BEFgali/ILK_BEFgali-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>  -4.7663717</td><td>   0.0126919</td></tr>
+<tr><td>13</td><td> -18.8525661</td><td>   0.1696317</td></tr>
+<tr><td>21</td><td>  -0.6092399</td><td>  -0.0279179</td></tr>
+<tr><td>23</td><td> -10.3701554</td><td>   0.0874488</td></tr>
+</table>
+
+
+<p>The Wald test results are output only if the maximimzation of the Likelihood is performed (mle=1)
+</br>Parameters, Wald tests and Wald-based confidence intervals
+</br> W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+</br> And Wald-based confidence intervals plus and minus 1.96 * W 
+ </br> It might be better to visualize the covariance matrix. See the page '<a href="BEFgali-cov.htm">Matrix of variance-covariance of one-step probabilities and its graphs</a>'.
+</br>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr valign=top><td>12</td><td><b>  -4.7663717</b></br> (   0.5152060)</br>W=  -9.251</br>[  -5.7761755;  -3.7565680]</br></td><td>   0.0126919 (   0.0073207)</br>W=   1.734</br>[  -0.0016566;   0.0270404]</br></td></tr>
+<tr valign=top><td>13</td><td><b> -18.8525661</b></br> (   3.2967293)</br>W=  -5.719</br>[ -25.3141556; -12.3909767]</br></td><td><b>   0.1696317</b></br> (   0.0378300)</br>W=   4.484</br>[   0.0954849;   0.2437785]</br></td></tr>
+<tr valign=top><td>21</td><td>  -0.6092399 (   0.5065235)</br>W=  -1.203</br>[  -1.6020259;   0.3835461]</br></td><td><b>  -0.0279179</b></br> (   0.0072143)</br>W=  -3.870</br>[  -0.0420579;  -0.0137779]</br></td></tr>
+<tr valign=top><td>23</td><td><b> -10.3701554</b></br> (   1.3627060)</br>W=  -7.610</br>[ -13.0410593;  -7.6992516]</br></td><td><b>   0.0874488</b></br> (   0.0160328)</br>W=   5.454</br>[   0.0560246;   0.1188730]</br></td></tr>
+</table>
+<ul><li><a href='#firstorder'>Result files (first order: no variance)</a>
+    <li><a href='#secondorder'>Result files (second order (variance)</a>
+ </ul><ul><li><h4><a name='firstorder'>Result files (first order: no variance)</a></h4>
+<li>- Observed frequency between two states (during the period defined between 1/1/2013 and 1/9/2018): <a href="BEFgali/PHTMFR_BEFgali.htm">BEFgali/PHTMFR_BEFgali.htm</a> (html file)<br/>
+<li> - Observed prevalence (cross-sectional prevalence) in each state (during the period defined between 1/1/2013 and 1/9/2018): <a href="BEFgali/PHTM_BEFgali.htm">BEFgali/PHTM_BEFgali.htm</a> (html file) ,  <a href="BEFgali/P_BEFgali.txt">BEFgali/P_BEFgali.txt</a> (text file) <br>
+ - Estimated transition probabilities over 3 (stepm) months: <a href="BEFgali/PIJ_BEFgali.txt">BEFgali/PIJ_BEFgali.txt</a><br>
+  - Estimated back transition probabilities over 3 (stepm) months: <a href="BEFgali/PIJB_BEFgali.txt">BEFgali/PIJB_BEFgali.txt</a><br>
+  - Period (forward) prevalence in each health state: <a href="BEFgali/PL_BEFgali.txt">BEFgali/PL_BEFgali.txt</a> <br>
+ - Backward prevalence in each health state: <a href="BEFgali/PLB_BEFgali.txt">BEFgali/PLB_BEFgali.txt</a> <br>
+ - (a) Life expectancies by health status at initial age, e<sub>i.</sub> (b) health expectancies by health status at initial age, e<sub>ij</sub> . If one or more covariates are included, specific tables for each value of the covariate are output in sequences within the same file (estepm=12 months):    <a href="BEFgali/E_BEFgali.txt">BEFgali/E_BEFgali.txt</a> <br>
+ 
+<ul><li><b>Graphs (first order)</b></li><p> 
+<ul> 
+</ul></ul>
+<br><li><h4> <a name='secondorder'>Result files (second order: variances)</a></h4>
+ - Parameter file with estimated parameters and covariance matrix: <a href="rBEFgali.txt">rBEFgali.txt</a> <br>  - 95% confidence intervals and Wald tests of the estimated parameters are in the log file if optimization has been done (mle != 0).<br> But because parameters are usually highly correlated (a higher incidence of disability and a higher incidence of recovery can give very close observed transition) it might be very useful to look not only at linear confidence intervals estimated from the variances but at the covariance matrix. And instead of looking at the estimated coefficients (parameters) of the logistic regression, it might be more meaningful to visualize the covariance matrix of the one-step probabilities. See page 'Matrix of variance-covariance of one-step probabilities' below. 
+ - Standard deviation of one-step probabilities: <a href="BEFgali/PROB_BEFgali.txt">BEFgali/PROB_BEFgali.txt</a> <br>
+ - Variance-covariance of one-step probabilities: <a href="BEFgali/PROBCOV_BEFgali.txt">BEFgali/PROBCOV_BEFgali.txt</a> <br>
+ - Correlation matrix of one-step probabilities: <a href="BEFgali/PROBCOR_BEFgali.txt">BEFgali/PROBCOR_BEFgali.txt</a> <br>
+ - Variances and covariances of health expectancies by age and <b>initial health status</b> (cov(e<sup>ij</sup>,e<sup>kl</sup>)(estepm=12 months):    <a href="BEFgali/CVE_BEFgali.txt">BEFgali/CVE_BEFgali.txt</a> <br>
+</li> - (a) Health expectancies by health status at initial age (e<sup>ij</sup>) and standard errors (in parentheses) (b) life expectancies and standard errors (e<sup>i.</sup>=e<sup>i1</sup>+e<sup>i2</sup>+...)(estepm=12 months):    <a href="BEFgali/STDE_BEFgali.txt">BEFgali/STDE_BEFgali.txt</a> <br>
+</li> - Variances and covariances of health expectancies by age. Status (i) based health expectancies (in state j), e<sup>ij</sup> are weighted by the forward (period) prevalences in each state i (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="BEFgali/V_BEFgali.txt">BEFgali/V_BEFgali.txt</a><br>
+ - Total life expectancy and total health expectancies to be spent in each health state e<sup>.j</sup> with their standard errors (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="BEFgali/T_BEFgali.txt">BEFgali/T_BEFgali.txt</a> <br>
+ - Standard deviation of forward (period) prevalences: <a href="BEFgali/VPL_BEFgali.txt">BEFgali/VPL_BEFgali.txt</a> <br>
+ <ul><li><b>Graphs (second order)</b></li><p> 
+<ul> 
+</ul></ul>
+<li><h4> Computing and drawing one step probabilities with their confidence intervals</h4></li>
+
+
+<li><h4> <a href="BEFgali-cov.htm">Matrix of variance-covariance of one-step probabilities (drawings)</a></h4> this page is important in order to visualize confidence intervals and especially correlation between disability and recovery, or more generally, way in and way back. File BEFgali-cov.htm</li>
+<br>Local time at start Mon May 27 20:18:50 2024
+<br>Local time at end   Mon May 27 20:19:05 2024
+<br>
+</body></html>

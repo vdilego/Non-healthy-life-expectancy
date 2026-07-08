@@ -1,0 +1,136 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh ATFgali.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="ATFgali.htm">ATFgali.htm</a></br>Title=gali <br>Datafile=<a href="dataATFgali.txt">dataATFgali.txt</a> Firstpass=1 Lastpass=2 Stepm=6 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="ATFgali.txt">ATFgali.txt</a><br>
+ - Copy of the parameter file: <a href="orATFgali.txt">orATFgali.txt</a><br>
+ - Log file of the run: <a href="ATFgali.log">ATFgali.log</a><br>
+ - Gnuplot file name: <a href="ATFgali.gp">ATFgali.gp</a><br>
+ - Date and time at start: Tue Feb 04 20:24:32 2025
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=6
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="ATFgali/D_ATFgali_.svg">ATFgali/D_ATFgali_.svg</a></h4> 
+<img src="ATFgali/D_ATFgali_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=1554 <br>
+Youngest age at first (selected) pass 51.25, oldest age 93.00<br>
+Interval (in months) between two waves: Min=1 Max=32 Mean=25.03<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="ATFgali/ILK_ATFgali.txt">ATFgali/ILK_ATFgali.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="ATFgali/ILK_ATFgali-ori.png">ATFgali/ILK_ATFgali-ori.png</a><br> <img src="ATFgali/ILK_ATFgali-ori.png">
+<br>- and by state of destination <a href="ATFgali/ILK_ATFgali-dest.png">ATFgali/ILK_ATFgali-dest.png</a><br> <img src="ATFgali/ILK_ATFgali-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="ATFgali/ILK_ATFgali-p1j.png">ATFgali/ILK_ATFgali-p1j.png</a><br>
+ <img src="ATFgali/ILK_ATFgali-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="ATFgali/ILK_ATFgali-p2j.png">ATFgali/ILK_ATFgali-p2j.png</a><br>
+ <img src="ATFgali/ILK_ATFgali-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>  -6.2309874</td><td>   0.0439666</td></tr>
+<tr><td>13</td><td> -18.4246370</td><td>   0.1674186</td></tr>
+<tr><td>21</td><td>  -0.4753209</td><td>  -0.0231495</td></tr>
+<tr><td>23</td><td>  -9.0527332</td><td>   0.0765823</td></tr>
+</table>
+
+
+<p>The Wald test results are output only if the maximimzation of the Likelihood is performed (mle=1)
+</br>Parameters, Wald tests and Wald-based confidence intervals
+</br> W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+</br> And Wald-based confidence intervals plus and minus 1.96 * W 
+ </br> It might be better to visualize the covariance matrix. See the page '<a href="ATFgali-cov.htm">Matrix of variance-covariance of one-step probabilities and its graphs</a>'.
+</br>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr valign=top><td>12</td><td><b>  -6.2309874</b></br> (   0.6333228)</br>W=  -9.839</br>[  -7.4723001;  -4.9896747]</br></td><td><b>   0.0439666</b></br> (   0.0089184)</br>W=   4.930</br>[   0.0264865;   0.0614466]</br></td></tr>
+<tr valign=top><td>13</td><td><b> -18.4246370</b></br> (   4.4024167)</br>W=  -4.185</br>[ -27.0533738;  -9.7959003]</br></td><td><b>   0.1674186</b></br> (   0.0534788)</br>W=   3.131</br>[   0.0626001;   0.2722370]</br></td></tr>
+<tr valign=top><td>21</td><td>  -0.4753209 (   0.7382350)</br>W=  -0.644</br>[  -1.9222616;   0.9716197]</br></td><td><b>  -0.0231495</b></br> (   0.0103850)</br>W=  -2.229</br>[  -0.0435041;  -0.0027949]</br></td></tr>
+<tr valign=top><td>23</td><td><b>  -9.0527332</b></br> (   1.5757942)</br>W=  -5.745</br>[ -12.1412898;  -5.9641767]</br></td><td><b>   0.0765823</b></br> (   0.0193237)</br>W=   3.963</br>[   0.0387078;   0.1144569]</br></td></tr>
+</table>
+<ul><li><a href='#firstorder'>Result files (first order: no variance)</a>
+    <li><a href='#secondorder'>Result files (second order (variance)</a>
+ </ul><ul><li><h4><a name='firstorder'>Result files (first order: no variance)</a></h4>
+<li>- Observed frequency between two states (during the period defined between 1/1/2016 and 1/9/2018): <a href="ATFgali/PHTMFR_ATFgali.htm">ATFgali/PHTMFR_ATFgali.htm</a> (html file)<br/>
+<li> - Observed prevalence (cross-sectional prevalence) in each state (during the period defined between 1/1/2016 and 1/9/2018): <a href="ATFgali/PHTM_ATFgali.htm">ATFgali/PHTM_ATFgali.htm</a> (html file) ,  <a href="ATFgali/P_ATFgali.txt">ATFgali/P_ATFgali.txt</a> (text file) <br>
+ - Estimated transition probabilities over 6 (stepm) months: <a href="ATFgali/PIJ_ATFgali.txt">ATFgali/PIJ_ATFgali.txt</a><br>
+  - Estimated back transition probabilities over 6 (stepm) months: <a href="ATFgali/PIJB_ATFgali.txt">ATFgali/PIJB_ATFgali.txt</a><br>
+  - Period (forward) prevalence in each health state: <a href="ATFgali/PL_ATFgali.txt">ATFgali/PL_ATFgali.txt</a> <br>
+ - Backward prevalence in each health state: <a href="ATFgali/PLB_ATFgali.txt">ATFgali/PLB_ATFgali.txt</a> <br>
+ - (a) Life expectancies by health status at initial age, e<sub>i.</sub> (b) health expectancies by health status at initial age, e<sub>ij</sub> . If one or more covariates are included, specific tables for each value of the covariate are output in sequences within the same file (estepm= 6 months):    <a href="ATFgali/E_ATFgali.txt">ATFgali/E_ATFgali.txt</a> <br>
+ 
+<ul><li><b>Graphs (first order)</b></li><p> 
+<ul> 
+</ul><br>- Logit model (yours is: logit(pij)=log(pij/pii)= aij+ bij age+) as a function of age: <a href="ATFgali/PE_ATFgali_1-1-1.svg">ATFgali/PE_ATFgali_1-1-1.svg</a><br> <img src="ATFgali/PE_ATFgali_1-1-1.svg"><br>
+- P<sub>ij</sub> or conditional probabilities to be observed in state j being in state i, 6 (stepm) months before: <a href="ATFgali/PE_ATFgali_1-2-1.svg">ATFgali/PE_ATFgali_1-2-1.svg</a><br> <img src="ATFgali/PE_ATFgali_1-2-1.svg"><br>
+- I<sub>ij</sub> or Conditional probabilities to be observed in state j being in state i 6 (stepm) months before but expressed in per year i.e. quasi incidences if stepm is small and probabilities too,  incidence (rates) are the limit when h tends to zero of the ratio of the probability  <sub>h</sub>P<sub>ij</sub> divided by h: <sub>h</sub>P<sub>ij</sub>/h : <a href="ATFgali/PE_ATFgali_1-3-1.svg">ATFgali/PE_ATFgali_1-3-1.svg</a><br> <img src="ATFgali/PE_ATFgali_1-3-1.svg"><br>
+- Survival functions in state 1. And probability to be observed in state 1 being in state (1 to 2) at different ages. <a href="ATFgali/LIJ_ATFgali_1-1-1.svg">ATFgali/LIJ_ATFgali_1-1-1.svg</a><br> (data from text file  <a href="ATFgali/PIJ_ATFgali.txt">ATFgali/PIJ_ATFgali.txt</a>)
+<br><img src="ATFgali/LIJ_ATFgali_1-1-1.svg"><br>
+- Survival functions in state 2. And probability to be observed in state 2 being in state (1 to 2) at different ages. <a href="ATFgali/LIJ_ATFgali_2-1-1.svg">ATFgali/LIJ_ATFgali_2-1-1.svg</a><br> (data from text file  <a href="ATFgali/PIJ_ATFgali.txt">ATFgali/PIJ_ATFgali.txt</a>)
+<br><img src="ATFgali/LIJ_ATFgali_2-1-1.svg"><br>
+- Survival functions in state 1 and in any other live state (total). And probability to be observed in various states (up to 2) being in state 1 at different ages.	 <a href="ATFgali/LIJT_ATFgali_1-1-1.svg">ATFgali/LIJT_ATFgali_1-1-1.svg</a><br>  (data from text file  <a href="ATFgali/PIJ_ATFgali.txt">ATFgali/PIJ_ATFgali.txt</a>)
+<br><img src="ATFgali/LIJT_ATFgali_1-1-1.svg"><br>
+- Survival functions in state 2 and in any other live state (total). And probability to be observed in various states (up to 2) being in state 2 at different ages.	 <a href="ATFgali/LIJT_ATFgali_2-1-1.svg">ATFgali/LIJT_ATFgali_2-1-1.svg</a><br>  (data from text file  <a href="ATFgali/PIJ_ATFgali.txt">ATFgali/PIJ_ATFgali.txt</a>)
+<br><img src="ATFgali/LIJT_ATFgali_2-1-1.svg"><br>
+- Convergence to period (stable) prevalence in state 1. Or probability for a person being in state (1 to 2) at different ages, to be in state 1 some years after. <a href="ATFgali/P_ATFgali_1-1-1.svg">ATFgali/P_ATFgali_1-1-1.svg</a><br> (data from text file  <a href="ATFgali/PIJ_ATFgali.txt">ATFgali/PIJ_ATFgali.txt</a>)
+<br><img src="ATFgali/P_ATFgali_1-1-1.svg"><br>
+- Convergence to period (stable) prevalence in state 2. Or probability for a person being in state (1 to 2) at different ages, to be in state 2 some years after. <a href="ATFgali/P_ATFgali_2-1-1.svg">ATFgali/P_ATFgali_2-1-1.svg</a><br> (data from text file  <a href="ATFgali/PIJ_ATFgali.txt">ATFgali/PIJ_ATFgali.txt</a>)
+<br><img src="ATFgali/P_ATFgali_2-1-1.svg">
+<br>- Life expectancy by health state (1) at initial age and its decomposition into health expectancies in each alive state (1 to 2) (or area under each survival functions): <a href="ATFgali/EXP_ATFgali_1-1-1.svg">ATFgali/EXP_ATFgali_1-1-1.svg</a> (data from text file  <a href="ATFgali/E_ATFgali.txt"> ATFgali/E_ATFgali.txt</a>)
+<br><img src="ATFgali/EXP_ATFgali_1-1-1.svg">
+<br>- Life expectancy by health state (2) at initial age and its decomposition into health expectancies in each alive state (1 to 2) (or area under each survival functions): <a href="ATFgali/EXP_ATFgali_2-1-1.svg">ATFgali/EXP_ATFgali_2-1-1.svg</a> (data from text file  <a href="ATFgali/E_ATFgali.txt"> ATFgali/E_ATFgali.txt</a>)
+<br><img src="ATFgali/EXP_ATFgali_2-1-1.svg"></ul>
+<br><li><h4> <a name='secondorder'>Result files (second order: variances)</a></h4>
+ - Parameter file with estimated parameters and covariance matrix: <a href="rATFgali.txt">rATFgali.txt</a> <br>  - 95% confidence intervals and Wald tests of the estimated parameters are in the log file if optimization has been done (mle != 0).<br> But because parameters are usually highly correlated (a higher incidence of disability and a higher incidence of recovery can give very close observed transition) it might be very useful to look not only at linear confidence intervals estimated from the variances but at the covariance matrix. And instead of looking at the estimated coefficients (parameters) of the logistic regression, it might be more meaningful to visualize the covariance matrix of the one-step probabilities. See page 'Matrix of variance-covariance of one-step probabilities' below. 
+ - Standard deviation of one-step probabilities: <a href="ATFgali/PROB_ATFgali.txt">ATFgali/PROB_ATFgali.txt</a> <br>
+ - Variance-covariance of one-step probabilities: <a href="ATFgali/PROBCOV_ATFgali.txt">ATFgali/PROBCOV_ATFgali.txt</a> <br>
+ - Correlation matrix of one-step probabilities: <a href="ATFgali/PROBCOR_ATFgali.txt">ATFgali/PROBCOR_ATFgali.txt</a> <br>
+ - Variances and covariances of health expectancies by age and <b>initial health status</b> (cov(e<sup>ij</sup>,e<sup>kl</sup>)(estepm= 6 months):    <a href="ATFgali/CVE_ATFgali.txt">ATFgali/CVE_ATFgali.txt</a> <br>
+</li> - (a) Health expectancies by health status at initial age (e<sup>ij</sup>) and standard errors (in parentheses) (b) life expectancies and standard errors (e<sup>i.</sup>=e<sup>i1</sup>+e<sup>i2</sup>+...)(estepm= 6 months):    <a href="ATFgali/STDE_ATFgali.txt">ATFgali/STDE_ATFgali.txt</a> <br>
+</li> - Variances and covariances of health expectancies by age. Status (i) based health expectancies (in state j), e<sup>ij</sup> are weighted by the forward (period) prevalences in each state i (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=6 months): <a href="ATFgali/V_ATFgali.txt">ATFgali/V_ATFgali.txt</a><br>
+ - Total life expectancy and total health expectancies to be spent in each health state e<sup>.j</sup> with their standard errors (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=6 months): <a href="ATFgali/T_ATFgali.txt">ATFgali/T_ATFgali.txt</a> <br>
+ - Standard deviation of forward (period) prevalences: <a href="ATFgali/VPL_ATFgali.txt">ATFgali/VPL_ATFgali.txt</a> <br>
+ <ul><li><b>Graphs (second order)</b></li><p> 
+<ul> 
+</ul>
+<br>- Observed (cross-sectional with mov_average=0) and period (incidence based) prevalence (with 95% confidence interval) in state (1): <a href="ATFgali/V_ATFgali_1-1-1.svg"> ATFgali/V_ATFgali_1-1-1.svg</a> (data from text file  <a href="ATFgali/VPL_ATFgali.txt">ATFgali/VPL_ATFgali.txt</a>)
+ <br><img src="ATFgali/V_ATFgali_1-1-1.svg">
+<br>- Observed (cross-sectional with mov_average=0) and period (incidence based) prevalence (with 95% confidence interval) in state (2): <a href="ATFgali/V_ATFgali_2-1-1.svg"> ATFgali/V_ATFgali_2-1-1.svg</a> (data from text file  <a href="ATFgali/VPL_ATFgali.txt">ATFgali/VPL_ATFgali.txt</a>)
+ <br><img src="ATFgali/V_ATFgali_2-1-1.svg">
+<br>- Total life expectancy by age and health expectancies in each live states (1 to 2). If popbased=1 the smooth (due to the model) true period expectancies (those weighted with period prevalences are also drawn in addition to the population based expectancies computed using observed and cahotic prevalences:  <a href="ATFgali/E_ATFgali_1-1.svg">ATFgali/E_ATFgali_1-1.svg</a> (data from text file <a href="ATFgali/T_ATFgali.txt">ATFgali/T_ATFgali.txt</a>) 
+<br><img src="ATFgali/E_ATFgali_1-1.svg"></ul>
+<li><h4> Computing and drawing one step probabilities with their confidence intervals</h4></li>
+
+
+<li><h4> <a href="ATFgali-cov.htm">Matrix of variance-covariance of one-step probabilities (drawings)</a></h4> this page is important in order to visualize confidence intervals and especially correlation between disability and recovery, or more generally, way in and way back. File ATFgali-cov.htm</li>
+
+<li><h4> Computing probabilities of dying over estepm months as a weighted average (i.e global mortality independent of initial healh state)</h4></li>
+
+<br>-STABLBASED_  <br>
+
+<br> File (multiple files are possible if covariates are present): <A href="ATFgali/PRMORPREV-1-STABLBASED_ATFgali.txt">ATFgali/PRMORPREV-1-STABLBASED_ATFgali.txt</a>
+
+<br> Probability is computed over estepm=6 months. <br> <img src="ATFgali/VARMUPTJGR--STABLBASED_ATFgali1.svg"> <br>
+<br>Local time at start Tue Feb 04 20:24:32 2025
+<br>Local time at end   Tue Feb 04 20:24:56 2025
+<br>
+</body></html>

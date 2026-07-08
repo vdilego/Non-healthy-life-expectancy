@@ -1,0 +1,136 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh ATMsr.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="ATMsr.htm">ATMsr.htm</a></br>Title=sr <br>Datafile=<a href="dataATMsr.txt">dataATMsr.txt</a> Firstpass=1 Lastpass=2 Stepm=6 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="ATMsr.txt">ATMsr.txt</a><br>
+ - Copy of the parameter file: <a href="orATMsr.txt">orATMsr.txt</a><br>
+ - Log file of the run: <a href="ATMsr.log">ATMsr.log</a><br>
+ - Gnuplot file name: <a href="ATMsr.gp">ATMsr.gp</a><br>
+ - Date and time at start: Tue Feb 04 22:13:36 2025
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=6
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="ATMsr/D_ATMsr_.svg">ATMsr/D_ATMsr_.svg</a></h4> 
+<img src="ATMsr/D_ATMsr_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=1097 <br>
+Youngest age at first (selected) pass 51.25, oldest age 92.83<br>
+Interval (in months) between two waves: Min=2 Max=32 Mean=24.70<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="ATMsr/ILK_ATMsr.txt">ATMsr/ILK_ATMsr.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="ATMsr/ILK_ATMsr-ori.png">ATMsr/ILK_ATMsr-ori.png</a><br> <img src="ATMsr/ILK_ATMsr-ori.png">
+<br>- and by state of destination <a href="ATMsr/ILK_ATMsr-dest.png">ATMsr/ILK_ATMsr-dest.png</a><br> <img src="ATMsr/ILK_ATMsr-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="ATMsr/ILK_ATMsr-p1j.png">ATMsr/ILK_ATMsr-p1j.png</a><br>
+ <img src="ATMsr/ILK_ATMsr-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="ATMsr/ILK_ATMsr-p2j.png">ATMsr/ILK_ATMsr-p2j.png</a><br>
+ <img src="ATMsr/ILK_ATMsr-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>  -5.4667340</td><td>   0.0394863</td></tr>
+<tr><td>13</td><td> -18.3000970</td><td>   0.1537783</td></tr>
+<tr><td>21</td><td>  -1.3023342</td><td>  -0.0158566</td></tr>
+<tr><td>23</td><td> -10.1860553</td><td>   0.0971954</td></tr>
+</table>
+
+
+<p>The Wald test results are output only if the maximimzation of the Likelihood is performed (mle=1)
+</br>Parameters, Wald tests and Wald-based confidence intervals
+</br> W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+</br> And Wald-based confidence intervals plus and minus 1.96 * W 
+ </br> It might be better to visualize the covariance matrix. See the page '<a href="ATMsr-cov.htm">Matrix of variance-covariance of one-step probabilities and its graphs</a>'.
+</br>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr valign=top><td>12</td><td><b>  -5.4667340</b></br> (   0.6767329)</br>W=  -8.078</br>[  -6.7931304;  -4.1403375]</br></td><td><b>   0.0394863</b></br> (   0.0097930)</br>W=   4.032</br>[   0.0202920;   0.0586806]</br></td></tr>
+<tr valign=top><td>13</td><td><b> -18.3000970</b></br> (   9.1181652)</br>W=  -2.007</br>[ -36.1717009;  -0.4284932]</br></td><td>   0.1537783 (   0.1124775)</br>W=   1.367</br>[  -0.0666776;   0.3742342]</br></td></tr>
+<tr valign=top><td>21</td><td>  -1.3023342 (   0.8069237)</br>W=  -1.614</br>[  -2.8839047;   0.2792362]</br></td><td>  -0.0158566 (   0.0121484)</br>W=  -1.305</br>[  -0.0396674;   0.0079543]</br></td></tr>
+<tr valign=top><td>23</td><td><b> -10.1860553</b></br> (   1.1317014)</br>W=  -9.001</br>[ -12.4041900;  -7.9679206]</br></td><td><b>   0.0971954</b></br> (   0.0145750)</br>W=   6.669</br>[   0.0686283;   0.1257624]</br></td></tr>
+</table>
+<ul><li><a href='#firstorder'>Result files (first order: no variance)</a>
+    <li><a href='#secondorder'>Result files (second order (variance)</a>
+ </ul><ul><li><h4><a name='firstorder'>Result files (first order: no variance)</a></h4>
+<li>- Observed frequency between two states (during the period defined between 1/1/2016 and 1/9/2018): <a href="ATMsr/PHTMFR_ATMsr.htm">ATMsr/PHTMFR_ATMsr.htm</a> (html file)<br/>
+<li> - Observed prevalence (cross-sectional prevalence) in each state (during the period defined between 1/1/2016 and 1/9/2018): <a href="ATMsr/PHTM_ATMsr.htm">ATMsr/PHTM_ATMsr.htm</a> (html file) ,  <a href="ATMsr/P_ATMsr.txt">ATMsr/P_ATMsr.txt</a> (text file) <br>
+ - Estimated transition probabilities over 6 (stepm) months: <a href="ATMsr/PIJ_ATMsr.txt">ATMsr/PIJ_ATMsr.txt</a><br>
+  - Estimated back transition probabilities over 6 (stepm) months: <a href="ATMsr/PIJB_ATMsr.txt">ATMsr/PIJB_ATMsr.txt</a><br>
+  - Period (forward) prevalence in each health state: <a href="ATMsr/PL_ATMsr.txt">ATMsr/PL_ATMsr.txt</a> <br>
+ - Backward prevalence in each health state: <a href="ATMsr/PLB_ATMsr.txt">ATMsr/PLB_ATMsr.txt</a> <br>
+ - (a) Life expectancies by health status at initial age, e<sub>i.</sub> (b) health expectancies by health status at initial age, e<sub>ij</sub> . If one or more covariates are included, specific tables for each value of the covariate are output in sequences within the same file (estepm= 6 months):    <a href="ATMsr/E_ATMsr.txt">ATMsr/E_ATMsr.txt</a> <br>
+ 
+<ul><li><b>Graphs (first order)</b></li><p> 
+<ul> 
+</ul><br>- Logit model (yours is: logit(pij)=log(pij/pii)= aij+ bij age+) as a function of age: <a href="ATMsr/PE_ATMsr_1-1-1.svg">ATMsr/PE_ATMsr_1-1-1.svg</a><br> <img src="ATMsr/PE_ATMsr_1-1-1.svg"><br>
+- P<sub>ij</sub> or conditional probabilities to be observed in state j being in state i, 6 (stepm) months before: <a href="ATMsr/PE_ATMsr_1-2-1.svg">ATMsr/PE_ATMsr_1-2-1.svg</a><br> <img src="ATMsr/PE_ATMsr_1-2-1.svg"><br>
+- I<sub>ij</sub> or Conditional probabilities to be observed in state j being in state i 6 (stepm) months before but expressed in per year i.e. quasi incidences if stepm is small and probabilities too,  incidence (rates) are the limit when h tends to zero of the ratio of the probability  <sub>h</sub>P<sub>ij</sub> divided by h: <sub>h</sub>P<sub>ij</sub>/h : <a href="ATMsr/PE_ATMsr_1-3-1.svg">ATMsr/PE_ATMsr_1-3-1.svg</a><br> <img src="ATMsr/PE_ATMsr_1-3-1.svg"><br>
+- Survival functions in state 1. And probability to be observed in state 1 being in state (1 to 2) at different ages. <a href="ATMsr/LIJ_ATMsr_1-1-1.svg">ATMsr/LIJ_ATMsr_1-1-1.svg</a><br> (data from text file  <a href="ATMsr/PIJ_ATMsr.txt">ATMsr/PIJ_ATMsr.txt</a>)
+<br><img src="ATMsr/LIJ_ATMsr_1-1-1.svg"><br>
+- Survival functions in state 2. And probability to be observed in state 2 being in state (1 to 2) at different ages. <a href="ATMsr/LIJ_ATMsr_2-1-1.svg">ATMsr/LIJ_ATMsr_2-1-1.svg</a><br> (data from text file  <a href="ATMsr/PIJ_ATMsr.txt">ATMsr/PIJ_ATMsr.txt</a>)
+<br><img src="ATMsr/LIJ_ATMsr_2-1-1.svg"><br>
+- Survival functions in state 1 and in any other live state (total). And probability to be observed in various states (up to 2) being in state 1 at different ages.	 <a href="ATMsr/LIJT_ATMsr_1-1-1.svg">ATMsr/LIJT_ATMsr_1-1-1.svg</a><br>  (data from text file  <a href="ATMsr/PIJ_ATMsr.txt">ATMsr/PIJ_ATMsr.txt</a>)
+<br><img src="ATMsr/LIJT_ATMsr_1-1-1.svg"><br>
+- Survival functions in state 2 and in any other live state (total). And probability to be observed in various states (up to 2) being in state 2 at different ages.	 <a href="ATMsr/LIJT_ATMsr_2-1-1.svg">ATMsr/LIJT_ATMsr_2-1-1.svg</a><br>  (data from text file  <a href="ATMsr/PIJ_ATMsr.txt">ATMsr/PIJ_ATMsr.txt</a>)
+<br><img src="ATMsr/LIJT_ATMsr_2-1-1.svg"><br>
+- Convergence to period (stable) prevalence in state 1. Or probability for a person being in state (1 to 2) at different ages, to be in state 1 some years after. <a href="ATMsr/P_ATMsr_1-1-1.svg">ATMsr/P_ATMsr_1-1-1.svg</a><br> (data from text file  <a href="ATMsr/PIJ_ATMsr.txt">ATMsr/PIJ_ATMsr.txt</a>)
+<br><img src="ATMsr/P_ATMsr_1-1-1.svg"><br>
+- Convergence to period (stable) prevalence in state 2. Or probability for a person being in state (1 to 2) at different ages, to be in state 2 some years after. <a href="ATMsr/P_ATMsr_2-1-1.svg">ATMsr/P_ATMsr_2-1-1.svg</a><br> (data from text file  <a href="ATMsr/PIJ_ATMsr.txt">ATMsr/PIJ_ATMsr.txt</a>)
+<br><img src="ATMsr/P_ATMsr_2-1-1.svg">
+<br>- Life expectancy by health state (1) at initial age and its decomposition into health expectancies in each alive state (1 to 2) (or area under each survival functions): <a href="ATMsr/EXP_ATMsr_1-1-1.svg">ATMsr/EXP_ATMsr_1-1-1.svg</a> (data from text file  <a href="ATMsr/E_ATMsr.txt"> ATMsr/E_ATMsr.txt</a>)
+<br><img src="ATMsr/EXP_ATMsr_1-1-1.svg">
+<br>- Life expectancy by health state (2) at initial age and its decomposition into health expectancies in each alive state (1 to 2) (or area under each survival functions): <a href="ATMsr/EXP_ATMsr_2-1-1.svg">ATMsr/EXP_ATMsr_2-1-1.svg</a> (data from text file  <a href="ATMsr/E_ATMsr.txt"> ATMsr/E_ATMsr.txt</a>)
+<br><img src="ATMsr/EXP_ATMsr_2-1-1.svg"></ul>
+<br><li><h4> <a name='secondorder'>Result files (second order: variances)</a></h4>
+ - Parameter file with estimated parameters and covariance matrix: <a href="rATMsr.txt">rATMsr.txt</a> <br>  - 95% confidence intervals and Wald tests of the estimated parameters are in the log file if optimization has been done (mle != 0).<br> But because parameters are usually highly correlated (a higher incidence of disability and a higher incidence of recovery can give very close observed transition) it might be very useful to look not only at linear confidence intervals estimated from the variances but at the covariance matrix. And instead of looking at the estimated coefficients (parameters) of the logistic regression, it might be more meaningful to visualize the covariance matrix of the one-step probabilities. See page 'Matrix of variance-covariance of one-step probabilities' below. 
+ - Standard deviation of one-step probabilities: <a href="ATMsr/PROB_ATMsr.txt">ATMsr/PROB_ATMsr.txt</a> <br>
+ - Variance-covariance of one-step probabilities: <a href="ATMsr/PROBCOV_ATMsr.txt">ATMsr/PROBCOV_ATMsr.txt</a> <br>
+ - Correlation matrix of one-step probabilities: <a href="ATMsr/PROBCOR_ATMsr.txt">ATMsr/PROBCOR_ATMsr.txt</a> <br>
+ - Variances and covariances of health expectancies by age and <b>initial health status</b> (cov(e<sup>ij</sup>,e<sup>kl</sup>)(estepm= 6 months):    <a href="ATMsr/CVE_ATMsr.txt">ATMsr/CVE_ATMsr.txt</a> <br>
+</li> - (a) Health expectancies by health status at initial age (e<sup>ij</sup>) and standard errors (in parentheses) (b) life expectancies and standard errors (e<sup>i.</sup>=e<sup>i1</sup>+e<sup>i2</sup>+...)(estepm= 6 months):    <a href="ATMsr/STDE_ATMsr.txt">ATMsr/STDE_ATMsr.txt</a> <br>
+</li> - Variances and covariances of health expectancies by age. Status (i) based health expectancies (in state j), e<sup>ij</sup> are weighted by the forward (period) prevalences in each state i (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=6 months): <a href="ATMsr/V_ATMsr.txt">ATMsr/V_ATMsr.txt</a><br>
+ - Total life expectancy and total health expectancies to be spent in each health state e<sup>.j</sup> with their standard errors (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=6 months): <a href="ATMsr/T_ATMsr.txt">ATMsr/T_ATMsr.txt</a> <br>
+ - Standard deviation of forward (period) prevalences: <a href="ATMsr/VPL_ATMsr.txt">ATMsr/VPL_ATMsr.txt</a> <br>
+ <ul><li><b>Graphs (second order)</b></li><p> 
+<ul> 
+</ul>
+<br>- Observed (cross-sectional with mov_average=0) and period (incidence based) prevalence (with 95% confidence interval) in state (1): <a href="ATMsr/V_ATMsr_1-1-1.svg"> ATMsr/V_ATMsr_1-1-1.svg</a> (data from text file  <a href="ATMsr/VPL_ATMsr.txt">ATMsr/VPL_ATMsr.txt</a>)
+ <br><img src="ATMsr/V_ATMsr_1-1-1.svg">
+<br>- Observed (cross-sectional with mov_average=0) and period (incidence based) prevalence (with 95% confidence interval) in state (2): <a href="ATMsr/V_ATMsr_2-1-1.svg"> ATMsr/V_ATMsr_2-1-1.svg</a> (data from text file  <a href="ATMsr/VPL_ATMsr.txt">ATMsr/VPL_ATMsr.txt</a>)
+ <br><img src="ATMsr/V_ATMsr_2-1-1.svg">
+<br>- Total life expectancy by age and health expectancies in each live states (1 to 2). If popbased=1 the smooth (due to the model) true period expectancies (those weighted with period prevalences are also drawn in addition to the population based expectancies computed using observed and cahotic prevalences:  <a href="ATMsr/E_ATMsr_1-1.svg">ATMsr/E_ATMsr_1-1.svg</a> (data from text file <a href="ATMsr/T_ATMsr.txt">ATMsr/T_ATMsr.txt</a>) 
+<br><img src="ATMsr/E_ATMsr_1-1.svg"></ul>
+<li><h4> Computing and drawing one step probabilities with their confidence intervals</h4></li>
+
+
+<li><h4> <a href="ATMsr-cov.htm">Matrix of variance-covariance of one-step probabilities (drawings)</a></h4> this page is important in order to visualize confidence intervals and especially correlation between disability and recovery, or more generally, way in and way back. File ATMsr-cov.htm</li>
+
+<li><h4> Computing probabilities of dying over estepm months as a weighted average (i.e global mortality independent of initial healh state)</h4></li>
+
+<br>-STABLBASED_  <br>
+
+<br> File (multiple files are possible if covariates are present): <A href="ATMsr/PRMORPREV-1-STABLBASED_ATMsr.txt">ATMsr/PRMORPREV-1-STABLBASED_ATMsr.txt</a>
+
+<br> Probability is computed over estepm=6 months. <br> <img src="ATMsr/VARMUPTJGR--STABLBASED_ATMsr1.svg"> <br>
+<br>Local time at start Tue Feb 04 22:13:36 2025
+<br>Local time at end   Tue Feb 04 22:14:27 2025
+<br>
+</body></html>

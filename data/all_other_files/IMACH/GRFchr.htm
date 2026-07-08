@@ -1,0 +1,55 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh GRFchr.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="GRFchr.htm">GRFchr.htm</a></br>Title=chr <br>Datafile=<a href="dataGRFchr.txt">dataGRFchr.txt</a> Firstpass=1 Lastpass=2 Stepm=3 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="GRFchr.txt">GRFchr.txt</a><br>
+ - Copy of the parameter file: <a href="orGRFchr.txt">orGRFchr.txt</a><br>
+ - Log file of the run: <a href="GRFchr.log">GRFchr.log</a><br>
+ - Gnuplot file name: <a href="GRFchr.gp">GRFchr.gp</a><br>
+ - Date and time at start: Tue May 28 07:03:20 2024
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=3
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="GRFchr/D_GRFchr_.svg">GRFchr/D_GRFchr_.svg</a></h4> 
+<img src="GRFchr/D_GRFchr_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=1660 <br>
+Youngest age at first (selected) pass 51.08, oldest age 97.33<br>
+Interval (in months) between two waves: Min=2 Max=30 Mean=23.07<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="GRFchr/ILK_GRFchr.txt">GRFchr/ILK_GRFchr.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="GRFchr/ILK_GRFchr-ori.png">GRFchr/ILK_GRFchr-ori.png</a><br> <img src="GRFchr/ILK_GRFchr-ori.png">
+<br>- and by state of destination <a href="GRFchr/ILK_GRFchr-dest.png">GRFchr/ILK_GRFchr-dest.png</a><br> <img src="GRFchr/ILK_GRFchr-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="GRFchr/ILK_GRFchr-p1j.png">GRFchr/ILK_GRFchr-p1j.png</a><br>
+ <img src="GRFchr/ILK_GRFchr-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="GRFchr/ILK_GRFchr-p2j.png">GRFchr/ILK_GRFchr-p2j.png</a><br>
+ <img src="GRFchr/ILK_GRFchr-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>-170.6864631</td><td>   3.7028468</td></tr>
+<tr><td>13</td><td> -74.2536588</td><td>   0.3553102</td></tr>
+<tr><td>21</td><td>   9.1371630</td><td>  -0.1535270</td></tr>
+<tr><td>23</td><td> -16.9203576</td><td>   0.1594321</td></tr>
+</table>
+

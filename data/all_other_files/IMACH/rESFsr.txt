@@ -1,0 +1,48 @@
+#IMaCh 0.99r45
+title=sr datafile=dataESFsr.txt lastobs=15000 firstpass=1 lastpass=2
+ftol=1.000000e-018 stepm=3 ncovcol=0 nqv=0 ntv=0 nqtv=0 nlstate=2 ndeath=1 maxwav=2 mle=0 weight=1
+model=1+age+
+#Number of iterations & function calls = 44 & 6112, -2 Log likelihood = 3886.449140867348
+# Parameters nlstate*nlstate*ncov a12*1 + b12 * age + ...
+#model=  1      +     age 
+12   -6.9001441    0.0561165 
+13   -9.5696676    0.0404148 
+21   -1.5620499   -0.0226188 
+23  -12.8546701    0.1094646 
+# Scales (for hessian or gradient estimation)
+12 1.00000e-004 1.00000e-006
+13 4.00000e-003 1.00000e-005
+21 1.00000e-004 1.00000e-006
+23 1.00000e-004 1.00000e-005
+# Covariance matrix 
+# 121 Var(a12)
+# 122 Cov(b12,a12) Var(b12)
+#   ...
+# 232 Cov(b23,a12)  Cov(b23,b12) ... Var (b23)
+#121 Var(a12)
+#122 Cov(b12,a12) Var(b12)
+#131 Cov(a13,a12) Cov(a13,b12) Var(a13)
+#132 Cov(b13,a12) Cov(b13,b12) Cov(b13,a13) Var(b13)
+#211 Cov(a21,a12) Cov(a21,b12) Cov(a21,a13) Cov(a21,b13) Var(a21)
+#212 Cov(b21,a12) Cov(b21,b12) Cov(b21,a13) Cov(b21,b13) Cov(b21,a21) Var(b21)
+#231 Cov(a23,a12) Cov(a23,b12) Cov(a23,a13) Cov(a23,b13) Cov(a23,a21) Cov(a23,b21) Var(a23)
+#232 Cov(b23,a12) Cov(b23,b12) Cov(b23,a13) Cov(b23,b13) Cov(b23,a21) Cov(b23,b21) Cov(b23,a23) Var(b23)
+121 1.5924092e-001
+122 -2.25190e-003 3.2668600e-005
+131 -1.28887e-001 2.13302e-003 9.1972754e+000
+132 2.14331e-003 -3.56522e-005 -1.43776e-001 2.2901470e-003
+211 6.83871e-002 -9.92530e-004 -8.18785e-003 1.40855e-004 2.1226944e-001
+212 -9.91842e-004 1.47511e-005 1.14967e-004 -1.93365e-006 -3.00464e-003 4.3617922e-005
+231 -5.42919e-003 1.07772e-004 1.73377e-001 -3.69146e-003 9.02308e-003 -1.27007e-004 7.9760996e-001
+232 4.68944e-005 -9.72603e-007 -1.35038e-003 3.14355e-005 -1.30091e-004 1.88220e-006 -9.27082e-003 1.0891093e-004
+# agemin agemax for life expectancy, bage fage (if mle==0 ie no data nor Max likelihood).
+# agemin agemax for life expectancy, bage fage (if mle==0 ie no data nor Max likelihood).
+agemin=50 agemax=100 bage=50 fage=110 estepm=12 ftolpl=6.000000e-004
+# Observed prevalence period
+begin-prev-date=1/1/2013 end-prev-date=1/9/2018 mov_average=0
+# Health expectancies computed from stable (period) prevalence (pop_based=0) or population based (1)
+pop_based=0
+# Prevalence forecasting and backcasting is skept here
+##prevforecast=0  starting-proj-date=1/1/1989 final-proj-date=1/1/1990 mobil_average=0
+#prevforecast=1 yearsfproj=10 mobil_average=0
+#prevbackcast=1 yearsbproj=10 mobil_average=1

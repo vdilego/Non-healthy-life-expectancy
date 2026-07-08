@@ -1,0 +1,136 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh EEMchr.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="EEMchr.htm">EEMchr.htm</a></br>Title=chr <br>Datafile=<a href="dataEEMchr.txt">dataEEMchr.txt</a> Firstpass=1 Lastpass=2 Stepm=24 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="EEMchr.txt">EEMchr.txt</a><br>
+ - Copy of the parameter file: <a href="orEEMchr.txt">orEEMchr.txt</a><br>
+ - Log file of the run: <a href="EEMchr.log">EEMchr.log</a><br>
+ - Gnuplot file name: <a href="EEMchr.gp">EEMchr.gp</a><br>
+ - Date and time at start: Tue Feb 04 22:21:37 2025
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=24
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="EEMchr/D_EEMchr_.svg">EEMchr/D_EEMchr_.svg</a></h4> 
+<img src="EEMchr/D_EEMchr_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=1857 <br>
+Youngest age at first (selected) pass 51.08, oldest age 92.17<br>
+Interval (in months) between two waves: Min=1 Max=29 Mean=20.66<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="EEMchr/ILK_EEMchr.txt">EEMchr/ILK_EEMchr.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="EEMchr/ILK_EEMchr-ori.png">EEMchr/ILK_EEMchr-ori.png</a><br> <img src="EEMchr/ILK_EEMchr-ori.png">
+<br>- and by state of destination <a href="EEMchr/ILK_EEMchr-dest.png">EEMchr/ILK_EEMchr-dest.png</a><br> <img src="EEMchr/ILK_EEMchr-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="EEMchr/ILK_EEMchr-p1j.png">EEMchr/ILK_EEMchr-p1j.png</a><br>
+ <img src="EEMchr/ILK_EEMchr-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="EEMchr/ILK_EEMchr-p2j.png">EEMchr/ILK_EEMchr-p2j.png</a><br>
+ <img src="EEMchr/ILK_EEMchr-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>  -3.5194949</td><td>   0.0585267</td></tr>
+<tr><td>13</td><td> -12.0201528</td><td>   0.1431958</td></tr>
+<tr><td>21</td><td>  -0.0620362</td><td>  -0.0306893</td></tr>
+<tr><td>23</td><td>  -7.1341226</td><td>   0.0751848</td></tr>
+</table>
+
+
+<p>The Wald test results are output only if the maximimzation of the Likelihood is performed (mle=1)
+</br>Parameters, Wald tests and Wald-based confidence intervals
+</br> W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+</br> And Wald-based confidence intervals plus and minus 1.96 * W 
+ </br> It might be better to visualize the covariance matrix. See the page '<a href="EEMchr-cov.htm">Matrix of variance-covariance of one-step probabilities and its graphs</a>'.
+</br>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr valign=top><td>12</td><td><b>  -3.5194949</b></br> (   0.9330685)</br>W=  -3.772</br>[  -5.3483091;  -1.6906807]</br></td><td><b>   0.0585267</b></br> (   0.0153579)</br>W=   3.811</br>[   0.0284252;   0.0886282]</br></td></tr>
+<tr valign=top><td>13</td><td><b> -12.0201528</b></br> (   2.3493696)</br>W=  -5.116</br>[ -16.6249173;  -7.4153884]</br></td><td><b>   0.1431958</b></br> (   0.0340727)</br>W=   4.203</br>[   0.0764134;   0.2099782]</br></td></tr>
+<tr valign=top><td>21</td><td>  -0.0620362 (   0.6785987)</br>W=  -0.091</br>[  -1.3920896;   1.2680173]</br></td><td><b>  -0.0306893</b></br> (   0.0105576)</br>W=  -2.907</br>[  -0.0513822;  -0.0099964]</br></td></tr>
+<tr valign=top><td>23</td><td><b>  -7.1341226</b></br> (   0.6827704)</br>W= -10.449</br>[  -8.4723526;  -5.7958926]</br></td><td><b>   0.0751848</b></br> (   0.0093611)</br>W=   8.032</br>[   0.0568371;   0.0935325]</br></td></tr>
+</table>
+<ul><li><a href='#firstorder'>Result files (first order: no variance)</a>
+    <li><a href='#secondorder'>Result files (second order (variance)</a>
+ </ul><ul><li><h4><a name='firstorder'>Result files (first order: no variance)</a></h4>
+<li>- Observed frequency between two states (during the period defined between 1/1/2013 and 1/9/2018): <a href="EEMchr/PHTMFR_EEMchr.htm">EEMchr/PHTMFR_EEMchr.htm</a> (html file)<br/>
+<li> - Observed prevalence (cross-sectional prevalence) in each state (during the period defined between 1/1/2013 and 1/9/2018): <a href="EEMchr/PHTM_EEMchr.htm">EEMchr/PHTM_EEMchr.htm</a> (html file) ,  <a href="EEMchr/P_EEMchr.txt">EEMchr/P_EEMchr.txt</a> (text file) <br>
+ - Estimated transition probabilities over 24 (stepm) months: <a href="EEMchr/PIJ_EEMchr.txt">EEMchr/PIJ_EEMchr.txt</a><br>
+  - Estimated back transition probabilities over 24 (stepm) months: <a href="EEMchr/PIJB_EEMchr.txt">EEMchr/PIJB_EEMchr.txt</a><br>
+  - Period (forward) prevalence in each health state: <a href="EEMchr/PL_EEMchr.txt">EEMchr/PL_EEMchr.txt</a> <br>
+ - Backward prevalence in each health state: <a href="EEMchr/PLB_EEMchr.txt">EEMchr/PLB_EEMchr.txt</a> <br>
+ - (a) Life expectancies by health status at initial age, e<sub>i.</sub> (b) health expectancies by health status at initial age, e<sub>ij</sub> . If one or more covariates are included, specific tables for each value of the covariate are output in sequences within the same file (estepm=24 months):    <a href="EEMchr/E_EEMchr.txt">EEMchr/E_EEMchr.txt</a> <br>
+ 
+<ul><li><b>Graphs (first order)</b></li><p> 
+<ul> 
+</ul><br>- Logit model (yours is: logit(pij)=log(pij/pii)= aij+ bij age+) as a function of age: <a href="EEMchr/PE_EEMchr_1-1-1.svg">EEMchr/PE_EEMchr_1-1-1.svg</a><br> <img src="EEMchr/PE_EEMchr_1-1-1.svg"><br>
+- P<sub>ij</sub> or conditional probabilities to be observed in state j being in state i, 24 (stepm) months before: <a href="EEMchr/PE_EEMchr_1-2-1.svg">EEMchr/PE_EEMchr_1-2-1.svg</a><br> <img src="EEMchr/PE_EEMchr_1-2-1.svg"><br>
+- I<sub>ij</sub> or Conditional probabilities to be observed in state j being in state i 24 (stepm) months before but expressed in per year i.e. quasi incidences if stepm is small and probabilities too,  incidence (rates) are the limit when h tends to zero of the ratio of the probability  <sub>h</sub>P<sub>ij</sub> divided by h: <sub>h</sub>P<sub>ij</sub>/h : <a href="EEMchr/PE_EEMchr_1-3-1.svg">EEMchr/PE_EEMchr_1-3-1.svg</a><br> <img src="EEMchr/PE_EEMchr_1-3-1.svg"><br>
+- Survival functions in state 1. And probability to be observed in state 1 being in state (1 to 2) at different ages. <a href="EEMchr/LIJ_EEMchr_1-1-1.svg">EEMchr/LIJ_EEMchr_1-1-1.svg</a><br> (data from text file  <a href="EEMchr/PIJ_EEMchr.txt">EEMchr/PIJ_EEMchr.txt</a>)
+<br><img src="EEMchr/LIJ_EEMchr_1-1-1.svg"><br>
+- Survival functions in state 2. And probability to be observed in state 2 being in state (1 to 2) at different ages. <a href="EEMchr/LIJ_EEMchr_2-1-1.svg">EEMchr/LIJ_EEMchr_2-1-1.svg</a><br> (data from text file  <a href="EEMchr/PIJ_EEMchr.txt">EEMchr/PIJ_EEMchr.txt</a>)
+<br><img src="EEMchr/LIJ_EEMchr_2-1-1.svg"><br>
+- Survival functions in state 1 and in any other live state (total). And probability to be observed in various states (up to 2) being in state 1 at different ages.	 <a href="EEMchr/LIJT_EEMchr_1-1-1.svg">EEMchr/LIJT_EEMchr_1-1-1.svg</a><br>  (data from text file  <a href="EEMchr/PIJ_EEMchr.txt">EEMchr/PIJ_EEMchr.txt</a>)
+<br><img src="EEMchr/LIJT_EEMchr_1-1-1.svg"><br>
+- Survival functions in state 2 and in any other live state (total). And probability to be observed in various states (up to 2) being in state 2 at different ages.	 <a href="EEMchr/LIJT_EEMchr_2-1-1.svg">EEMchr/LIJT_EEMchr_2-1-1.svg</a><br>  (data from text file  <a href="EEMchr/PIJ_EEMchr.txt">EEMchr/PIJ_EEMchr.txt</a>)
+<br><img src="EEMchr/LIJT_EEMchr_2-1-1.svg"><br>
+- Convergence to period (stable) prevalence in state 1. Or probability for a person being in state (1 to 2) at different ages, to be in state 1 some years after. <a href="EEMchr/P_EEMchr_1-1-1.svg">EEMchr/P_EEMchr_1-1-1.svg</a><br> (data from text file  <a href="EEMchr/PIJ_EEMchr.txt">EEMchr/PIJ_EEMchr.txt</a>)
+<br><img src="EEMchr/P_EEMchr_1-1-1.svg"><br>
+- Convergence to period (stable) prevalence in state 2. Or probability for a person being in state (1 to 2) at different ages, to be in state 2 some years after. <a href="EEMchr/P_EEMchr_2-1-1.svg">EEMchr/P_EEMchr_2-1-1.svg</a><br> (data from text file  <a href="EEMchr/PIJ_EEMchr.txt">EEMchr/PIJ_EEMchr.txt</a>)
+<br><img src="EEMchr/P_EEMchr_2-1-1.svg">
+<br>- Life expectancy by health state (1) at initial age and its decomposition into health expectancies in each alive state (1 to 2) (or area under each survival functions): <a href="EEMchr/EXP_EEMchr_1-1-1.svg">EEMchr/EXP_EEMchr_1-1-1.svg</a> (data from text file  <a href="EEMchr/E_EEMchr.txt"> EEMchr/E_EEMchr.txt</a>)
+<br><img src="EEMchr/EXP_EEMchr_1-1-1.svg">
+<br>- Life expectancy by health state (2) at initial age and its decomposition into health expectancies in each alive state (1 to 2) (or area under each survival functions): <a href="EEMchr/EXP_EEMchr_2-1-1.svg">EEMchr/EXP_EEMchr_2-1-1.svg</a> (data from text file  <a href="EEMchr/E_EEMchr.txt"> EEMchr/E_EEMchr.txt</a>)
+<br><img src="EEMchr/EXP_EEMchr_2-1-1.svg"></ul>
+<br><li><h4> <a name='secondorder'>Result files (second order: variances)</a></h4>
+ - Parameter file with estimated parameters and covariance matrix: <a href="rEEMchr.txt">rEEMchr.txt</a> <br>  - 95% confidence intervals and Wald tests of the estimated parameters are in the log file if optimization has been done (mle != 0).<br> But because parameters are usually highly correlated (a higher incidence of disability and a higher incidence of recovery can give very close observed transition) it might be very useful to look not only at linear confidence intervals estimated from the variances but at the covariance matrix. And instead of looking at the estimated coefficients (parameters) of the logistic regression, it might be more meaningful to visualize the covariance matrix of the one-step probabilities. See page 'Matrix of variance-covariance of one-step probabilities' below. 
+ - Standard deviation of one-step probabilities: <a href="EEMchr/PROB_EEMchr.txt">EEMchr/PROB_EEMchr.txt</a> <br>
+ - Variance-covariance of one-step probabilities: <a href="EEMchr/PROBCOV_EEMchr.txt">EEMchr/PROBCOV_EEMchr.txt</a> <br>
+ - Correlation matrix of one-step probabilities: <a href="EEMchr/PROBCOR_EEMchr.txt">EEMchr/PROBCOR_EEMchr.txt</a> <br>
+ - Variances and covariances of health expectancies by age and <b>initial health status</b> (cov(e<sup>ij</sup>,e<sup>kl</sup>)(estepm=24 months):    <a href="EEMchr/CVE_EEMchr.txt">EEMchr/CVE_EEMchr.txt</a> <br>
+</li> - (a) Health expectancies by health status at initial age (e<sup>ij</sup>) and standard errors (in parentheses) (b) life expectancies and standard errors (e<sup>i.</sup>=e<sup>i1</sup>+e<sup>i2</sup>+...)(estepm=24 months):    <a href="EEMchr/STDE_EEMchr.txt">EEMchr/STDE_EEMchr.txt</a> <br>
+</li> - Variances and covariances of health expectancies by age. Status (i) based health expectancies (in state j), e<sup>ij</sup> are weighted by the forward (period) prevalences in each state i (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=24 months): <a href="EEMchr/V_EEMchr.txt">EEMchr/V_EEMchr.txt</a><br>
+ - Total life expectancy and total health expectancies to be spent in each health state e<sup>.j</sup> with their standard errors (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=24 months): <a href="EEMchr/T_EEMchr.txt">EEMchr/T_EEMchr.txt</a> <br>
+ - Standard deviation of forward (period) prevalences: <a href="EEMchr/VPL_EEMchr.txt">EEMchr/VPL_EEMchr.txt</a> <br>
+ <ul><li><b>Graphs (second order)</b></li><p> 
+<ul> 
+</ul>
+<br>- Observed (cross-sectional with mov_average=0) and period (incidence based) prevalence (with 95% confidence interval) in state (1): <a href="EEMchr/V_EEMchr_1-1-1.svg"> EEMchr/V_EEMchr_1-1-1.svg</a> (data from text file  <a href="EEMchr/VPL_EEMchr.txt">EEMchr/VPL_EEMchr.txt</a>)
+ <br><img src="EEMchr/V_EEMchr_1-1-1.svg">
+<br>- Observed (cross-sectional with mov_average=0) and period (incidence based) prevalence (with 95% confidence interval) in state (2): <a href="EEMchr/V_EEMchr_2-1-1.svg"> EEMchr/V_EEMchr_2-1-1.svg</a> (data from text file  <a href="EEMchr/VPL_EEMchr.txt">EEMchr/VPL_EEMchr.txt</a>)
+ <br><img src="EEMchr/V_EEMchr_2-1-1.svg">
+<br>- Total life expectancy by age and health expectancies in each live states (1 to 2). If popbased=1 the smooth (due to the model) true period expectancies (those weighted with period prevalences are also drawn in addition to the population based expectancies computed using observed and cahotic prevalences:  <a href="EEMchr/E_EEMchr_1-1.svg">EEMchr/E_EEMchr_1-1.svg</a> (data from text file <a href="EEMchr/T_EEMchr.txt">EEMchr/T_EEMchr.txt</a>) 
+<br><img src="EEMchr/E_EEMchr_1-1.svg"></ul>
+<li><h4> Computing and drawing one step probabilities with their confidence intervals</h4></li>
+
+
+<li><h4> <a href="EEMchr-cov.htm">Matrix of variance-covariance of one-step probabilities (drawings)</a></h4> this page is important in order to visualize confidence intervals and especially correlation between disability and recovery, or more generally, way in and way back. File EEMchr-cov.htm</li>
+
+<li><h4> Computing probabilities of dying over estepm months as a weighted average (i.e global mortality independent of initial healh state)</h4></li>
+
+<br>-STABLBASED_  <br>
+
+<br> File (multiple files are possible if covariates are present): <A href="EEMchr/PRMORPREV-1-STABLBASED_EEMchr.txt">EEMchr/PRMORPREV-1-STABLBASED_EEMchr.txt</a>
+
+<br> Probability is computed over estepm=24 months. <br> <img src="EEMchr/VARMUPTJGR--STABLBASED_EEMchr1.svg"> <br>
+<br>Local time at start Tue Feb 04 22:21:37 2025
+<br>Local time at end   Tue Feb 04 22:21:40 2025
+<br>
+</body></html>

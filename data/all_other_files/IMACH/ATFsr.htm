@@ -1,0 +1,104 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh ATFsr.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="ATFsr.htm">ATFsr.htm</a></br>Title=sr <br>Datafile=<a href="dataATFsr.txt">dataATFsr.txt</a> Firstpass=1 Lastpass=2 Stepm=3 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="ATFsr.txt">ATFsr.txt</a><br>
+ - Copy of the parameter file: <a href="orATFsr.txt">orATFsr.txt</a><br>
+ - Log file of the run: <a href="ATFsr.log">ATFsr.log</a><br>
+ - Gnuplot file name: <a href="ATFsr.gp">ATFsr.gp</a><br>
+ - Date and time at start: Mon May 27 20:51:15 2024
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=3
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="ATFsr/D_ATFsr_.svg">ATFsr/D_ATFsr_.svg</a></h4> 
+<img src="ATFsr/D_ATFsr_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=1589 <br>
+Youngest age at first (selected) pass 51.25, oldest age 102.58<br>
+Interval (in months) between two waves: Min=1 Max=34 Mean=24.95<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="ATFsr/ILK_ATFsr.txt">ATFsr/ILK_ATFsr.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="ATFsr/ILK_ATFsr-ori.png">ATFsr/ILK_ATFsr-ori.png</a><br> <img src="ATFsr/ILK_ATFsr-ori.png">
+<br>- and by state of destination <a href="ATFsr/ILK_ATFsr-dest.png">ATFsr/ILK_ATFsr-dest.png</a><br> <img src="ATFsr/ILK_ATFsr-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="ATFsr/ILK_ATFsr-p1j.png">ATFsr/ILK_ATFsr-p1j.png</a><br>
+ <img src="ATFsr/ILK_ATFsr-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="ATFsr/ILK_ATFsr-p2j.png">ATFsr/ILK_ATFsr-p2j.png</a><br>
+ <img src="ATFsr/ILK_ATFsr-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>  -5.2136373</td><td>   0.0763489</td></tr>
+<tr><td>13</td><td> -28.4401262</td><td>   0.2960410</td></tr>
+<tr><td>21</td><td>  -2.4104871</td><td>   1.4891295</td></tr>
+<tr><td>23</td><td> -14.5807113</td><td>   1.5906629</td></tr>
+</table>
+
+
+<p>The Wald test results are output only if the maximimzation of the Likelihood is performed (mle=1)
+</br>Parameters, Wald tests and Wald-based confidence intervals
+</br> W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+</br> And Wald-based confidence intervals plus and minus 1.96 * W 
+ </br> It might be better to visualize the covariance matrix. See the page '<a href="ATFsr-cov.htm">Matrix of variance-covariance of one-step probabilities and its graphs</a>'.
+</br>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr valign=top><td>12</td><td><b>  -5.2136373</b></br> (   0.5862831)</br>W=  -8.893</br>[  -6.3627523;  -4.0645224]</br></td><td><b>   0.0763489</b></br> (   0.0083585)</br>W=   9.134</br>[   0.0599662;   0.0927316]</br></td></tr>
+<tr valign=top><td>13</td><td><b> -28.4401262</b></br> (   5.1793472)</br>W=  -5.491</br>[ -38.5916467; -18.2886057]</br></td><td><b>   0.2960410</b></br> (   0.0566036)</br>W=   5.230</br>[   0.1850978;   0.4069841]</br></td></tr>
+<tr valign=top><td>21</td><td>  -2.4104871 (1326.3569734)</br>W=  -0.002</br>[-2602.0701549;2597.2491806]</br></td><td>   1.4891295 (  20.9715329)</br>W=   0.071</br>[ -39.6150750;  42.5933340]</br></td></tr>
+<tr valign=top><td>23</td><td> -14.5807113 (1326.3561387)</br>W=  -0.011</br>[-2614.2387432;2585.0773206]</br></td><td>   1.5906629 (  20.9715319)</br>W=   0.076</br>[ -39.5135395;  42.6948654]</br></td></tr>
+</table>
+<ul><li><a href='#firstorder'>Result files (first order: no variance)</a>
+    <li><a href='#secondorder'>Result files (second order (variance)</a>
+ </ul><ul><li><h4><a name='firstorder'>Result files (first order: no variance)</a></h4>
+<li>- Observed frequency between two states (during the period defined between 1/1/2013 and 1/9/2018): <a href="ATFsr/PHTMFR_ATFsr.htm">ATFsr/PHTMFR_ATFsr.htm</a> (html file)<br/>
+<li> - Observed prevalence (cross-sectional prevalence) in each state (during the period defined between 1/1/2013 and 1/9/2018): <a href="ATFsr/PHTM_ATFsr.htm">ATFsr/PHTM_ATFsr.htm</a> (html file) ,  <a href="ATFsr/P_ATFsr.txt">ATFsr/P_ATFsr.txt</a> (text file) <br>
+ - Estimated transition probabilities over 3 (stepm) months: <a href="ATFsr/PIJ_ATFsr.txt">ATFsr/PIJ_ATFsr.txt</a><br>
+  - Estimated back transition probabilities over 3 (stepm) months: <a href="ATFsr/PIJB_ATFsr.txt">ATFsr/PIJB_ATFsr.txt</a><br>
+  - Period (forward) prevalence in each health state: <a href="ATFsr/PL_ATFsr.txt">ATFsr/PL_ATFsr.txt</a> <br>
+ - Backward prevalence in each health state: <a href="ATFsr/PLB_ATFsr.txt">ATFsr/PLB_ATFsr.txt</a> <br>
+ - (a) Life expectancies by health status at initial age, e<sub>i.</sub> (b) health expectancies by health status at initial age, e<sub>ij</sub> . If one or more covariates are included, specific tables for each value of the covariate are output in sequences within the same file (estepm=12 months):    <a href="ATFsr/E_ATFsr.txt">ATFsr/E_ATFsr.txt</a> <br>
+ 
+<ul><li><b>Graphs (first order)</b></li><p> 
+<ul> 
+</ul></ul>
+<br><li><h4> <a name='secondorder'>Result files (second order: variances)</a></h4>
+ - Parameter file with estimated parameters and covariance matrix: <a href="rATFsr.txt">rATFsr.txt</a> <br>  - 95% confidence intervals and Wald tests of the estimated parameters are in the log file if optimization has been done (mle != 0).<br> But because parameters are usually highly correlated (a higher incidence of disability and a higher incidence of recovery can give very close observed transition) it might be very useful to look not only at linear confidence intervals estimated from the variances but at the covariance matrix. And instead of looking at the estimated coefficients (parameters) of the logistic regression, it might be more meaningful to visualize the covariance matrix of the one-step probabilities. See page 'Matrix of variance-covariance of one-step probabilities' below. 
+ - Standard deviation of one-step probabilities: <a href="ATFsr/PROB_ATFsr.txt">ATFsr/PROB_ATFsr.txt</a> <br>
+ - Variance-covariance of one-step probabilities: <a href="ATFsr/PROBCOV_ATFsr.txt">ATFsr/PROBCOV_ATFsr.txt</a> <br>
+ - Correlation matrix of one-step probabilities: <a href="ATFsr/PROBCOR_ATFsr.txt">ATFsr/PROBCOR_ATFsr.txt</a> <br>
+ - Variances and covariances of health expectancies by age and <b>initial health status</b> (cov(e<sup>ij</sup>,e<sup>kl</sup>)(estepm=12 months):    <a href="ATFsr/CVE_ATFsr.txt">ATFsr/CVE_ATFsr.txt</a> <br>
+</li> - (a) Health expectancies by health status at initial age (e<sup>ij</sup>) and standard errors (in parentheses) (b) life expectancies and standard errors (e<sup>i.</sup>=e<sup>i1</sup>+e<sup>i2</sup>+...)(estepm=12 months):    <a href="ATFsr/STDE_ATFsr.txt">ATFsr/STDE_ATFsr.txt</a> <br>
+</li> - Variances and covariances of health expectancies by age. Status (i) based health expectancies (in state j), e<sup>ij</sup> are weighted by the forward (period) prevalences in each state i (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="ATFsr/V_ATFsr.txt">ATFsr/V_ATFsr.txt</a><br>
+ - Total life expectancy and total health expectancies to be spent in each health state e<sup>.j</sup> with their standard errors (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="ATFsr/T_ATFsr.txt">ATFsr/T_ATFsr.txt</a> <br>
+ - Standard deviation of forward (period) prevalences: <a href="ATFsr/VPL_ATFsr.txt">ATFsr/VPL_ATFsr.txt</a> <br>
+ <ul><li><b>Graphs (second order)</b></li><p> 
+<ul> 
+</ul></ul>
+<li><h4> Computing and drawing one step probabilities with their confidence intervals</h4></li>
+
+
+<li><h4> <a href="ATFsr-cov.htm">Matrix of variance-covariance of one-step probabilities (drawings)</a></h4> this page is important in order to visualize confidence intervals and especially correlation between disability and recovery, or more generally, way in and way back. File ATFsr-cov.htm</li>
+<br>Local time at start Mon May 27 20:51:15 2024
+<br>Local time at end   Mon May 27 20:52:09 2024
+<br>
+</body></html>

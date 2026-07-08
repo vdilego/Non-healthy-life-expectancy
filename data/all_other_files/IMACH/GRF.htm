@@ -1,0 +1,104 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh GRF.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="GRF.htm">GRF.htm</a></br>Title=adl <br>Datafile=<a href="dataGRF.txt">dataGRF.txt</a> Firstpass=1 Lastpass=2 Stepm=3 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="GRF.txt">GRF.txt</a><br>
+ - Copy of the parameter file: <a href="orGRF.txt">orGRF.txt</a><br>
+ - Log file of the run: <a href="GRF.log">GRF.log</a><br>
+ - Gnuplot file name: <a href="GRF.gp">GRF.gp</a><br>
+ - Date and time at start: Sat May 25 22:26:15 2024
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=3
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="GRF/D_GRF_.svg">GRF/D_GRF_.svg</a></h4> 
+<img src="GRF/D_GRF_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=1654 <br>
+Youngest age at first (selected) pass 51.08, oldest age 97.33<br>
+Interval (in months) between two waves: Min=2 Max=30 Mean=23.05<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="GRF/ILK_GRF.txt">GRF/ILK_GRF.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="GRF/ILK_GRF-ori.png">GRF/ILK_GRF-ori.png</a><br> <img src="GRF/ILK_GRF-ori.png">
+<br>- and by state of destination <a href="GRF/ILK_GRF-dest.png">GRF/ILK_GRF-dest.png</a><br> <img src="GRF/ILK_GRF-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="GRF/ILK_GRF-p1j.png">GRF/ILK_GRF-p1j.png</a><br>
+ <img src="GRF/ILK_GRF-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="GRF/ILK_GRF-p2j.png">GRF/ILK_GRF-p2j.png</a><br>
+ <img src="GRF/ILK_GRF-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>  21.0940951</td><td>   1.9790000</td></tr>
+<tr><td>13</td><td>   2.6614732</td><td>   2.1560601</td></tr>
+<tr><td>21</td><td>   2.6661357</td><td>  -0.0122090</td></tr>
+<tr><td>23</td><td> -15.3341487</td><td>   0.1608478</td></tr>
+</table>
+
+
+<p>The Wald test results are output only if the maximimzation of the Likelihood is performed (mle=1)
+</br>Parameters, Wald tests and Wald-based confidence intervals
+</br> W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+</br> And Wald-based confidence intervals plus and minus 1.96 * W 
+ </br> It might be better to visualize the covariance matrix. See the page '<a href="GRF-cov.htm">Matrix of variance-covariance of one-step probabilities and its graphs</a>'.
+</br>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr valign=top><td>12</td><td>  21.0940951 (  14.5306124)</br>W=   1.452</br>[  -7.3859052;  49.5740955]</br></td><td>   1.9790000 (  -1.#IND000)</br>W=  -1.#IO</br>[  -1.#IND000;  -1.#IND000]</br></td></tr>
+<tr valign=top><td>13</td><td>   2.6614732 (  14.0203198)</br>W=   0.190</br>[ -24.8183537;  30.1413001]</br></td><td>   2.1560601 (  -1.#IND000)</br>W=  -1.#IO</br>[  -1.#IND000;  -1.#IND000]</br></td></tr>
+<tr valign=top><td>21</td><td><b>   2.6661357</b></br> (   0.4923463)</br>W=   5.415</br>[   1.7011370;   3.6311345]</br></td><td>  -0.0122090 (   0.0069939)</br>W=  -1.746</br>[  -0.0259171;   0.0014991]</br></td></tr>
+<tr valign=top><td>23</td><td><b> -15.3341487</b></br> (   2.1662254)</br>W=  -7.079</br>[ -19.5799504; -11.0883469]</br></td><td><b>   0.1608478</b></br> (   0.0259327)</br>W=   6.203</br>[   0.1100197;   0.2116760]</br></td></tr>
+</table>
+<ul><li><a href='#firstorder'>Result files (first order: no variance)</a>
+    <li><a href='#secondorder'>Result files (second order (variance)</a>
+ </ul><ul><li><h4><a name='firstorder'>Result files (first order: no variance)</a></h4>
+<li>- Observed frequency between two states (during the period defined between 1/1/2013 and 1/9/2018): <a href="GRF/PHTMFR_GRF.htm">GRF/PHTMFR_GRF.htm</a> (html file)<br/>
+<li> - Observed prevalence (cross-sectional prevalence) in each state (during the period defined between 1/1/2013 and 1/9/2018): <a href="GRF/PHTM_GRF.htm">GRF/PHTM_GRF.htm</a> (html file) ,  <a href="GRF/P_GRF.txt">GRF/P_GRF.txt</a> (text file) <br>
+ - Estimated transition probabilities over 3 (stepm) months: <a href="GRF/PIJ_GRF.txt">GRF/PIJ_GRF.txt</a><br>
+  - Estimated back transition probabilities over 3 (stepm) months: <a href="GRF/PIJB_GRF.txt">GRF/PIJB_GRF.txt</a><br>
+  - Period (forward) prevalence in each health state: <a href="GRF/PL_GRF.txt">GRF/PL_GRF.txt</a> <br>
+ - Backward prevalence in each health state: <a href="GRF/PLB_GRF.txt">GRF/PLB_GRF.txt</a> <br>
+ - (a) Life expectancies by health status at initial age, e<sub>i.</sub> (b) health expectancies by health status at initial age, e<sub>ij</sub> . If one or more covariates are included, specific tables for each value of the covariate are output in sequences within the same file (estepm=12 months):    <a href="GRF/E_GRF.txt">GRF/E_GRF.txt</a> <br>
+ 
+<ul><li><b>Graphs (first order)</b></li><p> 
+<ul> 
+</ul></ul>
+<br><li><h4> <a name='secondorder'>Result files (second order: variances)</a></h4>
+ - Parameter file with estimated parameters and covariance matrix: <a href="rGRF.txt">rGRF.txt</a> <br>  - 95% confidence intervals and Wald tests of the estimated parameters are in the log file if optimization has been done (mle != 0).<br> But because parameters are usually highly correlated (a higher incidence of disability and a higher incidence of recovery can give very close observed transition) it might be very useful to look not only at linear confidence intervals estimated from the variances but at the covariance matrix. And instead of looking at the estimated coefficients (parameters) of the logistic regression, it might be more meaningful to visualize the covariance matrix of the one-step probabilities. See page 'Matrix of variance-covariance of one-step probabilities' below. 
+ - Standard deviation of one-step probabilities: <a href="GRF/PROB_GRF.txt">GRF/PROB_GRF.txt</a> <br>
+ - Variance-covariance of one-step probabilities: <a href="GRF/PROBCOV_GRF.txt">GRF/PROBCOV_GRF.txt</a> <br>
+ - Correlation matrix of one-step probabilities: <a href="GRF/PROBCOR_GRF.txt">GRF/PROBCOR_GRF.txt</a> <br>
+ - Variances and covariances of health expectancies by age and <b>initial health status</b> (cov(e<sup>ij</sup>,e<sup>kl</sup>)(estepm=12 months):    <a href="GRF/CVE_GRF.txt">GRF/CVE_GRF.txt</a> <br>
+</li> - (a) Health expectancies by health status at initial age (e<sup>ij</sup>) and standard errors (in parentheses) (b) life expectancies and standard errors (e<sup>i.</sup>=e<sup>i1</sup>+e<sup>i2</sup>+...)(estepm=12 months):    <a href="GRF/STDE_GRF.txt">GRF/STDE_GRF.txt</a> <br>
+</li> - Variances and covariances of health expectancies by age. Status (i) based health expectancies (in state j), e<sup>ij</sup> are weighted by the forward (period) prevalences in each state i (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="GRF/V_GRF.txt">GRF/V_GRF.txt</a><br>
+ - Total life expectancy and total health expectancies to be spent in each health state e<sup>.j</sup> with their standard errors (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="GRF/T_GRF.txt">GRF/T_GRF.txt</a> <br>
+ - Standard deviation of forward (period) prevalences: <a href="GRF/VPL_GRF.txt">GRF/VPL_GRF.txt</a> <br>
+ <ul><li><b>Graphs (second order)</b></li><p> 
+<ul> 
+</ul></ul>
+<li><h4> Computing and drawing one step probabilities with their confidence intervals</h4></li>
+
+
+<li><h4> <a href="GRF-cov.htm">Matrix of variance-covariance of one-step probabilities (drawings)</a></h4> this page is important in order to visualize confidence intervals and especially correlation between disability and recovery, or more generally, way in and way back. File GRF-cov.htm</li>
+<br>Local time at start Sat May 25 22:26:15 2024
+<br>Local time at end   Sat May 25 22:26:35 2024
+<br>
+</body></html>

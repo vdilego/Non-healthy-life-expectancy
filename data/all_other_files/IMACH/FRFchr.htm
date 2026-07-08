@@ -1,0 +1,104 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh FRFchr.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="FRFchr.htm">FRFchr.htm</a></br>Title=chr <br>Datafile=<a href="dataFRFchr.txt">dataFRFchr.txt</a> Firstpass=1 Lastpass=2 Stepm=3 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="FRFchr.txt">FRFchr.txt</a><br>
+ - Copy of the parameter file: <a href="orFRFchr.txt">orFRFchr.txt</a><br>
+ - Log file of the run: <a href="FRFchr.log">FRFchr.log</a><br>
+ - Gnuplot file name: <a href="FRFchr.gp">FRFchr.gp</a><br>
+ - Date and time at start: Tue May 28 07:56:06 2024
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=3
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="FRFchr/D_FRFchr_.svg">FRFchr/D_FRFchr_.svg</a></h4> 
+<img src="FRFchr/D_FRFchr_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=1665 <br>
+Youngest age at first (selected) pass 51.08, oldest age 99.25<br>
+Interval (in months) between two waves: Min=1 Max=33 Mean=24.65<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="FRFchr/ILK_FRFchr.txt">FRFchr/ILK_FRFchr.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="FRFchr/ILK_FRFchr-ori.png">FRFchr/ILK_FRFchr-ori.png</a><br> <img src="FRFchr/ILK_FRFchr-ori.png">
+<br>- and by state of destination <a href="FRFchr/ILK_FRFchr-dest.png">FRFchr/ILK_FRFchr-dest.png</a><br> <img src="FRFchr/ILK_FRFchr-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="FRFchr/ILK_FRFchr-p1j.png">FRFchr/ILK_FRFchr-p1j.png</a><br>
+ <img src="FRFchr/ILK_FRFchr-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="FRFchr/ILK_FRFchr-p2j.png">FRFchr/ILK_FRFchr-p2j.png</a><br>
+ <img src="FRFchr/ILK_FRFchr-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>  -4.5507353</td><td>   0.0335169</td></tr>
+<tr><td>13</td><td>   5.1360842</td><td>  -0.2094676</td></tr>
+<tr><td>21</td><td>  -1.4037709</td><td>  -0.0396536</td></tr>
+<tr><td>23</td><td> -16.1555673</td><td>   0.1413025</td></tr>
+</table>
+
+
+<p>The Wald test results are output only if the maximimzation of the Likelihood is performed (mle=1)
+</br>Parameters, Wald tests and Wald-based confidence intervals
+</br> W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+</br> And Wald-based confidence intervals plus and minus 1.96 * W 
+ </br> It might be better to visualize the covariance matrix. See the page '<a href="FRFchr-cov.htm">Matrix of variance-covariance of one-step probabilities and its graphs</a>'.
+</br>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr valign=top><td>12</td><td><b>  -4.5507353</b></br> (   0.6003178)</br>W=  -7.581</br>[  -5.7273582;  -3.3741125]</br></td><td><b>   0.0335169</b></br> (   0.0091865)</br>W=   3.648</br>[   0.0155113;   0.0515225]</br></td></tr>
+<tr valign=top><td>13</td><td>   5.1360842 (  13.0877922)</br>W=   0.392</br>[ -20.5159885;  30.7881569]</br></td><td>  -0.2094676 (   0.2380669)</br>W=  -0.880</br>[  -0.6760788;   0.2571435]</br></td></tr>
+<tr valign=top><td>21</td><td><b>  -1.4037709</b></br> (   0.7123732)</br>W=  -1.971</br>[  -2.8000224;  -0.0075194]</br></td><td><b>  -0.0396536</b></br> (   0.0108783)</br>W=  -3.645</br>[  -0.0609752;  -0.0183321]</br></td></tr>
+<tr valign=top><td>23</td><td><b> -16.1555673</b></br> (   1.5067669)</br>W= -10.722</br>[ -19.1088305; -13.2023041]</br></td><td><b>   0.1413025</b></br> (   0.0174700)</br>W=   8.088</br>[   0.1070612;   0.1755437]</br></td></tr>
+</table>
+<ul><li><a href='#firstorder'>Result files (first order: no variance)</a>
+    <li><a href='#secondorder'>Result files (second order (variance)</a>
+ </ul><ul><li><h4><a name='firstorder'>Result files (first order: no variance)</a></h4>
+<li>- Observed frequency between two states (during the period defined between 1/1/2013 and 1/9/2018): <a href="FRFchr/PHTMFR_FRFchr.htm">FRFchr/PHTMFR_FRFchr.htm</a> (html file)<br/>
+<li> - Observed prevalence (cross-sectional prevalence) in each state (during the period defined between 1/1/2013 and 1/9/2018): <a href="FRFchr/PHTM_FRFchr.htm">FRFchr/PHTM_FRFchr.htm</a> (html file) ,  <a href="FRFchr/P_FRFchr.txt">FRFchr/P_FRFchr.txt</a> (text file) <br>
+ - Estimated transition probabilities over 3 (stepm) months: <a href="FRFchr/PIJ_FRFchr.txt">FRFchr/PIJ_FRFchr.txt</a><br>
+  - Estimated back transition probabilities over 3 (stepm) months: <a href="FRFchr/PIJB_FRFchr.txt">FRFchr/PIJB_FRFchr.txt</a><br>
+  - Period (forward) prevalence in each health state: <a href="FRFchr/PL_FRFchr.txt">FRFchr/PL_FRFchr.txt</a> <br>
+ - Backward prevalence in each health state: <a href="FRFchr/PLB_FRFchr.txt">FRFchr/PLB_FRFchr.txt</a> <br>
+ - (a) Life expectancies by health status at initial age, e<sub>i.</sub> (b) health expectancies by health status at initial age, e<sub>ij</sub> . If one or more covariates are included, specific tables for each value of the covariate are output in sequences within the same file (estepm=12 months):    <a href="FRFchr/E_FRFchr.txt">FRFchr/E_FRFchr.txt</a> <br>
+ 
+<ul><li><b>Graphs (first order)</b></li><p> 
+<ul> 
+</ul></ul>
+<br><li><h4> <a name='secondorder'>Result files (second order: variances)</a></h4>
+ - Parameter file with estimated parameters and covariance matrix: <a href="rFRFchr.txt">rFRFchr.txt</a> <br>  - 95% confidence intervals and Wald tests of the estimated parameters are in the log file if optimization has been done (mle != 0).<br> But because parameters are usually highly correlated (a higher incidence of disability and a higher incidence of recovery can give very close observed transition) it might be very useful to look not only at linear confidence intervals estimated from the variances but at the covariance matrix. And instead of looking at the estimated coefficients (parameters) of the logistic regression, it might be more meaningful to visualize the covariance matrix of the one-step probabilities. See page 'Matrix of variance-covariance of one-step probabilities' below. 
+ - Standard deviation of one-step probabilities: <a href="FRFchr/PROB_FRFchr.txt">FRFchr/PROB_FRFchr.txt</a> <br>
+ - Variance-covariance of one-step probabilities: <a href="FRFchr/PROBCOV_FRFchr.txt">FRFchr/PROBCOV_FRFchr.txt</a> <br>
+ - Correlation matrix of one-step probabilities: <a href="FRFchr/PROBCOR_FRFchr.txt">FRFchr/PROBCOR_FRFchr.txt</a> <br>
+ - Variances and covariances of health expectancies by age and <b>initial health status</b> (cov(e<sup>ij</sup>,e<sup>kl</sup>)(estepm=12 months):    <a href="FRFchr/CVE_FRFchr.txt">FRFchr/CVE_FRFchr.txt</a> <br>
+</li> - (a) Health expectancies by health status at initial age (e<sup>ij</sup>) and standard errors (in parentheses) (b) life expectancies and standard errors (e<sup>i.</sup>=e<sup>i1</sup>+e<sup>i2</sup>+...)(estepm=12 months):    <a href="FRFchr/STDE_FRFchr.txt">FRFchr/STDE_FRFchr.txt</a> <br>
+</li> - Variances and covariances of health expectancies by age. Status (i) based health expectancies (in state j), e<sup>ij</sup> are weighted by the forward (period) prevalences in each state i (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="FRFchr/V_FRFchr.txt">FRFchr/V_FRFchr.txt</a><br>
+ - Total life expectancy and total health expectancies to be spent in each health state e<sup>.j</sup> with their standard errors (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="FRFchr/T_FRFchr.txt">FRFchr/T_FRFchr.txt</a> <br>
+ - Standard deviation of forward (period) prevalences: <a href="FRFchr/VPL_FRFchr.txt">FRFchr/VPL_FRFchr.txt</a> <br>
+ <ul><li><b>Graphs (second order)</b></li><p> 
+<ul> 
+</ul></ul>
+<li><h4> Computing and drawing one step probabilities with their confidence intervals</h4></li>
+
+
+<li><h4> <a href="FRFchr-cov.htm">Matrix of variance-covariance of one-step probabilities (drawings)</a></h4> this page is important in order to visualize confidence intervals and especially correlation between disability and recovery, or more generally, way in and way back. File FRFchr-cov.htm</li>
+<br>Local time at start Tue May 28 07:56:06 2024
+<br>Local time at end   Tue May 28 07:56:20 2024
+<br>
+</body></html>

@@ -1,0 +1,11 @@
+#IMaCh 0.99r45
+title=chr datafile=dataDEMchr.txt lastobs=5000 firstpass=1 lastpass=2
+ftol=1.000000e-018 stepm=24 ncovcol=0 nqv=0 ntv=0 nqtv=0 nlstate=2 ndeath=1 maxwav=2 mle=0 weight=1
+model=1+age+
+#Number of iterations & function calls = 21 & 2754, -2 Log likelihood = 1629.069366621636
+# Parameters nlstate*nlstate*ncov a12*1 + b12 * age + ...
+#model=  1      +     age 
+12   -2.2657631    0.0374062 
+13  180.6209785   -4.8209075 
+21   -2.0479372   -0.0115333 
+23   -8.4835481    0.0847420 

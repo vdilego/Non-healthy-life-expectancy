@@ -1,0 +1,136 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh DEMadl.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="DEMadl.htm">DEMadl.htm</a></br>Title=adl <br>Datafile=<a href="dataDEMadl.txt">dataDEMadl.txt</a> Firstpass=1 Lastpass=2 Stepm=6 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="DEMadl.txt">DEMadl.txt</a><br>
+ - Copy of the parameter file: <a href="orDEMadl.txt">orDEMadl.txt</a><br>
+ - Log file of the run: <a href="DEMadl.log">DEMadl.log</a><br>
+ - Gnuplot file name: <a href="DEMadl.gp">DEMadl.gp</a><br>
+ - Date and time at start: Tue Feb 04 22:03:38 2025
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=6
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="DEMadl/D_DEMadl_.svg">DEMadl/D_DEMadl_.svg</a></h4> 
+<img src="DEMadl/D_DEMadl_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=1688 <br>
+Youngest age at first (selected) pass 51.08, oldest age 93.00<br>
+Interval (in months) between two waves: Min=1 Max=34 Mean=22.66<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="DEMadl/ILK_DEMadl.txt">DEMadl/ILK_DEMadl.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="DEMadl/ILK_DEMadl-ori.png">DEMadl/ILK_DEMadl-ori.png</a><br> <img src="DEMadl/ILK_DEMadl-ori.png">
+<br>- and by state of destination <a href="DEMadl/ILK_DEMadl-dest.png">DEMadl/ILK_DEMadl-dest.png</a><br> <img src="DEMadl/ILK_DEMadl-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="DEMadl/ILK_DEMadl-p1j.png">DEMadl/ILK_DEMadl-p1j.png</a><br>
+ <img src="DEMadl/ILK_DEMadl-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="DEMadl/ILK_DEMadl-p2j.png">DEMadl/ILK_DEMadl-p2j.png</a><br>
+ <img src="DEMadl/ILK_DEMadl-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>  -8.0112605</td><td>   0.0629742</td></tr>
+<tr><td>13</td><td>  -4.4506134</td><td>  -0.0104518</td></tr>
+<tr><td>21</td><td>   1.8319098</td><td>  -0.0579400</td></tr>
+<tr><td>23</td><td> -10.8812164</td><td>   0.1110194</td></tr>
+</table>
+
+
+<p>The Wald test results are output only if the maximimzation of the Likelihood is performed (mle=1)
+</br>Parameters, Wald tests and Wald-based confidence intervals
+</br> W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+</br> And Wald-based confidence intervals plus and minus 1.96 * W 
+ </br> It might be better to visualize the covariance matrix. See the page '<a href="DEMadl-cov.htm">Matrix of variance-covariance of one-step probabilities and its graphs</a>'.
+</br>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr valign=top><td>12</td><td><b>  -8.0112605</b></br> (   0.7765128)</br>W= -10.317</br>[  -9.5332256;  -6.4892955]</br></td><td><b>   0.0629742</b></br> (   0.0108237)</br>W=   5.818</br>[   0.0417599;   0.0841886]</br></td></tr>
+<tr valign=top><td>13</td><td><b>  -4.4506134</b></br> (   1.9444174)</br>W=  -2.289</br>[  -8.2616716;  -0.6395553]</br></td><td>  -0.0104518 (   0.0313125)</br>W=  -0.334</br>[  -0.0718243;   0.0509207]</br></td></tr>
+<tr valign=top><td>21</td><td>   1.8319098 (   1.1387609)</br>W=   1.609</br>[  -0.4000616;   4.0638811]</br></td><td><b>  -0.0579400</b></br> (   0.0168519)</br>W=  -3.438</br>[  -0.0909698;  -0.0249102]</br></td></tr>
+<tr valign=top><td>23</td><td><b> -10.8812164</b></br> (   1.8206636)</br>W=  -5.977</br>[ -14.4497171;  -7.3127156]</br></td><td><b>   0.1110194</b></br> (   0.0223990)</br>W=   4.956</br>[   0.0671175;   0.1549214]</br></td></tr>
+</table>
+<ul><li><a href='#firstorder'>Result files (first order: no variance)</a>
+    <li><a href='#secondorder'>Result files (second order (variance)</a>
+ </ul><ul><li><h4><a name='firstorder'>Result files (first order: no variance)</a></h4>
+<li>- Observed frequency between two states (during the period defined between 1/1/2016 and 1/9/2018): <a href="DEMadl/PHTMFR_DEMadl.htm">DEMadl/PHTMFR_DEMadl.htm</a> (html file)<br/>
+<li> - Observed prevalence (cross-sectional prevalence) in each state (during the period defined between 1/1/2016 and 1/9/2018): <a href="DEMadl/PHTM_DEMadl.htm">DEMadl/PHTM_DEMadl.htm</a> (html file) ,  <a href="DEMadl/P_DEMadl.txt">DEMadl/P_DEMadl.txt</a> (text file) <br>
+ - Estimated transition probabilities over 6 (stepm) months: <a href="DEMadl/PIJ_DEMadl.txt">DEMadl/PIJ_DEMadl.txt</a><br>
+  - Estimated back transition probabilities over 6 (stepm) months: <a href="DEMadl/PIJB_DEMadl.txt">DEMadl/PIJB_DEMadl.txt</a><br>
+  - Period (forward) prevalence in each health state: <a href="DEMadl/PL_DEMadl.txt">DEMadl/PL_DEMadl.txt</a> <br>
+ - Backward prevalence in each health state: <a href="DEMadl/PLB_DEMadl.txt">DEMadl/PLB_DEMadl.txt</a> <br>
+ - (a) Life expectancies by health status at initial age, e<sub>i.</sub> (b) health expectancies by health status at initial age, e<sub>ij</sub> . If one or more covariates are included, specific tables for each value of the covariate are output in sequences within the same file (estepm= 6 months):    <a href="DEMadl/E_DEMadl.txt">DEMadl/E_DEMadl.txt</a> <br>
+ 
+<ul><li><b>Graphs (first order)</b></li><p> 
+<ul> 
+</ul><br>- Logit model (yours is: logit(pij)=log(pij/pii)= aij+ bij age+) as a function of age: <a href="DEMadl/PE_DEMadl_1-1-1.svg">DEMadl/PE_DEMadl_1-1-1.svg</a><br> <img src="DEMadl/PE_DEMadl_1-1-1.svg"><br>
+- P<sub>ij</sub> or conditional probabilities to be observed in state j being in state i, 6 (stepm) months before: <a href="DEMadl/PE_DEMadl_1-2-1.svg">DEMadl/PE_DEMadl_1-2-1.svg</a><br> <img src="DEMadl/PE_DEMadl_1-2-1.svg"><br>
+- I<sub>ij</sub> or Conditional probabilities to be observed in state j being in state i 6 (stepm) months before but expressed in per year i.e. quasi incidences if stepm is small and probabilities too,  incidence (rates) are the limit when h tends to zero of the ratio of the probability  <sub>h</sub>P<sub>ij</sub> divided by h: <sub>h</sub>P<sub>ij</sub>/h : <a href="DEMadl/PE_DEMadl_1-3-1.svg">DEMadl/PE_DEMadl_1-3-1.svg</a><br> <img src="DEMadl/PE_DEMadl_1-3-1.svg"><br>
+- Survival functions in state 1. And probability to be observed in state 1 being in state (1 to 2) at different ages. <a href="DEMadl/LIJ_DEMadl_1-1-1.svg">DEMadl/LIJ_DEMadl_1-1-1.svg</a><br> (data from text file  <a href="DEMadl/PIJ_DEMadl.txt">DEMadl/PIJ_DEMadl.txt</a>)
+<br><img src="DEMadl/LIJ_DEMadl_1-1-1.svg"><br>
+- Survival functions in state 2. And probability to be observed in state 2 being in state (1 to 2) at different ages. <a href="DEMadl/LIJ_DEMadl_2-1-1.svg">DEMadl/LIJ_DEMadl_2-1-1.svg</a><br> (data from text file  <a href="DEMadl/PIJ_DEMadl.txt">DEMadl/PIJ_DEMadl.txt</a>)
+<br><img src="DEMadl/LIJ_DEMadl_2-1-1.svg"><br>
+- Survival functions in state 1 and in any other live state (total). And probability to be observed in various states (up to 2) being in state 1 at different ages.	 <a href="DEMadl/LIJT_DEMadl_1-1-1.svg">DEMadl/LIJT_DEMadl_1-1-1.svg</a><br>  (data from text file  <a href="DEMadl/PIJ_DEMadl.txt">DEMadl/PIJ_DEMadl.txt</a>)
+<br><img src="DEMadl/LIJT_DEMadl_1-1-1.svg"><br>
+- Survival functions in state 2 and in any other live state (total). And probability to be observed in various states (up to 2) being in state 2 at different ages.	 <a href="DEMadl/LIJT_DEMadl_2-1-1.svg">DEMadl/LIJT_DEMadl_2-1-1.svg</a><br>  (data from text file  <a href="DEMadl/PIJ_DEMadl.txt">DEMadl/PIJ_DEMadl.txt</a>)
+<br><img src="DEMadl/LIJT_DEMadl_2-1-1.svg"><br>
+- Convergence to period (stable) prevalence in state 1. Or probability for a person being in state (1 to 2) at different ages, to be in state 1 some years after. <a href="DEMadl/P_DEMadl_1-1-1.svg">DEMadl/P_DEMadl_1-1-1.svg</a><br> (data from text file  <a href="DEMadl/PIJ_DEMadl.txt">DEMadl/PIJ_DEMadl.txt</a>)
+<br><img src="DEMadl/P_DEMadl_1-1-1.svg"><br>
+- Convergence to period (stable) prevalence in state 2. Or probability for a person being in state (1 to 2) at different ages, to be in state 2 some years after. <a href="DEMadl/P_DEMadl_2-1-1.svg">DEMadl/P_DEMadl_2-1-1.svg</a><br> (data from text file  <a href="DEMadl/PIJ_DEMadl.txt">DEMadl/PIJ_DEMadl.txt</a>)
+<br><img src="DEMadl/P_DEMadl_2-1-1.svg">
+<br>- Life expectancy by health state (1) at initial age and its decomposition into health expectancies in each alive state (1 to 2) (or area under each survival functions): <a href="DEMadl/EXP_DEMadl_1-1-1.svg">DEMadl/EXP_DEMadl_1-1-1.svg</a> (data from text file  <a href="DEMadl/E_DEMadl.txt"> DEMadl/E_DEMadl.txt</a>)
+<br><img src="DEMadl/EXP_DEMadl_1-1-1.svg">
+<br>- Life expectancy by health state (2) at initial age and its decomposition into health expectancies in each alive state (1 to 2) (or area under each survival functions): <a href="DEMadl/EXP_DEMadl_2-1-1.svg">DEMadl/EXP_DEMadl_2-1-1.svg</a> (data from text file  <a href="DEMadl/E_DEMadl.txt"> DEMadl/E_DEMadl.txt</a>)
+<br><img src="DEMadl/EXP_DEMadl_2-1-1.svg"></ul>
+<br><li><h4> <a name='secondorder'>Result files (second order: variances)</a></h4>
+ - Parameter file with estimated parameters and covariance matrix: <a href="rDEMadl.txt">rDEMadl.txt</a> <br>  - 95% confidence intervals and Wald tests of the estimated parameters are in the log file if optimization has been done (mle != 0).<br> But because parameters are usually highly correlated (a higher incidence of disability and a higher incidence of recovery can give very close observed transition) it might be very useful to look not only at linear confidence intervals estimated from the variances but at the covariance matrix. And instead of looking at the estimated coefficients (parameters) of the logistic regression, it might be more meaningful to visualize the covariance matrix of the one-step probabilities. See page 'Matrix of variance-covariance of one-step probabilities' below. 
+ - Standard deviation of one-step probabilities: <a href="DEMadl/PROB_DEMadl.txt">DEMadl/PROB_DEMadl.txt</a> <br>
+ - Variance-covariance of one-step probabilities: <a href="DEMadl/PROBCOV_DEMadl.txt">DEMadl/PROBCOV_DEMadl.txt</a> <br>
+ - Correlation matrix of one-step probabilities: <a href="DEMadl/PROBCOR_DEMadl.txt">DEMadl/PROBCOR_DEMadl.txt</a> <br>
+ - Variances and covariances of health expectancies by age and <b>initial health status</b> (cov(e<sup>ij</sup>,e<sup>kl</sup>)(estepm= 6 months):    <a href="DEMadl/CVE_DEMadl.txt">DEMadl/CVE_DEMadl.txt</a> <br>
+</li> - (a) Health expectancies by health status at initial age (e<sup>ij</sup>) and standard errors (in parentheses) (b) life expectancies and standard errors (e<sup>i.</sup>=e<sup>i1</sup>+e<sup>i2</sup>+...)(estepm= 6 months):    <a href="DEMadl/STDE_DEMadl.txt">DEMadl/STDE_DEMadl.txt</a> <br>
+</li> - Variances and covariances of health expectancies by age. Status (i) based health expectancies (in state j), e<sup>ij</sup> are weighted by the forward (period) prevalences in each state i (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=6 months): <a href="DEMadl/V_DEMadl.txt">DEMadl/V_DEMadl.txt</a><br>
+ - Total life expectancy and total health expectancies to be spent in each health state e<sup>.j</sup> with their standard errors (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=6 months): <a href="DEMadl/T_DEMadl.txt">DEMadl/T_DEMadl.txt</a> <br>
+ - Standard deviation of forward (period) prevalences: <a href="DEMadl/VPL_DEMadl.txt">DEMadl/VPL_DEMadl.txt</a> <br>
+ <ul><li><b>Graphs (second order)</b></li><p> 
+<ul> 
+</ul>
+<br>- Observed (cross-sectional with mov_average=0) and period (incidence based) prevalence (with 95% confidence interval) in state (1): <a href="DEMadl/V_DEMadl_1-1-1.svg"> DEMadl/V_DEMadl_1-1-1.svg</a> (data from text file  <a href="DEMadl/VPL_DEMadl.txt">DEMadl/VPL_DEMadl.txt</a>)
+ <br><img src="DEMadl/V_DEMadl_1-1-1.svg">
+<br>- Observed (cross-sectional with mov_average=0) and period (incidence based) prevalence (with 95% confidence interval) in state (2): <a href="DEMadl/V_DEMadl_2-1-1.svg"> DEMadl/V_DEMadl_2-1-1.svg</a> (data from text file  <a href="DEMadl/VPL_DEMadl.txt">DEMadl/VPL_DEMadl.txt</a>)
+ <br><img src="DEMadl/V_DEMadl_2-1-1.svg">
+<br>- Total life expectancy by age and health expectancies in each live states (1 to 2). If popbased=1 the smooth (due to the model) true period expectancies (those weighted with period prevalences are also drawn in addition to the population based expectancies computed using observed and cahotic prevalences:  <a href="DEMadl/E_DEMadl_1-1.svg">DEMadl/E_DEMadl_1-1.svg</a> (data from text file <a href="DEMadl/T_DEMadl.txt">DEMadl/T_DEMadl.txt</a>) 
+<br><img src="DEMadl/E_DEMadl_1-1.svg"></ul>
+<li><h4> Computing and drawing one step probabilities with their confidence intervals</h4></li>
+
+
+<li><h4> <a href="DEMadl-cov.htm">Matrix of variance-covariance of one-step probabilities (drawings)</a></h4> this page is important in order to visualize confidence intervals and especially correlation between disability and recovery, or more generally, way in and way back. File DEMadl-cov.htm</li>
+
+<li><h4> Computing probabilities of dying over estepm months as a weighted average (i.e global mortality independent of initial healh state)</h4></li>
+
+<br>-STABLBASED_  <br>
+
+<br> File (multiple files are possible if covariates are present): <A href="DEMadl/PRMORPREV-1-STABLBASED_DEMadl.txt">DEMadl/PRMORPREV-1-STABLBASED_DEMadl.txt</a>
+
+<br> Probability is computed over estepm=6 months. <br> <img src="DEMadl/VARMUPTJGR--STABLBASED_DEMadl1.svg"> <br>
+<br>Local time at start Tue Feb 04 22:03:38 2025
+<br>Local time at end   Tue Feb 04 22:03:59 2025
+<br>
+</body></html>

@@ -1,0 +1,104 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh DKF.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="DKF.htm">DKF.htm</a></br>Title=adl <br>Datafile=<a href="dataDKF.txt">dataDKF.txt</a> Firstpass=1 Lastpass=2 Stepm=3 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="DKF.txt">DKF.txt</a><br>
+ - Copy of the parameter file: <a href="orDKF.txt">orDKF.txt</a><br>
+ - Log file of the run: <a href="DKF.log">DKF.log</a><br>
+ - Gnuplot file name: <a href="DKF.gp">DKF.gp</a><br>
+ - Date and time at start: Sat May 25 22:26:15 2024
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=3
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="DKF/D_DKF_.svg">DKF/D_DKF_.svg</a></h4> 
+<img src="DKF/D_DKF_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=1655 <br>
+Youngest age at first (selected) pass 51.08, oldest age 101.08<br>
+Interval (in months) between two waves: Min=1 Max=34 Mean=23.71<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="DKF/ILK_DKF.txt">DKF/ILK_DKF.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="DKF/ILK_DKF-ori.png">DKF/ILK_DKF-ori.png</a><br> <img src="DKF/ILK_DKF-ori.png">
+<br>- and by state of destination <a href="DKF/ILK_DKF-dest.png">DKF/ILK_DKF-dest.png</a><br> <img src="DKF/ILK_DKF-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="DKF/ILK_DKF-p1j.png">DKF/ILK_DKF-p1j.png</a><br>
+ <img src="DKF/ILK_DKF-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="DKF/ILK_DKF-p2j.png">DKF/ILK_DKF-p2j.png</a><br>
+ <img src="DKF/ILK_DKF-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>  -7.9253029</td><td>   0.0451170</td></tr>
+<tr><td>13</td><td> -14.0111208</td><td>   0.1177124</td></tr>
+<tr><td>21</td><td>  -0.6313203</td><td>  -0.0301202</td></tr>
+<tr><td>23</td><td>  -8.0677810</td><td>   0.0623848</td></tr>
+</table>
+
+
+<p>The Wald test results are output only if the maximimzation of the Likelihood is performed (mle=1)
+</br>Parameters, Wald tests and Wald-based confidence intervals
+</br> W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+</br> And Wald-based confidence intervals plus and minus 1.96 * W 
+ </br> It might be better to visualize the covariance matrix. See the page '<a href="DKF-cov.htm">Matrix of variance-covariance of one-step probabilities and its graphs</a>'.
+</br>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr valign=top><td>12</td><td><b>  -7.9253029</b></br> (   0.8936726)</br>W=  -8.868</br>[  -9.6769013;  -6.1737046]</br></td><td><b>   0.0451170</b></br> (   0.0124346)</br>W=   3.628</br>[   0.0207452;   0.0694889]</br></td></tr>
+<tr valign=top><td>13</td><td><b> -14.0111208</b></br> (   1.2095689)</br>W= -11.584</br>[ -16.3818758; -11.6403658]</br></td><td><b>   0.1177124</b></br> (   0.0149538)</br>W=   7.872</br>[   0.0884029;   0.1470219]</br></td></tr>
+<tr valign=top><td>21</td><td>  -0.6313203 (   0.9226715)</br>W=  -0.684</br>[  -2.4397565;   1.1771159]</br></td><td><b>  -0.0301202</b></br> (   0.0131358)</br>W=  -2.293</br>[  -0.0558663;  -0.0043741]</br></td></tr>
+<tr valign=top><td>23</td><td><b>  -8.0677810</b></br> (   1.4273822)</br>W=  -5.652</br>[ -10.8654502;  -5.2701118]</br></td><td><b>   0.0623848</b></br> (   0.0170252)</br>W=   3.664</br>[   0.0290154;   0.0957543]</br></td></tr>
+</table>
+<ul><li><a href='#firstorder'>Result files (first order: no variance)</a>
+    <li><a href='#secondorder'>Result files (second order (variance)</a>
+ </ul><ul><li><h4><a name='firstorder'>Result files (first order: no variance)</a></h4>
+<li>- Observed frequency between two states (during the period defined between 1/1/2013 and 1/9/2018): <a href="DKF/PHTMFR_DKF.htm">DKF/PHTMFR_DKF.htm</a> (html file)<br/>
+<li> - Observed prevalence (cross-sectional prevalence) in each state (during the period defined between 1/1/2013 and 1/9/2018): <a href="DKF/PHTM_DKF.htm">DKF/PHTM_DKF.htm</a> (html file) ,  <a href="DKF/P_DKF.txt">DKF/P_DKF.txt</a> (text file) <br>
+ - Estimated transition probabilities over 3 (stepm) months: <a href="DKF/PIJ_DKF.txt">DKF/PIJ_DKF.txt</a><br>
+  - Estimated back transition probabilities over 3 (stepm) months: <a href="DKF/PIJB_DKF.txt">DKF/PIJB_DKF.txt</a><br>
+  - Period (forward) prevalence in each health state: <a href="DKF/PL_DKF.txt">DKF/PL_DKF.txt</a> <br>
+ - Backward prevalence in each health state: <a href="DKF/PLB_DKF.txt">DKF/PLB_DKF.txt</a> <br>
+ - (a) Life expectancies by health status at initial age, e<sub>i.</sub> (b) health expectancies by health status at initial age, e<sub>ij</sub> . If one or more covariates are included, specific tables for each value of the covariate are output in sequences within the same file (estepm=12 months):    <a href="DKF/E_DKF.txt">DKF/E_DKF.txt</a> <br>
+ 
+<ul><li><b>Graphs (first order)</b></li><p> 
+<ul> 
+</ul></ul>
+<br><li><h4> <a name='secondorder'>Result files (second order: variances)</a></h4>
+ - Parameter file with estimated parameters and covariance matrix: <a href="rDKF.txt">rDKF.txt</a> <br>  - 95% confidence intervals and Wald tests of the estimated parameters are in the log file if optimization has been done (mle != 0).<br> But because parameters are usually highly correlated (a higher incidence of disability and a higher incidence of recovery can give very close observed transition) it might be very useful to look not only at linear confidence intervals estimated from the variances but at the covariance matrix. And instead of looking at the estimated coefficients (parameters) of the logistic regression, it might be more meaningful to visualize the covariance matrix of the one-step probabilities. See page 'Matrix of variance-covariance of one-step probabilities' below. 
+ - Standard deviation of one-step probabilities: <a href="DKF/PROB_DKF.txt">DKF/PROB_DKF.txt</a> <br>
+ - Variance-covariance of one-step probabilities: <a href="DKF/PROBCOV_DKF.txt">DKF/PROBCOV_DKF.txt</a> <br>
+ - Correlation matrix of one-step probabilities: <a href="DKF/PROBCOR_DKF.txt">DKF/PROBCOR_DKF.txt</a> <br>
+ - Variances and covariances of health expectancies by age and <b>initial health status</b> (cov(e<sup>ij</sup>,e<sup>kl</sup>)(estepm=12 months):    <a href="DKF/CVE_DKF.txt">DKF/CVE_DKF.txt</a> <br>
+</li> - (a) Health expectancies by health status at initial age (e<sup>ij</sup>) and standard errors (in parentheses) (b) life expectancies and standard errors (e<sup>i.</sup>=e<sup>i1</sup>+e<sup>i2</sup>+...)(estepm=12 months):    <a href="DKF/STDE_DKF.txt">DKF/STDE_DKF.txt</a> <br>
+</li> - Variances and covariances of health expectancies by age. Status (i) based health expectancies (in state j), e<sup>ij</sup> are weighted by the forward (period) prevalences in each state i (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="DKF/V_DKF.txt">DKF/V_DKF.txt</a><br>
+ - Total life expectancy and total health expectancies to be spent in each health state e<sup>.j</sup> with their standard errors (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="DKF/T_DKF.txt">DKF/T_DKF.txt</a> <br>
+ - Standard deviation of forward (period) prevalences: <a href="DKF/VPL_DKF.txt">DKF/VPL_DKF.txt</a> <br>
+ <ul><li><b>Graphs (second order)</b></li><p> 
+<ul> 
+</ul></ul>
+<li><h4> Computing and drawing one step probabilities with their confidence intervals</h4></li>
+
+
+<li><h4> <a href="DKF-cov.htm">Matrix of variance-covariance of one-step probabilities (drawings)</a></h4> this page is important in order to visualize confidence intervals and especially correlation between disability and recovery, or more generally, way in and way back. File DKF-cov.htm</li>
+<br>Local time at start Sat May 25 22:26:15 2024
+<br>Local time at end   Sat May 25 22:27:01 2024
+<br>
+</body></html>

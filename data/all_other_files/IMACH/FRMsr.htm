@@ -1,0 +1,104 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh FRMsr.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="FRMsr.htm">FRMsr.htm</a></br>Title=sr <br>Datafile=<a href="dataFRMsr.txt">dataFRMsr.txt</a> Firstpass=1 Lastpass=2 Stepm=3 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="FRMsr.txt">FRMsr.txt</a><br>
+ - Copy of the parameter file: <a href="orFRMsr.txt">orFRMsr.txt</a><br>
+ - Log file of the run: <a href="FRMsr.log">FRMsr.log</a><br>
+ - Gnuplot file name: <a href="FRMsr.gp">FRMsr.gp</a><br>
+ - Date and time at start: Mon May 27 21:41:28 2024
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=3
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="FRMsr/D_FRMsr_.svg">FRMsr/D_FRMsr_.svg</a></h4> 
+<img src="FRMsr/D_FRMsr_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=1251 <br>
+Youngest age at first (selected) pass 51.08, oldest age 97.00<br>
+Interval (in months) between two waves: Min=1 Max=33 Mean=24.32<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="FRMsr/ILK_FRMsr.txt">FRMsr/ILK_FRMsr.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="FRMsr/ILK_FRMsr-ori.png">FRMsr/ILK_FRMsr-ori.png</a><br> <img src="FRMsr/ILK_FRMsr-ori.png">
+<br>- and by state of destination <a href="FRMsr/ILK_FRMsr-dest.png">FRMsr/ILK_FRMsr-dest.png</a><br> <img src="FRMsr/ILK_FRMsr-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="FRMsr/ILK_FRMsr-p1j.png">FRMsr/ILK_FRMsr-p1j.png</a><br>
+ <img src="FRMsr/ILK_FRMsr-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="FRMsr/ILK_FRMsr-p2j.png">FRMsr/ILK_FRMsr-p2j.png</a><br>
+ <img src="FRMsr/ILK_FRMsr-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>  -4.7834271</td><td>   0.0762270</td></tr>
+<tr><td>13</td><td> -20.6838639</td><td>   0.2241339</td></tr>
+<tr><td>21</td><td>  15.3314366</td><td>   0.2670406</td></tr>
+<tr><td>23</td><td>   5.2260531</td><td>   0.3434597</td></tr>
+</table>
+
+
+<p>The Wald test results are output only if the maximimzation of the Likelihood is performed (mle=1)
+</br>Parameters, Wald tests and Wald-based confidence intervals
+</br> W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+</br> And Wald-based confidence intervals plus and minus 1.96 * W 
+ </br> It might be better to visualize the covariance matrix. See the page '<a href="FRMsr-cov.htm">Matrix of variance-covariance of one-step probabilities and its graphs</a>'.
+</br>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr valign=top><td>12</td><td><b>  -4.7834271</b></br> (   0.8343722)</br>W=  -5.733</br>[  -6.4187966;  -3.1480576]</br></td><td><b>   0.0762270</b></br> (   0.0130659)</br>W=   5.834</br>[   0.0506178;   0.1018363]</br></td></tr>
+<tr valign=top><td>13</td><td><b> -20.6838639</b></br> (   2.6003230)</br>W=  -7.954</br>[ -25.7804970; -15.5872308]</br></td><td><b>   0.2241339</b></br> (   0.0317868)</br>W=   7.051</br>[   0.1618318;   0.2864359]</br></td></tr>
+<tr valign=top><td>21</td><td>  15.3314366 (66117.4040850)</br>W=   0.000</br>[-129574.7805700;129605.4434431]</br></td><td><b>   0.2670406</b></br> (   0.0330717)</br>W=   8.075</br>[   0.2022201;   0.3318612]</br></td></tr>
+<tr valign=top><td>23</td><td>   5.2260531 (66117.4140765)</br>W=   0.000</br>[-129584.9055369;129595.3576431]</br></td><td><b>   0.3434597</b></br> (   0.0426625)</br>W=   8.051</br>[   0.2598412;   0.4270781]</br></td></tr>
+</table>
+<ul><li><a href='#firstorder'>Result files (first order: no variance)</a>
+    <li><a href='#secondorder'>Result files (second order (variance)</a>
+ </ul><ul><li><h4><a name='firstorder'>Result files (first order: no variance)</a></h4>
+<li>- Observed frequency between two states (during the period defined between 1/1/2013 and 1/9/2018): <a href="FRMsr/PHTMFR_FRMsr.htm">FRMsr/PHTMFR_FRMsr.htm</a> (html file)<br/>
+<li> - Observed prevalence (cross-sectional prevalence) in each state (during the period defined between 1/1/2013 and 1/9/2018): <a href="FRMsr/PHTM_FRMsr.htm">FRMsr/PHTM_FRMsr.htm</a> (html file) ,  <a href="FRMsr/P_FRMsr.txt">FRMsr/P_FRMsr.txt</a> (text file) <br>
+ - Estimated transition probabilities over 3 (stepm) months: <a href="FRMsr/PIJ_FRMsr.txt">FRMsr/PIJ_FRMsr.txt</a><br>
+  - Estimated back transition probabilities over 3 (stepm) months: <a href="FRMsr/PIJB_FRMsr.txt">FRMsr/PIJB_FRMsr.txt</a><br>
+  - Period (forward) prevalence in each health state: <a href="FRMsr/PL_FRMsr.txt">FRMsr/PL_FRMsr.txt</a> <br>
+ - Backward prevalence in each health state: <a href="FRMsr/PLB_FRMsr.txt">FRMsr/PLB_FRMsr.txt</a> <br>
+ - (a) Life expectancies by health status at initial age, e<sub>i.</sub> (b) health expectancies by health status at initial age, e<sub>ij</sub> . If one or more covariates are included, specific tables for each value of the covariate are output in sequences within the same file (estepm=12 months):    <a href="FRMsr/E_FRMsr.txt">FRMsr/E_FRMsr.txt</a> <br>
+ 
+<ul><li><b>Graphs (first order)</b></li><p> 
+<ul> 
+</ul></ul>
+<br><li><h4> <a name='secondorder'>Result files (second order: variances)</a></h4>
+ - Parameter file with estimated parameters and covariance matrix: <a href="rFRMsr.txt">rFRMsr.txt</a> <br>  - 95% confidence intervals and Wald tests of the estimated parameters are in the log file if optimization has been done (mle != 0).<br> But because parameters are usually highly correlated (a higher incidence of disability and a higher incidence of recovery can give very close observed transition) it might be very useful to look not only at linear confidence intervals estimated from the variances but at the covariance matrix. And instead of looking at the estimated coefficients (parameters) of the logistic regression, it might be more meaningful to visualize the covariance matrix of the one-step probabilities. See page 'Matrix of variance-covariance of one-step probabilities' below. 
+ - Standard deviation of one-step probabilities: <a href="FRMsr/PROB_FRMsr.txt">FRMsr/PROB_FRMsr.txt</a> <br>
+ - Variance-covariance of one-step probabilities: <a href="FRMsr/PROBCOV_FRMsr.txt">FRMsr/PROBCOV_FRMsr.txt</a> <br>
+ - Correlation matrix of one-step probabilities: <a href="FRMsr/PROBCOR_FRMsr.txt">FRMsr/PROBCOR_FRMsr.txt</a> <br>
+ - Variances and covariances of health expectancies by age and <b>initial health status</b> (cov(e<sup>ij</sup>,e<sup>kl</sup>)(estepm=12 months):    <a href="FRMsr/CVE_FRMsr.txt">FRMsr/CVE_FRMsr.txt</a> <br>
+</li> - (a) Health expectancies by health status at initial age (e<sup>ij</sup>) and standard errors (in parentheses) (b) life expectancies and standard errors (e<sup>i.</sup>=e<sup>i1</sup>+e<sup>i2</sup>+...)(estepm=12 months):    <a href="FRMsr/STDE_FRMsr.txt">FRMsr/STDE_FRMsr.txt</a> <br>
+</li> - Variances and covariances of health expectancies by age. Status (i) based health expectancies (in state j), e<sup>ij</sup> are weighted by the forward (period) prevalences in each state i (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="FRMsr/V_FRMsr.txt">FRMsr/V_FRMsr.txt</a><br>
+ - Total life expectancy and total health expectancies to be spent in each health state e<sup>.j</sup> with their standard errors (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="FRMsr/T_FRMsr.txt">FRMsr/T_FRMsr.txt</a> <br>
+ - Standard deviation of forward (period) prevalences: <a href="FRMsr/VPL_FRMsr.txt">FRMsr/VPL_FRMsr.txt</a> <br>
+ <ul><li><b>Graphs (second order)</b></li><p> 
+<ul> 
+</ul></ul>
+<li><h4> Computing and drawing one step probabilities with their confidence intervals</h4></li>
+
+
+<li><h4> <a href="FRMsr-cov.htm">Matrix of variance-covariance of one-step probabilities (drawings)</a></h4> this page is important in order to visualize confidence intervals and especially correlation between disability and recovery, or more generally, way in and way back. File FRMsr-cov.htm</li>
+<br>Local time at start Mon May 27 21:41:28 2024
+<br>Local time at end   Mon May 27 21:41:40 2024
+<br>
+</body></html>

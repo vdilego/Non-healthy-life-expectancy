@@ -1,0 +1,104 @@
+<html><head>
+<meta charset="utf-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMaCh PLMgali.htm</title></head>
+ <body><font size="7"><a href=http:/euroreves.ined.fr/imach>IMaCh for Interpolated Markov Chain</a> </font><br>
+<font size="3">Sponsored by Copyright (C)  2002-2015 <a href=http://www.ined.fr>INED</a>-EUROREVES-Institut de longévité-2013-2022-Japan Society for the Promotion of Sciences 日本学術振興会 (<a href=https://www.jsps.go.jp/english/e-grants/>Grant-in-Aid for Scientific Research 25293121</a>) - <a href=https://software.intel.com/en-us>Intel Software 2015-2018</a></font><br> 
+<hr size="2" color="#EC5E5E"> 
+<font size="2">IMaCh-0.99r45 <br> $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $</font> <hr size="2" color="#EC5E5E"> 
+This file: <a href="PLMgali.htm">PLMgali.htm</a></br>Title=gali <br>Datafile=<a href="dataPLMgali.txt">dataPLMgali.txt</a> Firstpass=1 Lastpass=2 Stepm=3 Weight=1 Model=1+age+<br>
+
+<hr  size="2" color="#EC5E5E"> <ul><li><h4>Parameter files</h4>
+ - Parameter file: <a href="PLMgali.txt">PLMgali.txt</a><br>
+ - Copy of the parameter file: <a href="orPLMgali.txt">orPLMgali.txt</a><br>
+ - Log file of the run: <a href="PLMgali.log">PLMgali.log</a><br>
+ - Gnuplot file name: <a href="PLMgali.gp">PLMgali.gp</a><br>
+ - Date and time at start: Mon May 27 10:58:34 2024
+</ul>
+
+<h4>Parameter line 2</h4><ul><li>Tolerance for the convergence of the likelihood: ftol=1e-018 
+<li>Interval for the elementary matrix (in month): stepm=3
+<li>Number of fixed dummy covariates: ncovcol=0 
+<li> Number of fixed quantitative variables: nqv=0 
+<li> Number of time varying (wave varying) dummy covariates: ntv=0 
+<li>Number of time varying  quantitative covariates: nqtv=0 
+<li>Weights column 
+<br>Number of alive states: nlstate=2 <br>Number of death states (not really implemented): ndeath=1 
+<li>Number of waves: maxwav=2 
+<li>Parameter for maximization (1), using parameter values (0), for design of parameters and variance-covariance matrix: mle=1 
+<li>Does the weight column be taken into account (1), or not (0): weight=1</ul>
+<h4> Diagram of states <a href="PLMgali/D_PLMgali_.svg">PLMgali/D_PLMgali_.svg</a></h4> 
+<img src="PLMgali/D_PLMgali_.svg">
+<h4>Some descriptive statistics </h4>
+<br>Number of (used) observations=661 <br>
+Youngest age at first (selected) pass 51.08, oldest age 95.42<br>
+Interval (in months) between two waves: Min=1 Max=33 Mean=24.26<br>
+
+<br>File of contributions to the likelihood computed with optimized parameters mle = 1. You should at least run with mle >= 1 to get starting values corresponding to the optimized parameters in order to visualize the real contribution of each individual/wave: <a href="PLMgali/ILK_PLMgali.txt">PLMgali/ILK_PLMgali.txt</a><br>
+
+<br>Equation of the model: <b>model=1+age+</b><br>
+<br>- The function drawn is -2Log(L) in Log scale: by state of origin <a href="PLMgali/ILK_PLMgali-ori.png">PLMgali/ILK_PLMgali-ori.png</a><br> <img src="PLMgali/ILK_PLMgali-ori.png">
+<br>- and by state of destination <a href="PLMgali/ILK_PLMgali-dest.png">PLMgali/ILK_PLMgali-dest.png</a><br> <img src="PLMgali/ILK_PLMgali-dest.png">
+<br>- Probability p<sub>1j</sub> by origin 1 and destination j. Dot's sizes are related to corresponding weight: <a href="PLMgali/ILK_PLMgali-p1j.png">PLMgali/ILK_PLMgali-p1j.png</a><br>
+ <img src="PLMgali/ILK_PLMgali-p1j.png">
+<br>- Probability p<sub>2j</sub> by origin 2 and destination j. Dot's sizes are related to corresponding weight: <a href="PLMgali/ILK_PLMgali-p2j.png">PLMgali/ILK_PLMgali-p2j.png</a><br>
+ <img src="PLMgali/ILK_PLMgali-p2j.png">
+
+<ul><li> model=1+age+
+ </ul>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr><td>12</td><td>  -4.8971875</td><td>   0.0202286</td></tr>
+<tr><td>13</td><td>  -6.5597390</td><td>   0.0203411</td></tr>
+<tr><td>21</td><td>  -0.9821877</td><td>  -0.0258149</td></tr>
+<tr><td>23</td><td>  -9.3077004</td><td>   0.0790771</td></tr>
+</table>
+
+
+<p>The Wald test results are output only if the maximimzation of the Likelihood is performed (mle=1)
+</br>Parameters, Wald tests and Wald-based confidence intervals
+</br> W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+</br> And Wald-based confidence intervals plus and minus 1.96 * W 
+ </br> It might be better to visualize the covariance matrix. See the page '<a href="PLMgali-cov.htm">Matrix of variance-covariance of one-step probabilities and its graphs</a>'.
+</br>
+<table style="text-align:center; border: 1px solid">
+<tr><th>Model=</th><th>1</th><th>+ age</th></tr>
+<tr valign=top><td>12</td><td><b>  -4.8971875</b></br> (   0.8995688)</br>W=  -5.444</br>[  -6.6603424;  -3.1340326]</br></td><td>   0.0202286 (   0.0133794)</br>W=   1.512</br>[  -0.0059949;   0.0464522]</br></td></tr>
+<tr valign=top><td>13</td><td><b>  -6.5597390</b></br> (   1.9482465)</br>W=  -3.367</br>[ -10.3783021;  -2.7411760]</br></td><td>   0.0203411 (   0.0301865)</br>W=   0.674</br>[  -0.0388245;   0.0795067]</br></td></tr>
+<tr valign=top><td>21</td><td>  -0.9821877 (   1.1133205)</br>W=  -0.882</br>[  -3.1642958;   1.1999204]</br></td><td>  -0.0258149 (   0.0167002)</br>W=  -1.546</br>[  -0.0585474;   0.0069175]</br></td></tr>
+<tr valign=top><td>23</td><td><b>  -9.3077004</b></br> (   1.5201400)</br>W=  -6.123</br>[ -12.2871747;  -6.3282261]</br></td><td><b>   0.0790771</b></br> (   0.0194029)</br>W=   4.076</br>[   0.0410475;   0.1171067]</br></td></tr>
+</table>
+<ul><li><a href='#firstorder'>Result files (first order: no variance)</a>
+    <li><a href='#secondorder'>Result files (second order (variance)</a>
+ </ul><ul><li><h4><a name='firstorder'>Result files (first order: no variance)</a></h4>
+<li>- Observed frequency between two states (during the period defined between 1/1/2013 and 1/9/2018): <a href="PLMgali/PHTMFR_PLMgali.htm">PLMgali/PHTMFR_PLMgali.htm</a> (html file)<br/>
+<li> - Observed prevalence (cross-sectional prevalence) in each state (during the period defined between 1/1/2013 and 1/9/2018): <a href="PLMgali/PHTM_PLMgali.htm">PLMgali/PHTM_PLMgali.htm</a> (html file) ,  <a href="PLMgali/P_PLMgali.txt">PLMgali/P_PLMgali.txt</a> (text file) <br>
+ - Estimated transition probabilities over 3 (stepm) months: <a href="PLMgali/PIJ_PLMgali.txt">PLMgali/PIJ_PLMgali.txt</a><br>
+  - Estimated back transition probabilities over 3 (stepm) months: <a href="PLMgali/PIJB_PLMgali.txt">PLMgali/PIJB_PLMgali.txt</a><br>
+  - Period (forward) prevalence in each health state: <a href="PLMgali/PL_PLMgali.txt">PLMgali/PL_PLMgali.txt</a> <br>
+ - Backward prevalence in each health state: <a href="PLMgali/PLB_PLMgali.txt">PLMgali/PLB_PLMgali.txt</a> <br>
+ - (a) Life expectancies by health status at initial age, e<sub>i.</sub> (b) health expectancies by health status at initial age, e<sub>ij</sub> . If one or more covariates are included, specific tables for each value of the covariate are output in sequences within the same file (estepm=12 months):    <a href="PLMgali/E_PLMgali.txt">PLMgali/E_PLMgali.txt</a> <br>
+ 
+<ul><li><b>Graphs (first order)</b></li><p> 
+<ul> 
+</ul></ul>
+<br><li><h4> <a name='secondorder'>Result files (second order: variances)</a></h4>
+ - Parameter file with estimated parameters and covariance matrix: <a href="rPLMgali.txt">rPLMgali.txt</a> <br>  - 95% confidence intervals and Wald tests of the estimated parameters are in the log file if optimization has been done (mle != 0).<br> But because parameters are usually highly correlated (a higher incidence of disability and a higher incidence of recovery can give very close observed transition) it might be very useful to look not only at linear confidence intervals estimated from the variances but at the covariance matrix. And instead of looking at the estimated coefficients (parameters) of the logistic regression, it might be more meaningful to visualize the covariance matrix of the one-step probabilities. See page 'Matrix of variance-covariance of one-step probabilities' below. 
+ - Standard deviation of one-step probabilities: <a href="PLMgali/PROB_PLMgali.txt">PLMgali/PROB_PLMgali.txt</a> <br>
+ - Variance-covariance of one-step probabilities: <a href="PLMgali/PROBCOV_PLMgali.txt">PLMgali/PROBCOV_PLMgali.txt</a> <br>
+ - Correlation matrix of one-step probabilities: <a href="PLMgali/PROBCOR_PLMgali.txt">PLMgali/PROBCOR_PLMgali.txt</a> <br>
+ - Variances and covariances of health expectancies by age and <b>initial health status</b> (cov(e<sup>ij</sup>,e<sup>kl</sup>)(estepm=12 months):    <a href="PLMgali/CVE_PLMgali.txt">PLMgali/CVE_PLMgali.txt</a> <br>
+</li> - (a) Health expectancies by health status at initial age (e<sup>ij</sup>) and standard errors (in parentheses) (b) life expectancies and standard errors (e<sup>i.</sup>=e<sup>i1</sup>+e<sup>i2</sup>+...)(estepm=12 months):    <a href="PLMgali/STDE_PLMgali.txt">PLMgali/STDE_PLMgali.txt</a> <br>
+</li> - Variances and covariances of health expectancies by age. Status (i) based health expectancies (in state j), e<sup>ij</sup> are weighted by the forward (period) prevalences in each state i (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="PLMgali/V_PLMgali.txt">PLMgali/V_PLMgali.txt</a><br>
+ - Total life expectancy and total health expectancies to be spent in each health state e<sup>.j</sup> with their standard errors (if popbased=1, an additional computation is done using the cross-sectional prevalences, i.e population based) (estepm=12 months): <a href="PLMgali/T_PLMgali.txt">PLMgali/T_PLMgali.txt</a> <br>
+ - Standard deviation of forward (period) prevalences: <a href="PLMgali/VPL_PLMgali.txt">PLMgali/VPL_PLMgali.txt</a> <br>
+ <ul><li><b>Graphs (second order)</b></li><p> 
+<ul> 
+</ul></ul>
+<li><h4> Computing and drawing one step probabilities with their confidence intervals</h4></li>
+
+
+<li><h4> <a href="PLMgali-cov.htm">Matrix of variance-covariance of one-step probabilities (drawings)</a></h4> this page is important in order to visualize confidence intervals and especially correlation between disability and recovery, or more generally, way in and way back. File PLMgali-cov.htm</li>
+<br>Local time at start Mon May 27 10:58:34 2024
+<br>Local time at end   Mon May 27 10:59:13 2024
+<br>
+</body></html>

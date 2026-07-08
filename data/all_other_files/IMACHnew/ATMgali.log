@@ -1,0 +1,526 @@
+Log filename:ATMgali.log
+Version 0.99r45 $Revision: 1.353 $ $Date: 2023/05/08 18:48:22 $
+Enter the parameter file name: 
+pathimach=C:\PROGRA~1\IMACH-~2.99R\bin\
+pathtot=C:\Users\mmusz\Dropbox\gender_paradox\data\IMACHnew\ATMgali.txt
+ path=C:\Users\mmusz\Dropbox\gender_paradox\data\IMACHnew\ 
+ optionfile=ATMgali.txt
+ optionfilext=txt
+ optionfilefiname='ATMgali'
+Compiled with: Microsoft Visual Studio for Windows (x64 and x86)  64-bit
+The programm is not running under WOW64 (i.e probably on a 64bit Windows).
+Local time (at start): Tue Feb 04 20:24:32 2025
+title=gali datafile=dataATMgali.txt lastobs=5000 firstpass=1 lastpass=2
+ftol=1.000000e-018 stepm=6 ncovcol=0 nqv=0 ntv=0 nqtv=0 nlstate=2 ndeath=1 maxwav=2 mle=1 weight=1
+model=1+age+
+12 -5.817461 0.042543
+13 -14.763141 0.139669
+21 -0.128734 -0.017027
+23 -7.487972 0.079847
+# Scales (for hessian or gradient estimation)
+12 0.000000e+000 0.000000e+000
+13 0.000000e+000 0.000000e+000
+21 0.000000e+000 0.000000e+000
+23 0.000000e+000 0.000000e+000
+# Covariance matrix
+121 0.00000e+000
+122 0.00000e+000 0.00000e+000
+131 0.00000e+000 0.00000e+000 0.00000e+000
+132 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000
+211 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000
+212 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000
+231 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000
+232 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000 0.00000e+000
+
+Model=1+age+
+Typevar: 0 for simple covariate (dummy, quantitative, fixed or varying), 1 for age product, 2 for  product, 3 for double product with age  
+Fixed[k] 0=fixed (product or simple), 1 varying, 2 fixed with age product, 3 varying with age product 
+Dummy[k] 0=dummy (0 1), 1 quantitative (single or product without age), 2 dummy with age product, 3 quant with age product
+ncoveff=0, nqfveff=0, ntveff=0, nqtveff=0, cptcovn=0
+ncovf=0, ncovv=0, ncova=0, nsd=0, nsq=0
+Warning: The value of parameter lastobs=5000 is big compared to the 
+  effective number of cases imx=1098, please adjust, 
+  otherwise you are allocating more memory than necessary.
+Total number of individuals= 1098, Agemin = 51.25, Agemax= 92.83
+
+Information, you have to check 0 informations which haven't been logged!
+Delay (in months) between two waves Min=2 (for indiviudal 706) Max=32 (891) Mean=24.694900
+
+ Age 51 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=32.3% 2.=0 prev[2]=67.7% 11=0 21=0
+Age 52 1.=0 loss[1]=0.0% 2.=0 loss[2]=NaNQ% 1.=0 prev[1]=100.0% 2.=0 prev[2]=0.0% 11=0
+Age 53 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=76.9% 2.=0 prev[2]=23.1% 11=1 21=0
+Age 54 1.=3 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=3 prev[1]=95.8% 2.=0 prev[2]=4.2% 11=3 21=0
+Age 55 1.=6 loss[1]=0.0% 2.=1 loss[2]=0.0% 1.=6 prev[1]=81.6% 2.=1 prev[2]=18.4% 11=6 12=0 21=0 22=1
+Age 56 1.=4 loss[1]=0.0% 2.=1 loss[2]=0.0% 1.=4 prev[1]=75.3% 2.=1 prev[2]=24.7% 11=4 12=0 21=1 22=0
+Age 57 1.=5 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=5 prev[1]=98.8% 2.=0 prev[2]=1.2% 11=5 12=0 22=0
+Age 58 1.=5 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=5 prev[1]=97.1% 2.=0 prev[2]=2.9% 11=4 12=0 22=0
+Age 59 1.=4 loss[1]=0.0% 2.=1 loss[2]=0.0% 1.=4 prev[1]=89.2% 2.=1 prev[2]=10.8% 11=4 12=0 22=1
+Age 60 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=94.6% 2.=0 prev[2]=5.4% 11=2 12=0 13=0 21=0 22=0
+Age 61 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=88.9% 2.=0 prev[2]=11.1% 11=2 12=0 13=0 21=0 22=0 23=0
+Age 62 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=92.5% 2.=0 prev[2]=7.5% 11=2 12=0 13=0 22=0
+Age 63 1.=3 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=3 prev[1]=87.1% 2.=0 prev[2]=12.9% 11=2 12=0 13=0 22=0 23=0
+Age 64 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=82.6% 2.=0 prev[2]=17.4% 11=2 13=0 21=0 22=0 23=0
+Age 65 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=88.0% 2.=0 prev[2]=12.0% 11=2 12=0 21=0 22=0 23=0
+Age 66 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=82.7% 2.=0 prev[2]=17.3% 11=2 12=0 21=0 22=0 23=0
+Age 67 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=91.3% 2.=0 prev[2]=8.7% 11=2 12=0 21=0 22=0
+Age 68 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=82.8% 2.=0 prev[2]=17.2% 11=2 12=0 13=0 21=0 22=0 23=0
+Age 69 1.=2 loss[1]=0.0% 2.=1 loss[2]=0.0% 1.=2 prev[1]=81.4% 2.=1 prev[2]=18.6% 11=2 12=0 13=0 21=0 22=0 23=0
+Age 70 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=91.7% 2.=0 prev[2]=8.3% 11=1 12=0 13=0 21=0 22=0
+Age 71 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=82.8% 2.=0 prev[2]=17.2% 11=2 12=0 21=0 22=0 23=0
+Age 72 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=86.1% 2.=0 prev[2]=13.9% 11=1 12=0 21=0 22=0
+Age 73 1.=2 loss[1]=0.0% 2.=1 loss[2]=0.0% 1.=2 prev[1]=76.7% 2.=1 prev[2]=23.3% 11=2 12=0 13=0 21=0 22=0 23=0
+Age 74 1.=2 loss[1]=0.0% 2.=1 loss[2]=0.0% 1.=2 prev[1]=78.9% 2.=1 prev[2]=21.1% 11=2 12=0 13=0 21=0 22=0 23=0
+Age 75 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=86.7% 2.=0 prev[2]=13.3% 11=2 12=0 21=0 22=0 23=0
+Age 76 1.=2 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=2 prev[1]=90.4% 2.=0 prev[2]=9.6% 11=2 12=0 13=0 21=0 22=0 23=0
+Age 77 1.=1 loss[1]=0.0% 2.=0 loss[2]=NaNQ% 1.=1 prev[1]=100.0% 2.=0 prev[2]=0.0% 11=1 12=0 13=0
+Age 78 1.=1 loss[1]=0.0% 2.=1 loss[2]=0.0% 1.=1 prev[1]=61.1% 2.=1 prev[2]=38.9% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 79 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=81.0% 2.=0 prev[2]=19.0% 11=1 12=0 13=0 21=0 22=0 23=0
+Age 80 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=90.0% 2.=0 prev[2]=10.0% 11=1 12=0 13=0 21=0 22=0
+Age 81 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=72.1% 2.=0 prev[2]=27.9% 11=1 12=0 13=0 22=0 23=0
+Age 82 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=86.6% 2.=0 prev[2]=13.4% 11=1 13=0 22=0 23=0
+Age 83 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=79.9% 2.=0 prev[2]=20.1% 11=0 12=0 21=0
+Age 84 1.=1 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=1 prev[1]=86.2% 2.=0 prev[2]=13.8% 11=0 12=0 13=0 21=0 23=0
+Age 85 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=81.1% 2.=0 prev[2]=18.9% 11=0 12=0 23=0
+Age 86 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=63.3% 2.=0 prev[2]=36.7% 11=0 21=0 22=0 23=0
+Age 87 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=37.1% 2.=0 prev[2]=62.9% 11=0 13=0 21=0 22=0 23=0
+Age 88 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=27.0% 2.=0 prev[2]=73.0% 11=0 13=0 21=0 22=0 23=0
+Age 89 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=51.4% 2.=0 prev[2]=48.6% 11=0 21=0 23=0
+Age 90 1.=0 loss[1]=0.0% 2.=0 loss[2]=0.0% 1.=0 prev[1]=26.9% 2.=0 prev[2]=73.1% 11=0 22=0 23=0
+Age 91 1.=0 loss[1]=NaNQ% 2.=0 loss[2]=0.0% 1.=0 prev[1]=0.0% 2.=0 prev[2]=100.0% 22=0
+Age 92 1.=0 loss[1]=NaNQ% 2.=0 loss[2]=NaNQ% 1.=0 prev[1]=NaNQ% 2.=0 prev[2]=NaNQ%
+1 1.=0 loss[1]=NaNQ% 2.=0 loss[2]=NaNQ% 1.=0 prev[1]=NaNQ% 2.=0 prev[2]=NaNQ%
+0 1.=0 loss[1]=NaNQ% 2.=0 loss[2]=NaNQ% 1.=0 prev[1]=NaNQ% 2.=0 prev[2]=NaNQ%
+Total 1.=71 loss[1]=0.0% 2.=13 loss[2]=0.0% 1.=71 prev[1]=84.7% 2.=13 prev[2]=15.3% 11=63 12=6 13=2 21=4 22=6 23=3
+
+
+12   -5.8174611 ln(6/63)=   -2.4244762 
+13  -14.7631411 ln(2/63)=   -3.5771674 
+21   -0.1287339 ln(4/6)=   -0.3260067 
+23   -7.4879716 ln(3/6)=   -0.6853850 
+
+ -1-1=0 -10=0 -11=0 -12=0 -13=0 0-1=0 00=0 01=0 02=0 03=0 1-1=0 10=0 11=63 12=6 13=2 2-1=0 20=0 21=4 22=6 23=3 3-1=0 30=0 31=0 32=0 33=0
+Powell
+
+Powell iter=1 Big Iter=1 -2*LL=1287.176294226754 gain=0 0 sec. 0 sec.
+#model=  1      +     age 
+12   -5.8174611    0.0425431 
+13  -14.7631411    0.1396694 
+21   -0.1287339   -0.0170266 
+23   -7.4879716    0.0798473 
+1.........2.............3.......4....................5........6..............7........8.................
+Powell iter=2 Big Iter=2 -2*LL=1202.098954187529 gain=85.1 0 sec. 0 sec.
+#model=  1      +     age 
+12   -6.2751405    0.0424993 
+13  -16.1292384    0.1400235 
+21   -0.7382558   -0.0168342 
+23   -8.2842778    0.0797885 
+
+Considering the time needed for this last iteration #2: 0 seconds,
+   - if your program needs 1 BIG iterations  (2 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 20:24:32 2025 (current time is Tue Feb 04 20:24:32 2025);
+   - if your program needs 11 BIG iterations  (22 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 20:24:32 2025 (current time is Tue Feb 04 20:24:32 2025);
+   - if your program needs 21 BIG iterations  (42 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 20:24:32 2025 (current time is Tue Feb 04 20:24:32 2025);
+   - if your program needs 31 BIG iterations  (62 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 20:24:32 2025 (current time is Tue Feb 04 20:24:32 2025);
+1..........2..............3.........4...................5.........6..............7.........8.................
+Powell iter=3 Big Iter=2 -2*LL=1198.593647909625 gain=3.51 0 sec. 0 sec.
+#model=  1      +     age 
+12   -6.3964738    0.0425230 
+13  -15.7414399    0.1400978 
+21   -0.8990953   -0.0168628 
+23   -8.3470746    0.0797351 
+
+Considering the time needed for this last iteration #3: 0 seconds,
+   - if your program needs 1 BIG iterations  (2 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 20:24:32 2025 (current time is Tue Feb 04 20:24:32 2025);
+   - if your program needs 11 BIG iterations  (22 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 20:24:32 2025 (current time is Tue Feb 04 20:24:32 2025);
+   - if your program needs 21 BIG iterations  (42 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 20:24:32 2025 (current time is Tue Feb 04 20:24:32 2025);
+   - if your program needs 31 BIG iterations  (62 iterations) to converge, convergence will be 
+   reached in 0 day(s) 0 hour(s) 0 minute(s) 0 second(s) i.e.
+   on Tue Feb 04 20:24:32 2025 (current time is Tue Feb 04 20:24:32 2025);
+1.........2..................3..........4...................5.........6...............7.........8.........................Gaining to use new average direction of P0 P8 instead of biggest increase direction 1 :
+
+Powell iter=4 Big Iter=3 -2*LL=1198.276911939088 gain=0.317 0 sec. 0 sec.
+#model=  1      +     age 
+12   -6.4639113    0.0425222 
+13  -15.7088416    0.1401439 
+21   -0.9230373   -0.0169101 
+23   -8.3542623    0.0796779 
+1........................2...............3..........4...................5.........6...............7.........8.......
+Powell iter=5 Big Iter=3 -2*LL=1198.275429793829 gain=0.00148 0 sec. 0 sec.
+#model=  1      +     age 
+12   -6.4627619    0.0425056 
+13  -15.7112100    0.1401793 
+21   -0.9201430   -0.0169530 
+23   -8.3504786    0.0796786 
+1.................2...............3..........4...................5.........6...............7.........8..............Gaining to use new average direction of P0 P8 instead of biggest increase direction 1 :
+
+Powell iter=6 Big Iter=4 -2*LL=1198.210285157385 gain=0.0651 0 sec. 0 sec.
+#model=  1      +     age 
+12   -6.3893174    0.0414406 
+13  -15.8910335    0.1424009 
+21   -0.7395257   -0.0196110 
+23   -8.1119320    0.0765736 
+1.............2...............3..........4...................5.........6...............7..................8.............directest= 0.063564370314 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000000574552, f1= 1198.210285157385,f2= 1198.210100200195,f3= 1198.273764887184, del= 0.000142636933
+f1-2f2+f3= 0.063849644180, f1-f2-del= 0.000042320257, f1-f3= -0.063479729799
+
+Powell iter=7 Big Iter=4 -2*LL=1198.210100200195 gain=0.000185 0 sec. 0 sec.
+#model=  1      +     age 
+12   -6.3892953    0.0414437 
+13  -15.8953960    0.1424276 
+21   -0.7396876   -0.0196086 
+23   -8.1118284    0.0765723 
+1.......2..............3..........4...................5.............6...............7............8.................Gaining to use new average direction of P0 P8 instead of biggest increase direction 3 :
+
+Powell iter=8 Big Iter=5 -2*LL=1198.208656895361 gain=0.00144 0 sec. 0 sec.
+#model=  1      +     age 
+12   -6.3954854    0.0415882 
+13  -15.9686139    0.1433149 
+21   -0.7433304   -0.0195405 
+23   -8.1061908    0.0765144 
+1.......2.......................3..............4.......................5.........6................7.............8......
+Powell iter=9 Big Iter=5 -2*LL=1198.207173987936 gain=0.00148 1 sec. 1 sec.
+#model=  1      +     age 
+12   -6.4029416    0.0416766 
+13  -16.0116521    0.1438540 
+21   -0.7465173   -0.0194988 
+23   -8.1029746    0.0764750 
+1.......2..................3..............4..................5...........6................7.........8.............Gaining to use new average direction of P0 P8 instead of biggest increase direction 1 :
+
+Powell iter=10 Big Iter=6 -2*LL=1198.206369476171 gain=0.000805 0 sec. 1 sec.
+#model=  1      +     age 
+12   -6.4139184    0.0418072 
+13  -16.0742775    0.1446392 
+21   -0.7516489   -0.0194305 
+23   -8.0986935    0.0764228 
+1...............2..................3..............4.........................5...................6...............7....................8..........directest= 0.000276091258 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000000000000, f1= 1198.206369476171,f2= 1198.206365539704,f3= 1198.206641657923, del= 0.000001981714
+f1-2f2+f3= 0.000280054686, f1-f2-del= 0.000001954753, f1-f3= -0.000272181752
+
+Powell iter=11 Big Iter=6 -2*LL=1198.206365539704 gain=3.94e-006 0 sec. 1 sec.
+#model=  1      +     age 
+12   -6.4138027    0.0418052 
+13  -16.0739409    0.1446347 
+21   -0.7517306   -0.0194294 
+23   -8.0986138    0.0764217 
+1...........2..................3.............4.......................5..........6.................7...................8................Gaining to use new average direction of P0 P8 instead of biggest increase direction 5 :
+
+Powell iter=12 Big Iter=7 -2*LL=1198.206244391338 gain=0.000121 0 sec. 1 sec.
+#model=  1      +     age 
+12   -6.4098901    0.0417513 
+13  -16.0848211    0.1447738 
+21   -0.7590375   -0.0193207 
+23   -8.0922349    0.0763399 
+1.......2..................3.................4...................5................6...................7...................8.............directest= 0.000116672277 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000000000000, f1= 1198.206244391338,f2= 1198.206243110209,f3= 1198.206360848317, del= 0.000001173480
+f1-2f2+f3= 0.000119019237, f1-f2-del= 0.000000107649, f1-f3= -0.000116456979
+
+Powell iter=13 Big Iter=7 -2*LL=1198.206243110209 gain=1.28e-006 0 sec. 1 sec.
+#model=  1      +     age 
+12   -6.4097280    0.0417477 
+13  -16.0830780    0.1447535 
+21   -0.7590767   -0.0193206 
+23   -8.0923649    0.0763410 
+1....................2..................3...........................4......................5.......6..................7......................8............................Gaining to use new average direction of P0 P8 instead of biggest increase direction 1 :
+
+Powell iter=14 Big Iter=8 -2*LL=1198.206242731373 gain=3.79e-007 0 sec. 1 sec.
+#model=  1      +     age 
+12   -6.4097178    0.0417467 
+13  -16.0818343    0.1447394 
+21   -0.7591201   -0.0193203 
+23   -8.0923248    0.0763401 
+1..........................2..................3.................4.......................5..........6..................7................8.........
+Powell iter=15 Big Iter=8 -2*LL=1198.206242375927 gain=3.55e-007 0 sec. 1 sec.
+#model=  1      +     age 
+12   -6.4097880    0.0417478 
+13  -16.0816882    0.1447372 
+21   -0.7591681   -0.0193196 
+23   -8.0922437    0.0763391 
+1................2.................3................4.........................5...........6.................7......................8...........Gaining to use new average direction of P0 P8 instead of biggest increase direction 2 :
+
+Powell iter=16 Big Iter=9 -2*LL=1198.206240608925 gain=1.77e-006 1 sec. 2 sec.
+#model=  1      +     age 
+12   -6.4106465    0.0417607 
+13  -16.0803885    0.1447198 
+21   -0.7595183   -0.0193142 
+23   -8.0915305    0.0763300 
+1..................2........................................3...................4........................5..........................6..................7.....................8...........directest= 0.000001463082 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000000000000, f1= 1198.206240608925,f2= 1198.206240608027,f3= 1198.206242071698, del= 0.000000000744
+f1-2f2+f3= 0.000001464569, f1-f2-del= 0.000000000155, f1-f3= -0.000001462773
+
+Powell iter=17 Big Iter=9 -2*LL=1198.206240608027 gain=8.98e-010 0 sec. 2 sec.
+#model=  1      +     age 
+12   -6.4106488    0.0417607 
+13  -16.0803810    0.1447198 
+21   -0.7595108   -0.0193143 
+23   -8.0915276    0.0763300 
+1.........................2...................3............................4.................................5.............................6......................7.................8.........................................Gaining to use new average direction of P0 P8 instead of biggest increase direction 2 :
+
+Powell iter=18 Big Iter=10 -2*LL=1198.206240607923 gain=1.04e-010 0 sec. 2 sec.
+#model=  1      +     age 
+12   -6.4106493    0.0417607 
+13  -16.0804021    0.1447200 
+21   -0.7595102   -0.0193143 
+23   -8.0915283    0.0763300 
+1.............................2......................................3.........................4.......................5...............................6..................7.......................8............................................directest= 0.000000000002 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000000000000, f1= 1198.206240607923,f2= 1198.206240607922,f3= 1198.206240607925, del= 0.000000000001
+f1-2f2+f3= 0.000000000005, f1-f2-del= 0.000000000000, f1-f3= -0.000000000002
+
+Powell iter=19 Big Iter=10 -2*LL=1198.206240607922 gain=1.36e-012 1 sec. 3 sec.
+#model=  1      +     age 
+12   -6.4106493    0.0417607 
+13  -16.0804021    0.1447200 
+21   -0.7595102   -0.0193143 
+23   -8.0915283    0.0763300 
+1................................2.......................................3..........................4.......................5...............................6....................7.....................8............................................directest= 0.000000000001 (if directest<0 or t<0 we include P0 Pn as new direction), t= -0.000000000000, f1= 1198.206240607922,f2= 1198.206240607922,f3= 1198.206240607923, del= 0.000000000000
+f1-2f2+f3= 0.000000000002, f1-f2-del= 0.000000000000, f1-f3= -0.000000000001
+
+Powell iter=20 Big Iter=11 -2*LL=1198.206240607922 gain=2.27e-013 0 sec. 3 sec.
+#model=  1      +     age 
+12   -6.4106493    0.0417607 
+13  -16.0804021    0.1447200 
+21   -0.7595102   -0.0193143 
+23   -8.0915283    0.0763300 
+1...............................2......................................3..........................4.....................5..............................6...................7.......................8...........................................
+#Number of iterations & function calls = 20 & 3416, -2 Log likelihood = 1198.206240607922
+# Parameters nlstate*nlstate*ncov a12*1 + b12 * age + ...
+#model=  1      +     age 
+12   -6.4106493    0.0417607 
+13  -16.0804021    0.1447200 
+21   -0.7595102   -0.0193143 
+23   -8.0915283    0.0763300 
+
+Calculation of the hessian matrix. Wait...
+1-2-3-4-5-6-7-8-.1-2.1-3.1-4.1-5.1-6.1-7.1-8.2-3.2-4.2-5.2-6.2-7.2-8.3-4.3-5.3-6.3-7.3-8.4-5.4-6.4-7.4-8.5-6.5-7.5-8.6-7.6-8.7-8
+
+Inverting the hessian to get the covariance matrix. Wait...
+
+#Hessian matrix#
+7.537547e+001 5.206069e+003 4.270557e+000 3.225784e+002 -1.458013e+001 -9.940713e+002 -2.679888e+000 -2.052663e+002 
+5.206069e+003 3.663322e+005 3.186230e+002 2.431632e+004 -9.912385e+002 -6.890040e+004 -2.059229e+002 -1.589287e+004 
+4.270557e+000 3.186230e+002 7.683479e+000 6.084430e+002 -1.706844e+000 -1.321627e+002 4.567079e+000 3.480801e+002 
+3.225784e+002 2.431632e+004 6.084430e+002 4.875445e+004 -1.331695e+002 -1.046021e+004 3.477664e+002 2.679657e+004 
+-1.458013e+001 -9.912385e+002 -1.706844e+000 -1.331695e+002 4.754132e+001 3.161765e+003 -3.306386e+000 -2.468259e+002 
+-9.940713e+002 -6.890040e+004 -1.321627e+002 -1.046021e+004 3.161765e+003 2.148607e+005 -2.449024e+002 -1.870332e+004 
+-2.679888e+000 -2.059229e+002 4.567079e+000 3.477664e+002 -3.306386e+000 -2.449024e+002 3.731594e+001 2.866383e+003 
+-2.052663e+002 -1.589287e+004 3.480801e+002 2.679657e+004 -2.468259e+002 -1.870332e+004 2.866383e+003 2.243098e+005 
+Parameters, Wald tests and Wald-based confidence intervals
+ W is simply the result of the division of the parameter by the square root of covariance of the parameter.
+ And Wald-based confidence intervals plus and minus 1.96 * W 
+  It might be better to visualize the covariance matrix. See the page 'Matrix of variance-covariance of one-step probabilities' and its graphs.
+12   -6.4106493(   0.8792188) W=  -7.291 CI=[  -8.1339181 ;   -4.6873804]    0.0417607(   0.0126431) W=   3.303 CI=[   0.0169803 ;    0.0665412] 
+13  -16.0804021(   3.4563940) W=  -4.652 CI=[ -22.8549344 ;   -9.3058699]    0.1447200(   0.0432067) W=   3.349 CI=[   0.0600350 ;    0.2294051] 
+21   -0.7595102(   1.0299905) W=  -0.737 CI=[  -2.7782916 ;    1.2592712]   -0.0193143(   0.0153481) W=  -1.258 CI=[  -0.0493965 ;    0.0107679] 
+23   -8.0915283(   1.2399280) W=  -6.526 CI=[ -10.5217871 ;   -5.6612694]    0.0763300(   0.0159373) W=   4.789 CI=[   0.0450928 ;    0.1075671] 
+# Scales (for hessian or gradient estimation)
+12 1.00000e-003 1.00000e-005
+13 3.00000e-003 1.00000e-005
+21 1.00000e-003 2.00000e-005
+23 1.00000e-003 2.00000e-005
+# Covariance matrix 
+# 121 Var(a12)
+# 122 Cov(b12,a12) Var(b12)
+#   ...
+# 232 Cov(b23,a12)  Cov(b23,b12) ... Var (b23)
+#121 Var(a12)
+#122 Cov(b12,a12) Var(b12)
+#131 Cov(a13,a12) Cov(a13,b12) Var(a13)
+#132 Cov(b13,a12) Cov(b13,b12) Cov(b13,a13) Var(b13)
+#211 Cov(a21,a12) Cov(a21,b12) Cov(a21,a13) Cov(a21,b13) Var(a21)
+#212 Cov(b21,a12) Cov(b21,b12) Cov(b21,a13) Cov(b21,b13) Cov(b21,a21) Var(b21)
+#231 Cov(a23,a12) Cov(a23,b12) Cov(a23,a13) Cov(a23,b13) Cov(a23,a21) Cov(a23,b21) Var(a23)
+#232 Cov(b23,a12) Cov(b23,b12) Cov(b23,a13) Cov(b23,b13) Cov(b23,a21) Cov(b23,b21) Cov(b23,a23) Var(b23)
+121 7.7302569e-001
+122 -1.10088e-002 1.5984770e-004
+131 -2.10413e-001 2.35922e-003 1.1946660e+001
+132 2.98913e-003 -3.62191e-005 -1.48406e-001 1.8668149e-003
+211 2.04286e-001 -2.96827e-003 1.56785e-001 -2.22004e-003 1.0608805e+000
+212 -2.95327e-003 4.38760e-005 -2.50139e-003 3.54799e-005 -1.56390e-002 2.3556332e-004
+231 5.17022e-002 -6.60063e-004 -9.10708e-001 1.11123e-002 9.55755e-002 -1.34901e-003 1.5374214e+000
+232 -7.85319e-004 1.07442e-005 1.07665e-002 -1.34037e-004 -1.35942e-003 1.97206e-005 -1.95673e-002 2.5399823e-004
+# agemin agemax for life expectancy, bage fage (if mle==0 ie no data nor Max likelihood).
+# Observed prevalence period
+begin-prev-date=1/1/2016 end-prev-date=1/9/2018 mov_average=0
+# Health expectancies computed from stable (period) prevalence (pop_based=0) or population based (1)
+pop_based=0
+# Prevalence forecasting and backcasting is skept here
+##prevforecast=0  starting-proj-date=1/1/1989 final-proj-date=1/1/1990 mobil_average=0
+#prevforecast=1 yearsfproj=10 mobil_average=0
+#prevbackcast=1 yearsbproj=10 mobil_average=1
+result:  .
+End of resultlines.
+
+Computing forward period (stable) prevalence: result on file 'PL_ATMgali.txt' 
+#************
+Computing pij: result on file 'PIJ_ATMgali.txt' 
+Computing standard deviation of one-step probabilities: result on file 'PROB_rATMgali.txt' 
+Computing matrix of variance covariance of one-step probabilities: result on file 'PROBCOV_ATMgali.txt' 
+and correlation matrix of one-step probabilities: result on file 'PROBCOR_ATMgali.txt' 
+50 13-12 mu 2.8456e-004 2.6179e-002 Var 1.4361e-007 4.7910e-005 cor -0.097 cov -2.5536e-007 Eig 4.791e-005 1.422e-007 1stv 0.005 -1.000 tan -187.061
+55 13-12 mu 5.8485e-004 3.2156e-002 Var 4.3415e-007 4.5655e-005 cor -0.112 cov -4.9810e-007 Eig 4.566e-005 4.287e-007 1stv 0.011 -1.000 tan -90.798
+60 13-12 mu 1.2010e-003 3.9463e-002 Var 1.2380e-006 4.1067e-005 cor -0.137 cov -9.7358e-007 Eig 4.109e-005 1.214e-006 1stv 0.024 -1.000 tan -40.934
+65 13-12 mu 2.4634e-003 4.8374e-002 Var 3.2811e-006 3.8493e-005 cor -0.175 cov -1.9624e-006 Eig 3.860e-005 3.172e-006 1stv 0.055 -0.998 tan -17.999
+70 13-12 mu 5.0443e-003 5.9196e-002 Var 8.0531e-006 4.9881e-005 cor -0.213 cov -4.2701e-006 Eig 5.031e-005 7.622e-006 1stv 0.101 -0.995 tan -9.897
+75 13-12 mu 1.0302e-002 7.2252e-002 Var 1.9710e-005 1.0180e-004 cor -0.235 cov -1.0546e-005 Eig 1.031e-004 1.838e-005 1stv 0.125 -0.992 tan -7.910
+80 13-12 mu 2.0951e-002 8.7812e-002 Var 6.4783e-005 2.4650e-004 cor -0.241 cov -3.0507e-005 Eig 2.515e-004 5.980e-005 1stv 0.161 -0.987 tan -6.120
+85 13-12 mu 4.2296e-002 1.0594e-001 Var 3.5569e-004 5.7689e-004 cor -0.231 cov -1.0446e-004 Eig 6.184e-004 3.142e-004 1stv 0.369 -0.929 tan -2.515
+90 13-12 mu 8.4279e-002 1.2616e-001 Var 2.3343e-003 1.2426e-003 cor -0.247 cov -4.2118e-004 Eig 2.478e-003 1.099e-003 1stv 0.946 -0.323 tan -0.341
+50 21-12 mu 2.9887e-001 2.6179e-002 Var 5.5359e-003 4.7910e-005 cor 0.227 cov 1.1698e-004 Eig 5.538e-003 4.542e-005 1stv 1.000 0.021 tan 0.021
+55 21-12 mu 2.7364e-001 3.2156e-002 Var 2.9555e-003 4.5655e-005 cor 0.228 cov 8.3923e-005 Eig 2.958e-003 4.324e-005 1stv 1.000 0.029 tan 0.029
+60 21-12 mu 2.4959e-001 3.9463e-002 Var 1.5305e-003 4.1067e-005 cor 0.231 cov 5.7791e-005 Eig 1.533e-003 3.883e-005 1stv 0.999 0.039 tan 0.039
+65 21-12 mu 2.2655e-001 4.8374e-002 Var 9.2570e-004 3.8493e-005 cor 0.232 cov 4.3880e-005 Eig 9.279e-004 3.633e-005 1stv 0.999 0.049 tan 0.049
+70 21-12 mu 2.0430e-001 5.9196e-002 Var 8.5846e-004 4.9881e-005 cor 0.233 cov 4.8192e-005 Eig 8.613e-004 4.702e-005 1stv 0.998 0.059 tan 0.059
+75 21-12 mu 1.8262e-001 7.2252e-002 Var 1.0938e-003 1.0180e-004 cor 0.230 cov 7.6619e-005 Eig 1.100e-003 9.592e-005 1stv 0.997 0.077 tan 0.077
+80 21-12 mu 1.6133e-001 8.7812e-002 Var 1.4402e-003 2.4650e-004 cor 0.223 cov 1.3316e-004 Eig 1.455e-003 2.318e-004 1stv 0.994 0.110 tan 0.110
+85 21-12 mu 1.4028e-001 1.0594e-001 Var 1.7501e-003 5.7689e-004 cor 0.215 cov 2.1645e-004 Eig 1.789e-003 5.382e-004 1stv 0.984 0.176 tan 0.179
+90 21-12 mu 1.1949e-001 1.2616e-001 Var 1.9240e-003 1.2426e-003 cor 0.203 cov 3.1380e-004 Eig 2.046e-003 1.120e-003 1stv 0.932 0.364 tan 0.390
+50 23-12 mu 2.3341e-002 2.6179e-002 Var 1.1430e-004 4.7910e-005 cor 0.029 cov 2.1512e-006 Eig 1.144e-004 4.784e-005 1stv 0.999 0.032 tan 0.032
+55 23-12 mu 3.4475e-002 3.2156e-002 Var 1.7523e-004 4.5655e-005 cor 0.038 cov 3.3918e-006 Eig 1.753e-004 4.557e-005 1stv 1.000 0.026 tan 0.026
+60 23-12 mu 5.0727e-002 3.9463e-002 Var 2.5234e-004 4.1067e-005 cor 0.053 cov 5.3899e-006 Eig 2.525e-004 4.093e-005 1stv 1.000 0.025 tan 0.025
+65 23-12 mu 7.4278e-002 4.8374e-002 Var 3.3999e-004 3.8493e-005 cor 0.078 cov 8.9649e-006 Eig 3.403e-004 3.823e-005 1stv 1.000 0.030 tan 0.030
+70 23-12 mu 1.0806e-001 5.9196e-002 Var 4.4229e-004 4.9881e-005 cor 0.109 cov 1.6149e-005 Eig 4.430e-004 4.922e-005 1stv 0.999 0.041 tan 0.041
+75 23-12 mu 1.5582e-001 7.2252e-002 Var 6.3579e-004 1.0180e-004 cor 0.125 cov 3.1741e-005 Eig 6.377e-004 9.992e-005 1stv 0.998 0.059 tan 0.059
+80 23-12 mu 2.2206e-001 8.7812e-002 Var 1.2417e-003 2.4650e-004 cor 0.120 cov 6.6437e-005 Eig 1.246e-003 2.421e-004 1stv 0.998 0.066 tan 0.066
+85 23-12 mu 3.1150e-001 1.0594e-001 Var 3.1495e-003 5.7689e-004 cor 0.106 cov 1.4340e-004 Eig 3.157e-003 5.689e-004 1stv 0.998 0.055 tan 0.056
+90 23-12 mu 4.2803e-001 1.2616e-001 Var 8.1301e-003 1.2426e-003 cor 0.099 cov 3.1443e-004 Eig 8.144e-003 1.228e-003 1stv 0.999 0.046 tan 0.046
+50 21-13 mu 2.9887e-001 2.8456e-004 Var 5.5359e-003 1.4361e-007 cor 0.029 cov 8.1472e-007 Eig 5.536e-003 1.435e-007 1stv 1.000 0.000 tan 0.000
+55 21-13 mu 2.7364e-001 5.8485e-004 Var 2.9555e-003 4.3415e-007 cor 0.025 cov 8.9855e-007 Eig 2.956e-003 4.339e-007 1stv 1.000 0.000 tan 0.000
+60 21-13 mu 2.4959e-001 1.2010e-003 Var 1.5305e-003 1.2380e-006 cor 0.021 cov 8.9826e-007 Eig 1.531e-003 1.238e-006 1stv 1.000 0.001 tan 0.001
+65 21-13 mu 2.2655e-001 2.4634e-003 Var 9.2570e-004 3.2811e-006 cor 0.018 cov 9.7985e-007 Eig 9.257e-004 3.280e-006 1stv 1.000 0.001 tan 0.001
+70 21-13 mu 2.0430e-001 5.0443e-003 Var 8.5846e-004 8.0531e-006 cor 0.024 cov 1.9992e-006 Eig 8.585e-004 8.048e-006 1stv 1.000 0.002 tan 0.002
+75 21-13 mu 1.8262e-001 1.0302e-002 Var 1.0938e-003 1.9710e-005 cor 0.047 cov 6.8857e-006 Eig 1.094e-003 1.967e-005 1stv 1.000 0.006 tan 0.006
+80 21-13 mu 1.6133e-001 2.0951e-002 Var 1.4402e-003 6.4783e-005 cor 0.079 cov 2.4191e-005 Eig 1.441e-003 6.436e-005 1stv 1.000 0.018 tan 0.018
+85 21-13 mu 1.4028e-001 4.2296e-002 Var 1.7501e-003 3.5569e-004 cor 0.097 cov 7.6404e-005 Eig 1.754e-003 3.515e-004 1stv 0.999 0.055 tan 0.055
+90 21-13 mu 1.1949e-001 8.4279e-002 Var 1.9240e-003 2.3343e-003 cor 0.102 cov 2.1614e-004 Eig 2.427e-003 1.831e-003 1stv 0.395 0.919 tan 2.328
+50 23-13 mu 2.3341e-002 2.8456e-004 Var 1.1430e-004 1.4361e-007 cor -0.248 cov -1.0064e-006 Eig 1.143e-004 1.347e-007 1stv 1.000 -0.009 tan -0.009
+55 23-13 mu 3.4475e-002 5.8485e-004 Var 1.7523e-004 4.3415e-007 cor -0.258 cov -2.2484e-006 Eig 1.753e-004 4.052e-007 1stv 1.000 -0.013 tan -0.013
+60 23-13 mu 5.0727e-002 1.2010e-003 Var 2.5234e-004 1.2380e-006 cor -0.271 cov -4.7906e-006 Eig 2.524e-004 1.147e-006 1stv 1.000 -0.019 tan -0.019
+65 23-13 mu 7.4278e-002 2.4634e-003 Var 3.3999e-004 3.2811e-006 cor -0.289 cov -9.6663e-006 Eig 3.403e-004 3.004e-006 1stv 1.000 -0.029 tan -0.029
+70 23-13 mu 1.0806e-001 5.0443e-003 Var 4.4229e-004 8.0531e-006 cor -0.311 cov -1.8551e-005 Eig 4.431e-004 7.262e-006 1stv 0.999 -0.043 tan -0.043
+75 23-13 mu 1.5582e-001 1.0302e-002 Var 6.3579e-004 1.9710e-005 cor -0.317 cov -3.5478e-005 Eig 6.378e-004 1.767e-005 1stv 0.998 -0.057 tan -0.057
+80 23-13 mu 2.2206e-001 2.0951e-002 Var 1.2417e-003 6.4783e-005 cor -0.274 cov -7.7630e-005 Eig 1.247e-003 5.968e-005 1stv 0.998 -0.066 tan -0.066
+85 23-13 mu 3.1150e-001 4.2296e-002 Var 3.1495e-003 3.5569e-004 cor -0.213 cov -2.2516e-004 Eig 3.167e-003 3.377e-004 1stv 0.997 -0.080 tan -0.080
+90 23-13 mu 4.2803e-001 8.4279e-002 Var 8.1301e-003 2.3343e-003 cor -0.182 cov -7.9347e-004 Eig 8.237e-003 2.228e-003 1stv 0.991 -0.133 tan -0.134
+50 23-21 mu 2.3341e-002 2.9887e-001 Var 1.1430e-004 5.5359e-003 cor -0.048 cov -3.7941e-005 Eig 5.536e-003 1.140e-004 1stv 0.007 -1.000 tan -142.902
+55 23-21 mu 3.4475e-002 2.7364e-001 Var 1.7523e-004 2.9555e-003 cor -0.046 cov -3.3451e-005 Eig 2.956e-003 1.748e-004 1stv 0.012 -1.000 tan -83.128
+60 23-21 mu 5.0727e-002 2.4959e-001 Var 2.5234e-004 1.5305e-003 cor -0.053 cov -3.2978e-005 Eig 1.531e-003 2.515e-004 1stv 0.026 -1.000 tan -38.786
+65 23-21 mu 7.4278e-002 2.2655e-001 Var 3.3999e-004 9.2570e-004 cor -0.068 cov -3.8077e-005 Eig 9.282e-004 3.375e-004 1stv 0.065 -0.998 tan -15.447
+70 23-21 mu 1.0806e-001 2.0430e-001 Var 4.4229e-004 8.5846e-004 cor -0.082 cov -5.0666e-005 Eig 8.645e-004 4.362e-004 1stv 0.119 -0.993 tan -8.334
+75 23-21 mu 1.5582e-001 1.8262e-001 Var 6.3579e-004 1.0938e-003 cor -0.092 cov -7.7052e-005 Eig 1.106e-003 6.232e-004 1stv 0.162 -0.987 tan -6.108
+80 23-21 mu 2.2206e-001 1.6133e-001 Var 1.2417e-003 1.4402e-003 cor -0.104 cov -1.3866e-004 Eig 1.512e-003 1.170e-003 1stv 0.457 -0.889 tan -1.946
+85 23-21 mu 3.1150e-001 1.4028e-001 Var 3.1495e-003 1.7501e-003 cor -0.123 cov -2.8924e-004 Eig 3.207e-003 1.693e-003 1stv 0.981 -0.195 tan -0.199
+90 23-21 mu 4.2803e-001 1.1949e-001 Var 8.1301e-003 1.9240e-003 cor -0.158 cov -6.2340e-004 Eig 8.192e-003 1.862e-003 1stv 0.995 -0.099 tan -0.099
+Prevalence combination of varying and fixed dummies 1
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[50][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[51][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[51][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[52][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[52][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[53][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[53][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[54][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[54][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[55][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[55][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[56][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[56][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[57][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[57][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[58][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[58][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[59][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[59][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[60][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[60][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[61][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[61][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[62][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[62][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[63][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[63][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[64][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[64][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[65][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[65][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[66][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[66][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[67][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[67][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[68][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[68][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[69][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[69][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[70][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[70][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[71][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[71][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[72][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[72][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[73][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[73][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[74][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[74][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[75][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[75][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[76][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[76][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[77][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[77][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[78][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[78][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[79][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[79][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[80][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[80][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[81][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[81][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[82][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[82][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[83][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[83][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[84][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[84][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[85][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[85][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[86][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[86][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[87][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[87][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[88][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[88][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[89][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[89][2][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 1: probs[90][1][1]=0.000000 because of lack of cases.
+Warning Observed prevalence doesn't sum to 1 for state 2: probs[90][2][1]=0.000000 because of lack of cases.
+Computing Health Expectancies: result on file 'E_ATMgali.txt' ...50|51|52|53|54|55|56|57|58|59|60|61|62|63|64|65|66|67|68|69|70|71|72|73|74|75|76|77|78|79|80|81|82|83|84|85|86|87|88|89|90|
+done evsij
+Computing Total Life expectancies with their standard errors: file 'T_ATMgali.txt' ...
+  Computing State-specific Expectancies and standard errors: result on file 'STDE_ATMgali.txt' 
+    Computing Covar. of State-specific Expectancies: result on file 'CVE_ATMgali.txt' 
+      Computing Variance-covariance of State-specific Expectancies: file 'V_ATMgali.txt' ... 
+# model  
+#****** Result for:******
+ cvevsij 50|51|52|53|54|55|56|57|58|59|60|61|62|63|64|65|66|67|68|69|70|71|72|73|74|75|76|77|78|79|80|81|82|83|84|85|86|87|88|89|90|
+ end cvevsij 
+ varevsij vpopbased=0 
+Computing total mortality p.j=w1*p1j+w2*p2j+..: result on file 'PRMORPREV-1-STABLBASED_ATMgali.txt' 
+Computing age specific forward period (stable) prevalences in each health state 
+done selection
+done State-specific expectancies
+Computing Variance-covariance of forward period (stable) prevalence: file 'VPL_ATMgali.txt' ...
+#****** ******
+done variance-covariance of forward period prevalence
+End of Imach with 0 errors and/or warnings 1. Please look at the log file for details.
+Local time at start Tue Feb 04 20:24:32 2025
+
+Local time at end   Tue Feb 04 20:24:50 2025
+
+Total time used 0 day(s) 0 hour(s) 0 minute(s) 18 second(s)
+Total time was 18 Sec.
