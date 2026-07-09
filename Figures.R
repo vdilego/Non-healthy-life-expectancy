@@ -154,10 +154,10 @@ fig2 <- ggplot(fig2_data, aes(x = ULE, y = NHLE, colour = method, shape = method
   scale_colour_manual(values = c(Sullivan = VIR[2], CAL = VIR[5], Multistate = VIR[7])) +
   scale_shape_manual(values  = c(Sullivan = 16,     CAL = 17,     Multistate = 15)) +
   labs(
-    title    = "Figure 2. Gender gap in ULE versus gender gap in NHLE (female\u2009\u2212\u2009male)",
-    subtitle = "Shaded area = reversal zone: women have higher ULE but lower NHLE than men",
+    title    = "Figure 2. Gender gap in ULE versus gender gap in NHYE (female\u2009\u2212\u2009male)",
+    subtitle = "Shaded area = reversal zone: women have higher ULE but lower NHYE than men",
     x        = "Gender gap in ULE (years, female \u2212 male)",
-    y        = "Gender gap in NHLE (years, female \u2212 male)",
+    y        = "Gender gap in NHYE (years, female \u2212 male)",
     colour   = "Method", shape = "Method",
     caption  = paste0("Country labels shown for Sullivan estimates only. ",
                       "Age 50, European countries, 2017. Source: SHARE Wave 7 and HMD.")
@@ -313,6 +313,7 @@ make_nhye_decomp <- function(decomp_file, method_label,
            dimension = recode(dimension,
                               "CHR" = "Chronic morbidity",
                               "ADL" = "ADL",
+                              "GAL"  = "GALI", 
                               "GALI" = "GALI",
                               "SR"  = "Self-rated health"))
   
@@ -430,12 +431,17 @@ figS3a <- ggplot(figS3a_data, aes(x = value, y = country, fill = effect)) +
     plot.subtitle      = element_text(size = 9, colour = "grey40")
   )
 
+figS3a
+
 ggsave(here("figs","Supp", "figS3a_decomp_CAL.pdf"), figS3a, width = 8.5, height = 7, device = cairo_pdf)
 ggsave(here("figs","Supp","figS3a_decomp_CAL.png"), figS3a, width = 8.5, height = 7, dpi = 300)
 
 
 
 ## ── Supplementary S3b: Multistate decomposition ──────────────────────────────
+
+
+
 figS3b_data <- decomp_l %>%
   filter(!is.na(mort_NHYE)) %>%
   mutate(
@@ -470,6 +476,8 @@ figS3b <- ggplot(figS3b_data, aes(x = value, y = country, fill = effect)) +
     plot.title         = element_text(size = 10, face = "bold"),
     plot.subtitle      = element_text(size = 9, colour = "grey40")
   )
+
+figS3b
 
 ggsave(here("figs","Supp","figS3b_decomp_Multistate.pdf"), figS3b, width = 8.5, height = 7, device = cairo_pdf)
 ggsave(here("figs","Supp","figS3b_decomp_Multistate.png"), figS3b, width = 8.5, height = 7, dpi = 300)
@@ -540,8 +548,8 @@ figS4 <- ggplot(fig4_data, aes(x = gap_LE, y = gNHLE)) +
   )
 
 figS4
-ggsave(here("figs","Supp","figS4_le_gap_vs_nhle_gap.pdf"), fig4, width = 8, height = 6.5, device = cairo_pdf)
-ggsave(here("figs","Supp","figS4_le_gap_vs_nhle_gap.png"), fig4, width = 8, height = 6.5, dpi = 300)
+ggsave(here("figs","Supp","figS4_le_gap_vs_nhle_gap.pdf"), figS4, width = 8, height = 6.5, device = cairo_pdf)
+ggsave(here("figs","Supp","figS4_le_gap_vs_nhle_gap.png"), figS4, width = 8, height = 6.5, dpi = 300)
 
 
 ## ─────────────────────────────────────────────────────────────────────────────
@@ -576,10 +584,10 @@ cors_b <- fig5b_data %>% group_by(dimension) %>%
 p5a <- ggplot(fig5a_data, aes(x = Sullivan, y = CAL)) +
   geom_abline(slope=1, intercept=0, linetype="dashed", colour="grey60") +
   geom_point(colour = VIR[2], size=2, alpha=0.85) +
-  geom_text(data=cors_a, aes(x=x, y=y, label=sprintf("r=%.3f",r)),
+  geom_text(data=cors_a, aes(x=x, y=y, label=sprintf("r=%.5f",r)),
             hjust=-0.1, vjust=1.4, size=3, colour=VIR[6]) +
   facet_wrap(~dimension, nrow=2, scales="free") +
-  labs(title="Sullivan vs CAL", x="NHLE gap — Sullivan", y="NHLE gap — CAL") +
+  labs(title="Sullivan vs CAL", x="NHYE gap — Sullivan", y="NHYE gap — CAL") +
   theme_bw(base_size=9) +
   theme(strip.background=element_rect(fill="grey92"), strip.text=element_text(face="bold"),
         plot.title=element_text(size=9, face="bold"))
@@ -587,26 +595,26 @@ p5a <- ggplot(fig5a_data, aes(x = Sullivan, y = CAL)) +
 p5b <- ggplot(fig5b_data, aes(x = Sullivan, y = Multistate)) +
   geom_abline(slope=1, intercept=0, linetype="dashed", colour="grey60") +
   geom_point(colour = VIR[2], size=2, alpha=0.85) +
-  geom_text(data=cors_b, aes(x=x, y=y, label=sprintf("r=%.3f",r)),
+  geom_text(data=cors_b, aes(x=x, y=y, label=sprintf("r=%.4f",r)),
             hjust=-0.1, vjust=1.4, size=3, colour=VIR[5]) +
   facet_wrap(~dimension, nrow=2, scales="free") +
-  labs(title="Sullivan vs Multistate", x="NHLE gap — Sullivan", y="NHLE gap — Multistate") +
+  labs(title="Sullivan vs Multistate", x="NHYE gap — Sullivan", y="NHYE gap — Multistate") +
   theme_bw(base_size=9) +
   theme(strip.background=element_rect(fill="grey92"), strip.text=element_text(face="bold"),
         plot.title=element_text(size=9, face="bold"))
 
 figS5 <- p5a + p5b +
   plot_annotation(
-    title    = "Figure 5 (Supplementary). Gender gap in NHLE: method comparison",
-    subtitle = "Diagonal line = perfect agreement. r = Pearson correlation between country-level NHLE gaps across methods.\nSullivan vs CAL: r >= 0.997 for all dimensions (same prevalence data; period vs cohort survivorship barely differs).\nSullivan vs Multistate: r = 0.40-0.92 (different prevalence estimation method). Gender gap = female minus male, age 50.",
+    title    = "Figure 5 (Supplementary). Gender gap in NHYE: method comparison",
+    subtitle = "Diagonal line = perfect agreement. r = Pearson correlation between country-level NHYE gaps across methods.\nSullivan vs CAL: r >= 0.997 for all dimensions (same prevalence data; period vs cohort survivorship barely differs).\nSullivan vs Multistate: r = 0.40-0.92 (different prevalence estimation method). Gender gap = female minus male, age 50.",
     caption  = "Source: SHARE Waves 6-7 and HMD, 2017.",
     theme    = theme(plot.title    = element_text(size=10, face="bold"),
                      plot.subtitle = element_text(size=8, colour="grey40"))
   )
 
 figS5
-ggsave(here("figs","Supp","figS5_method_comparison.pdf"), fig5, width=10, height=7, device=cairo_pdf)
-ggsave(here("figs","Supp","figS5_method_comparison.png"), fig5, width=10, height=7, dpi=300)
+ggsave(here("figs","Supp","figS5_method_comparison.pdf"), figS5, width=10, height=7, device=cairo_pdf)
+ggsave(here("figs","Supp","figS5_method_comparison.png"), figS5, width=10, height=7, dpi=300)
 
 
 
